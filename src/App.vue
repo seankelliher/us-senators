@@ -1,30 +1,17 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+    <header>
+        <h1>United State Senate</h1>
+        <p>A guide to Senators in the 117th Congress</p>
+    </header>
+    <nav>
+        <button><router-link to="/">State</router-link></button>
+        <button><router-link to="/class">Class</router-link></button>
+        <button><router-link to="/party">Party</router-link></button>
+        <button><router-link to="/leaders">Leaders</router-link></button>
+    </nav>
+    <router-view />
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+@import "./assets/style.css";
 </style>
