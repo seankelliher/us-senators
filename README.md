@@ -1,4 +1,4 @@
-[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/=us-senators?style=flat-square)](/LICENSE.txt)
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/us-senators?style=flat-square)](/LICENSE.txt)
 ## US Senators
 
 An application with information on current US Senators.
