@@ -1,0 +1,157 @@
+#app {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+header {
+    width: 90%;
+    margin: 0;
+    padding: 1em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    text-align: center;
+}
+
+nav {
+    width: 90%;
+    margin: 0;
+    padding: 1em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    text-align: center;
+}
+
+nav a {
+    font-weight: 600;
+    /*color: #1976d2; blue 700*/
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a.router-link-exact-active {
+    color: #aed581; /*light green 300*/
+}
+
+nav {
+    border-top: 1px solid #eee; /*grey 200*/
+    border-bottom: 1px solid #eee; /*grey 200*/
+}
+
+button {
+    margin-right: 1em;
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    background: #0077c2; /*blue 400 dark*/
+    border: 1px solid #eee; /*grey 200*/
+    border-radius: 6px;
+}
+
+section {
+    width: 90%;
+    margin: 0;
+    padding: 1em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    text-align: center;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+@media all and (min-width: 300px) {
+    p {
+        font-size: .875em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    h2, button {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: .9375em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    p {
+        font-size: .9375em;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    p {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+}
