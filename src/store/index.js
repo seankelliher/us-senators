@@ -1709,8 +1709,7 @@ export default createStore({
         getStates: (state) => {
             return state.senators.map((senator) => {
                 return {
-                    fName: senator.firstName,
-                    lName: senator.lastName,
+                    fullName: senator.firstName + senator.lastName,
                     hState: senator.state,
                 };
             });
@@ -1718,8 +1717,7 @@ export default createStore({
         getClasses: (state) => {
             return state.senators.map((senator) => {
                 return {
-                    fName: senator.firstName,
-                    lName: senator.lastName,
+                    fullName: senator.firstName + senator.lastName,
                     sClass: senator.senateClass,
                 };
             });
@@ -1727,8 +1725,7 @@ export default createStore({
         getParties: (state) => {
             return state.senators.map((senator) => {
                 return {
-                    fName: senator.firstName,
-                    lName: senator.lastName,
+                    fullName: senator.firstName + senator.lastName,
                     sParty: senator.party,
                 };
             });
@@ -1736,8 +1733,7 @@ export default createStore({
         getLeaders: (state) => {
             return state.senators.map((senator) => {
                 return {
-                    fName: senator.firstName,
-                    lName: senator.lastName,
+                    fullName: senator.firstName + senator.lastName,
                     lPosition: senator.leadershipPosition,
                 };
             });
