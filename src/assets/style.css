@@ -1,6 +1,6 @@
 #app {
     width: 100%;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -55,7 +55,22 @@ section {
     margin: 0;
     padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
-    text-align: center;
+}
+
+.gallery-title {
+    width: 80%;
+    margin: .5em 5%;
+    padding: .5em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: #f5f5f5; /*grey 100*/
+}
+
+.senator-card {
+    width: 80%;
+    margin: .5em 5%;
+    padding: .5em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    background: #fafafa; /*grey 50*/
 }
 
 p {
