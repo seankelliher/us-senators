@@ -1,16 +1,17 @@
 <template>
     <section>
-        <h2>By Leaders</h2>
-        <p>Placeholder for Senators Cards, displayed by leaders</p>
+        <div class="gallery-title">
+            <h2>By Leaders</h2>
+            <p>Placeholder for Senators Cards, displayed by leaders</p>
+        </div>
 
         <div
             class="senator-card"
             v-for="(getLeader, index) in getLeaders"
             :key="index.getLeader"
         >
-            {{ getLeader.fName }}
-            {{ getLeader.lName }}
-            {{ getLeader.lPosition }}
+            <p>{{ getLeader.fullName }}</p>
+            <p>{{ getLeader.lPosition }}</p>
         </div>
     </section>
 </template>

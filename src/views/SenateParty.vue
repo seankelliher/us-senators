@@ -1,16 +1,17 @@
 <template>
     <section>
-        <h2>By Party</h2>
-        <p>Placeholder for Senators Cards, displayed by party</p>
+        <div class="gallery-title">
+            <h2>By Party</h2>
+            <p>Placeholder for Senators Cards, displayed by party</p>
+        </div>
 
         <div
             class="senator-card"
             v-for="(getParty, index) in getParties"
             :key="index.getClass"
         >
-            {{ getParty.fName }}
-            {{ getParty.lName }}
-            {{ getParty.sParty }}
+            <p>{{ getParty.fullName }}</p>
+            <p>{{ getParty.sParty }}</p>
         </div>
     </section>
 </template>
