@@ -7,403 +7,403 @@
 
         <div
             class="senator-card"
-            v-for="(getAL, index) in getAlabama"
+            v-for="(getState, index) in getStates.alabama"
             :key="index"
         >
-            <p>{{ getAL.firstName + " " + getAL.lastName }}</p>
-            <p>{{ getAL.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getAK, index) in getAlaska"
+            v-for="(getState, index) in getStates.alaska"
             :key="index"
         >
-            <p>{{ getAK.firstName + " " + getAK.lastName }}</p>
-            <p>{{ getAK.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getAZ, index) in getArizona"
+            v-for="(getState, index) in getStates.arizona"
             :key="index"
         >
-            <p>{{ getAZ.firstName + " " + getAZ.lastName }}</p>
-            <p>{{ getAZ.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getAR, index) in getArkansas"
+            v-for="(getState, index) in getStates.arkansas"
             :key="index"
         >
-            <p>{{ getAR.firstName + " " + getAR.lastName }}</p>
-            <p>{{ getAR.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getCA, index) in getCalifornia"
+            v-for="(getState, index) in getStates.california"
             :key="index"
         >
-            <p>{{ getCA.firstName + " " + getCA.lastName }}</p>
-            <p>{{ getCA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getCO, index) in getColorado"
+            v-for="(getState, index) in getStates.colorado"
             :key="index"
         >
-            <p>{{ getCO.firstName + " " + getCO.lastName }}</p>
-            <p>{{ getCO.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getCT, index) in getConnecticut"
+            v-for="(getState, index) in getStates.connecticut"
             :key="index"
         >
-            <p>{{ getCT.firstName + " " + getCT.lastName }}</p>
-            <p>{{ getCT.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getDE, index) in getDelaware"
+            v-for="(getState, index) in getStates.delaware"
             :key="index"
         >
-            <p>{{ getDE.firstName + " " + getDE.lastName }}</p>
-            <p>{{ getDE.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getFL, index) in getFlorida"
+            v-for="(getState, index) in getStates.florida"
             :key="index"
         >
-            <p>{{ getFL.firstName + " " + getFL.lastName }}</p>
-            <p>{{ getFL.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getGA, index) in getGeorgia"
+            v-for="(getState, index) in getStates.georgia"
             :key="index"
         >
-            <p>{{ getGA.firstName + " " + getGA.lastName }}</p>
-            <p>{{ getGA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getHI, index) in getHawaii"
+            v-for="(getState, index) in getStates.hawaii"
             :key="index"
         >
-            <p>{{ getHI.firstName + " " + getHI.lastName }}</p>
-            <p>{{ getHI.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getID, index) in getIdaho"
+            v-for="(getState, index) in getStates.idaho"
             :key="index"
         >
-            <p>{{ getID.firstName + " " + getID.lastName }}</p>
-            <p>{{ getID.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getIL, index) in getIllinois"
+            v-for="(getState, index) in getStates.illinois"
             :key="index"
         >
-            <p>{{ getIL.firstName + " " + getIL.lastName }}</p>
-            <p>{{ getIL.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getIN, index) in getIndiana"
+            v-for="(getState, index) in getStates.indiana"
             :key="index"
         >
-            <p>{{ getIN.firstName + " " + getIN.lastName }}</p>
-            <p>{{ getIN.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getIA, index) in getIowa"
+            v-for="(getState, index) in getStates.iowa"
             :key="index"
         >
-            <p>{{ getIA.firstName + " " + getIA.lastName }}</p>
-            <p>{{ getIA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getKS, index) in getKansas"
+            v-for="(getState, index) in getStates.kansas"
             :key="index"
         >
-            <p>{{ getKS.firstName + " " + getKS.lastName }}</p>
-            <p>{{ getKS.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getKS, index) in getKentucky"
+            v-for="(getState, index) in getStates.kentucky"
             :key="index"
         >
-            <p>{{ getKS.firstName + " " + getKS.lastName }}</p>
-            <p>{{ getKS.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getLA, index) in getLouisiana"
+            v-for="(getState, index) in getStates.louisiana"
             :key="index"
         >
-            <p>{{ getLA.firstName + " " + getLA.lastName }}</p>
-            <p>{{ getLA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getME, index) in getMaine"
+            v-for="(getState, index) in getStates.maine"
             :key="index"
         >
-            <p>{{ getME.firstName + " " + getME.lastName }}</p>
-            <p>{{ getME.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMD, index) in getMaryland"
+            v-for="(getState, index) in getStates.maryland"
             :key="index"
         >
-            <p>{{ getMD.firstName + " " + getMD.lastName }}</p>
-            <p>{{ getMD.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMA, index) in getMassachusetts"
+            v-for="(getState, index) in getStates.massachusetts"
             :key="index"
         >
-            <p>{{ getMA.firstName + " " + getMA.lastName }}</p>
-            <p>{{ getMA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMI, index) in getMichigan"
+            v-for="(getState, index) in getStates.michigan"
             :key="index"
         >
-            <p>{{ getMI.firstName + " " + getMI.lastName }}</p>
-            <p>{{ getMI.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMN, index) in getMinnesota"
+            v-for="(getState, index) in getStates.minnesota"
             :key="index"
         >
-            <p>{{ getMN.firstName + " " + getMN.lastName }}</p>
-            <p>{{ getMN.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMI, index) in getMississippi"
+            v-for="(getState, index) in getStates.mississippi"
             :key="index"
         >
-            <p>{{ getMI.firstName + " " + getMI.lastName }}</p>
-            <p>{{ getMI.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMS, index) in getMissouri"
+            v-for="(getState, index) in getStates.missouri"
             :key="index"
         >
-            <p>{{ getMS.firstName + " " + getMS.lastName }}</p>
-            <p>{{ getMS.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getMT, index) in getMontana"
+            v-for="(getState, index) in getStates.montana"
             :key="index"
         >
-            <p>{{ getMT.firstName + " " + getMT.lastName }}</p>
-            <p>{{ getMT.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNE, index) in getNebraska"
+            v-for="(getState, index) in getStates.nebraska"
             :key="index"
         >
-            <p>{{ getNE.firstName + " " + getNE.lastName }}</p>
-            <p>{{ getNE.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNV, index) in getNevada"
+            v-for="(getState, index) in getStates.nevada"
             :key="index"
         >
-            <p>{{ getNV.firstName + " " + getNV.lastName }}</p>
-            <p>{{ getNV.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNH, index) in getNewHampshire"
+            v-for="(getState, index) in getStates.newHampshire"
             :key="index"
         >
-            <p>{{ getNH.firstName + " " + getNH.lastName }}</p>
-            <p>{{ getNH.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNJ, index) in getNewJersey"
+            v-for="(getState, index) in getStates.newJersey"
             :key="index"
         >
-            <p>{{ getNJ.firstName + " " + getNJ.lastName }}</p>
-            <p>{{ getNJ.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNM, index) in getNewMexico"
+            v-for="(getState, index) in getStates.newMexico"
             :key="index"
         >
-            <p>{{ getNM.firstName + " " + getNM.lastName }}</p>
-            <p>{{ getNM.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNY, index) in getNewYork"
+            v-for="(getState, index) in getStates.newYork"
             :key="index"
         >
-            <p>{{ getNY.firstName + " " + getNY.lastName }}</p>
-            <p>{{ getNY.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getNC, index) in getNorthCarolina"
+            v-for="(getState, index) in getStates.northCarolina"
             :key="index"
         >
-            <p>{{ getNC.firstName + " " + getNC.lastName }}</p>
-            <p>{{ getNC.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getND, index) in getNorthDakota"
+            v-for="(getState, index) in getStates.northDakota"
             :key="index"
         >
-            <p>{{ getND.firstName + " " + getND.lastName }}</p>
-            <p>{{ getND.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getOH, index) in getOhio"
+            v-for="(getState, index) in getStates.ohio"
             :key="index"
         >
-            <p>{{ getOH.firstName + " " + getOH.lastName }}</p>
-            <p>{{ getOH.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getOK, index) in getOklahoma"
+            v-for="(getState, index) in getStates.oklahoma"
             :key="index"
         >
-            <p>{{ getOK.firstName + " " + getOK.lastName }}</p>
-            <p>{{ getOK.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getOR, index) in getOregon"
+            v-for="(getState, index) in getStates.oregon"
             :key="index"
         >
-            <p>{{ getOR.firstName + " " + getOR.lastName }}</p>
-            <p>{{ getOR.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getPA, index) in getPennsylvania"
+            v-for="(getState, index) in getStates.pennsylvania"
             :key="index"
         >
-            <p>{{ getPA.firstName + " " + getPA.lastName }}</p>
-            <p>{{ getPA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getRI, index) in getRhodeIsland"
+            v-for="(getState, index) in getStates.rhodeIsland"
             :key="index"
         >
-            <p>{{ getRI.firstName + " " + getRI.lastName }}</p>
-            <p>{{ getRI.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getSC, index) in getSouthCarolina"
+            v-for="(getState, index) in getStates.southCarolina"
             :key="index"
         >
-            <p>{{ getSC.firstName + " " + getSC.lastName }}</p>
-            <p>{{ getSC.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getSD, index) in getSouthDakota"
+            v-for="(getState, index) in getStates.southDakota"
             :key="index"
         >
-            <p>{{ getSD.firstName + " " + getSD.lastName }}</p>
-            <p>{{ getSD.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getTN, index) in getTennessee"
+            v-for="(getState, index) in getStates.tennessee"
             :key="index"
         >
-            <p>{{ getTN.firstName + " " + getTN.lastName }}</p>
-            <p>{{ getTN.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getTX, index) in getTexas"
+            v-for="(getState, index) in getStates.texas"
             :key="index"
         >
-            <p>{{ getTX.firstName + " " + getTX.lastName }}</p>
-            <p>{{ getTX.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getUT, index) in getUtah"
+            v-for="(getState, index) in getStates.utah"
             :key="index"
         >
-            <p>{{ getUT.firstName + " " + getUT.lastName }}</p>
-            <p>{{ getUT.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getVT, index) in getVermont"
+            v-for="(getState, index) in getStates.vermont"
             :key="index"
         >
-            <p>{{ getVT.firstName + " " + getVT.lastName }}</p>
-            <p>{{ getVT.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getVA, index) in getVirginia"
+            v-for="(getState, index) in getStates.virginia"
             :key="index"
         >
-            <p>{{ getVA.firstName + " " + getVA.lastName }}</p>
-            <p>{{ getVA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getWA, index) in getWashington"
+            v-for="(getState, index) in getStates.washington"
             :key="index"
         >
-            <p>{{ getWA.firstName + " " + getWA.lastName }}</p>
-            <p>{{ getWA.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getWV, index) in getWestVirginia"
+            v-for="(getState, index) in getStates.westVirginia"
             :key="index"
         >
-            <p>{{ getWV.firstName + " " + getWV.lastName }}</p>
-            <p>{{ getWV.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getWI, index) in getWisconsin"
+            v-for="(getState, index) in getStates.wisconsin"
             :key="index"
         >
-            <p>{{ getWI.firstName + " " + getWI.lastName }}</p>
-            <p>{{ getWI.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
         <div
             class="senator-card"
-            v-for="(getWY, index) in getWyoming"
+            v-for="(getState, index) in getStates.wyoming"
             :key="index"
         >
-            <p>{{ getWY.firstName + " " + getWY.lastName }}</p>
-            <p>{{ getWY.state }}</p>
+            <p>{{ getState.firstName + " " + getState.lastName }}</p>
+            <p>{{ getState.state }}</p>
         </div>
     </section>
 </template>
@@ -414,155 +414,59 @@ export default {
     components: {},
     methods: {},
     computed: {
-        getAlabama() {
-            return this.$store.getters.getAlabama;
-        },
-        getAlaska() {
-            return this.$store.getters.getAlaska;
-        },
-        getArizona() {
-            return this.$store.getters.getArizona;
-        },
-        getArkansas() {
-            return this.$store.getters.getArkansas;
-        },
-        getCalifornia() {
-            return this.$store.getters.getCalifornia;
-        },
-        getColorado() {
-            return this.$store.getters.getColorado;
-        },
-        getConnecticut() {
-            return this.$store.getters.getConnecticut;
-        },
-        getDelaware() {
-            return this.$store.getters.getDelaware;
-        },
-        getFlorida() {
-            return this.$store.getters.getFlorida;
-        },
-        getGeorgia() {
-            return this.$store.getters.getGeorgia;
-        },
-        getHawaii() {
-            return this.$store.getters.getHawaii;
-        },
-        getIdaho() {
-            return this.$store.getters.getIdaho;
-        },
-        getIllinois() {
-            return this.$store.getters.getIllinois;
-        },
-        getIndiana() {
-            return this.$store.getters.getIndiana;
-        },
-        getIowa() {
-            return this.$store.getters.getIowa;
-        },
-        getKansas() {
-            return this.$store.getters.getKansas;
-        },
-        getKentucky() {
-            return this.$store.getters.getKentucky;
-        },
-        getLouisiana() {
-            return this.$store.getters.getLouisiana;
-        },
-        getMaine() {
-            return this.$store.getters.getMaine;
-        },
-        getMaryland() {
-            return this.$store.getters.getMaryland;
-        },
-        getMassachusetts() {
-            return this.$store.getters.getMassachusetts;
-        },
-        getMichigan() {
-            return this.$store.getters.getMichigan;
-        },
-        getMinnesota() {
-            return this.$store.getters.getMinnesota;
-        },
-        getMississippi() {
-            return this.$store.getters.getMississippi;
-        },
-        getMissouri() {
-            return this.$store.getters.getMissouri;
-        },
-        getMontana() {
-            return this.$store.getters.getMontana;
-        },
-        getNebraska() {
-            return this.$store.getters.getNebraska;
-        },
-        getNevada() {
-            return this.$store.getters.getNevada;
-        },
-        getNewHampshire() {
-            return this.$store.getters.getNewHampshire;
-        },
-        getNewJersey() {
-            return this.$store.getters.getNewJersey;
-        },
-        getNewMexico() {
-            return this.$store.getters.getNewMexico;
-        },
-        getNewYork() {
-            return this.$store.getters.getNewYork;
-        },
-        getNorthCarolina() {
-            return this.$store.getters.getNorthCarolina;
-        },
-        getNorthDakota() {
-            return this.$store.getters.getNorthDakota;
-        },
-        getOhio() {
-            return this.$store.gettergetOhio;
-        },
-        getOklahoma() {
-            return this.$store.getters.getOklahoma;
-        },
-        getOregon() {
-            return this.$store.getters.getOregon;
-        },
-        getPennsylvania() {
-            return this.$store.getters.getPennsylvania;
-        },
-        getRhodeIsland() {
-            return this.$store.getters.getRhodeIsland;
-        },
-        getSouthCarolina() {
-            return this.$store.getters.getSouthCarolina;
-        },
-        getSouthDakota() {
-            return this.$store.getters.getSouthDakota;
-        },
-        getTennessee() {
-            return this.$store.getters.getTennessee;
-        },
-        getTexas() {
-            return this.$store.getters.getTexas;
-        },
-        getUtah() {
-            return this.$store.getters.getUtah;
-        },
-        getVermont() {
-            return this.$store.getters.getVermont;
-        },
-        getVirginia() {
-            return this.$store.getters.getVirginia;
-        },
-        getWashington() {
-            return this.$store.getters.getWashington;
-        },
-        getWestVirginia() {
-            return this.$store.getters.getWestVirginia;
-        },
-        getWisconsin() {
-            return this.$store.getters.getWisconsin;
-        },
-        getWyoming() {
-            return this.$store.getters.getWyoming;
+        getStates() {
+            return {
+                alabama: this.$store.getters.getAlabama,
+                alaska: this.$store.getters.getAlaska,
+                arizona: this.$store.getters.getArizona,
+                arkansas: this.$store.getters.getArkansas,
+                california: this.$store.getters.getCalifornia,
+                colorado: this.$store.getters.getColorado,
+                connecticut: this.$store.getters.getConnecticut,
+                delaware: this.$store.getters.getDelaware,
+                florida: this.$store.getters.getFlorida,
+                georgia: this.$store.getters.getGeorgia,
+                hawaii: this.$store.getters.getHawaii,
+                idaho: this.$store.getters.getIdaho,
+                illinois: this.$store.getters.getIllinois,
+                indiana: this.$store.getters.getIndiana,
+                iowa: this.$store.getters.getIowa,
+                kansas: this.$store.getters.getKansas,
+                kentucky: this.$store.getters.getKentucky,
+                louisiana: this.$store.getters.getLouisiana,
+                maine: this.$store.getters.getMaine,
+                maryland: this.$store.getters.getMaryland,
+                massachusetts: this.$store.getters.getMassachusetts,
+                michigan: this.$store.getters.getMichigan,
+                minnesota: this.$store.getters.getMinnesota,
+                mississippi: this.$store.getters.getMississippi,
+                missouri: this.$store.getters.getMissouri,
+                montana: this.$store.getters.getMontana,
+                nebraska: this.$store.getters.getNebraska,
+                nevada: this.$store.getters.getNevada,
+                newHampshire: this.$store.getters.getNewHampshire,
+                newJersey: this.$store.getters.getNewJersey,
+                newMexico: this.$store.getters.getNewMexico,
+                newYork: this.$store.getters.getNewYork,
+                northCarolina: this.$store.getters.getNorthCarolina,
+                northDakota: this.$store.getters.getNorthDakota,
+                ohio: this.$store.gettergetOhio,
+                oklahoma: this.$store.getters.getOklahoma,
+                oregon: this.$store.getters.getOregon,
+                pennsylvania: this.$store.getters.getPennsylvania,
+                rhodeIsland: this.$store.getters.getRhodeIsland,
+                southCarolina: this.$store.getters.getSouthCarolina,
+                southDakota: this.$store.getters.getSouthDakota,
+                tennessee: this.$store.getters.getTennessee,
+                texas: this.$store.getters.getTexas,
+                utah: this.$store.getters.getUtah,
+                vermont: this.$store.getters.getVermont,
+                virginia: this.$store.getters.getVirginia,
+                washington: this.$store.getters.getWashington,
+                westVirginia: this.$store.getters.getWestVirginia,
+                wisconsin: this.$store.getters.getWisconsin,
+                wyoming: this.$store.getters.getWyoming,
+            };
         },
     },
 };
