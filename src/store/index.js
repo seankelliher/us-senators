@@ -1706,13 +1706,249 @@ export default createStore({
         ],
     },
     getters: {
-        getStates: (state) => {
-            return state.senators.map((senator) => {
-                return {
-                    fullName: senator.firstName + senator.lastName,
-                    hState: senator.state,
-                };
-            });
+        getAlabama: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Alabama"
+            );
+        },
+        getAlaska: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Alaska"
+            );
+        },
+        getArizona: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Arizona"
+            );
+        },
+        getArkansas: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Arkansas"
+            );
+        },
+        getCalifornia: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "California"
+            );
+        },
+        getColorado: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Colorado"
+            );
+        },
+        getConnecticut: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Connecticut"
+            );
+        },
+        getDelaware: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Delaware"
+            );
+        },
+        getFlorida: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Florida"
+            );
+        },
+        getGeorgia: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Georgia"
+            );
+        },
+        getHawaii: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Hawaii"
+            );
+        },
+        getIdaho: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Idaho"
+            );
+        },
+        getIllinois: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Illinois"
+            );
+        },
+        getIndiana: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Indiana"
+            );
+        },
+        getIowa: (state) => {
+            return state.senators.filter((senator) => senator.state === "Iowa");
+        },
+        getKansas: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Kansas"
+            );
+        },
+        getKentucky: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Kentucky"
+            );
+        },
+        getLouisiana: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Louisiana"
+            );
+        },
+        getMaine: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Maine"
+            );
+        },
+        getMaryland: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Maryland"
+            );
+        },
+        getMassachusetts: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Massachusetts"
+            );
+        },
+        getMichigan: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Michigan"
+            );
+        },
+        getMinnesota: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Minnesota"
+            );
+        },
+        getMississippi: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Mississippi"
+            );
+        },
+        getMissouri: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Missouri"
+            );
+        },
+        getMontana: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Montana"
+            );
+        },
+        getNebraska: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Nebraska"
+            );
+        },
+        getNevada: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Nevada"
+            );
+        },
+        getNewHampshire: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "New Hampshire"
+            );
+        },
+        getNewJersey: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "New Jersey"
+            );
+        },
+        getNewMexico: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "New Mexico"
+            );
+        },
+        getNewYork: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "New York"
+            );
+        },
+        getNorthCarolina: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "North Carolina"
+            );
+        },
+        getNorthDakota: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "North Dakota"
+            );
+        },
+        getOhio: (state) => {
+            return state.senators.filter((senator) => senator.state === "Ohio");
+        },
+        getOklahoma: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Oklahoma"
+            );
+        },
+        getOregon: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Oregon"
+            );
+        },
+        getPennsylvania: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Pennsylvania"
+            );
+        },
+        getRhodeIsland: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Rhode Island"
+            );
+        },
+        getSouthCarolina: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "South Carolina"
+            );
+        },
+        getSouthDakota: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "South Dakota"
+            );
+        },
+        getTennessee: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Tennessee"
+            );
+        },
+        getTexas: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Texas"
+            );
+        },
+        getUtah: (state) => {
+            return state.senators.filter((senator) => senator.state === "Utah");
+        },
+        getVermont: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Vermont"
+            );
+        },
+        getVirginia: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Virginia"
+            );
+        },
+        getWashington: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Washington"
+            );
+        },
+        getWestVirginia: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "West Virginia"
+            );
+        },
+        getWisconsin: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Wisconsin"
+            );
+        },
+        getWyoming: (state) => {
+            return state.senators.filter(
+                (senator) => senator.state === "Wyoming"
+            );
         },
         getClasses: (state) => {
             return state.senators.map((senator) => {
