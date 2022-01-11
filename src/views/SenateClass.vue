@@ -1,17 +1,37 @@
 <template>
     <section>
         <div class="gallery-title">
-            <h2>By Class</h2>
-            <p>Placeholder for Senators Cards, displayed by class</p>
+            <h3>Class I</h3>
         </div>
-
         <div
             class="senator-card"
-            v-for="(getClass, index) in getClasses"
-            :key="index.getClass"
+            v-for="(getClass, index) in getClasses.classOne"
+            :key="index"
         >
-            <p>{{ getClass.fullName }}</p>
-            <p>{{ getClass.sClass }}</p>
+            <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
+            <p>{{ getClass.senateClass }}</p>
+        </div>
+        <div class="gallery-title">
+            <h3>Class II</h3>
+        </div>
+        <div
+            class="senator-card"
+            v-for="(getClass, index) in getClasses.classTwo"
+            :key="index"
+        >
+            <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
+            <p>{{ getClass.senateClass }}</p>
+        </div>
+        <div class="gallery-title">
+            <h3>Class III</h3>
+        </div>
+        <div
+            class="senator-card"
+            v-for="(getClass, index) in getClasses.classThree"
+            :key="index"
+        >
+            <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
+            <p>{{ getClass.senateClass }}</p>
         </div>
     </section>
 </template>
@@ -22,7 +42,11 @@ export default {
     components: {},
     computed: {
         getClasses() {
-            return this.$store.getters.getClasses;
+            return {
+                classOne: this.$store.getters.getClassOne,
+                classTwo: this.$store.getters.getClassTwo,
+                classThree: this.$store.getters.getClassThree,
+            };
         },
     },
 };
