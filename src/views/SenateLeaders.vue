@@ -1,8 +1,7 @@
 <template>
     <section>
         <div class="gallery-title">
-            <h2>By Leaders</h2>
-            <p>Placeholder for Senators Cards, displayed by leaders</p>
+            <h3>Leaders</h3>
         </div>
 
         <div
@@ -10,8 +9,8 @@
             v-for="(getLeader, index) in getLeaders"
             :key="index.getLeader"
         >
-            <p>{{ getLeader.fullName }}</p>
-            <p>{{ getLeader.lPosition }}</p>
+            <p>{{ getLeader.firstName + " " + getLeader.lastName }}</p>
+            <p>{{ getLeader.leadershipPosition }}</p>
         </div>
     </section>
 </template>
