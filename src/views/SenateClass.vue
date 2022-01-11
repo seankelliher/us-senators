@@ -10,6 +10,10 @@
         >
             <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
             <p>{{ getClass.senateClass }}</p>
+            <img
+                :src="require(`../assets/images/${getClass.portrait}.jpg`)"
+                :alt="getClass.firstName + ' ' + getClass.lastName"
+            />
         </div>
         <div class="gallery-title">
             <h3>Class II</h3>
@@ -21,6 +25,10 @@
         >
             <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
             <p>{{ getClass.senateClass }}</p>
+            <img
+                :src="require(`../assets/images/${getClass.portrait}.jpg`)"
+                :alt="getClass.firstName + ' ' + getClass.lastName"
+            />
         </div>
         <div class="gallery-title">
             <h3>Class III</h3>
@@ -32,6 +40,10 @@
         >
             <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
             <p>{{ getClass.senateClass }}</p>
+            <img
+                :src="require(`../assets/images/${getClass.portrait}.jpg`)"
+                :alt="getClass.firstName + ' ' + getClass.lastName"
+            />
         </div>
     </section>
 </template>

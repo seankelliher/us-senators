@@ -10,6 +10,10 @@
         >
             <p>{{ getParty.firstName + " " + getParty.lastName }}</p>
             <p>{{ getParty.party }}</p>
+            <img
+                :src="require(`../assets/images/${getParty.portrait}.jpg`)"
+                :alt="getParty.firstName + ' ' + getParty.lastName"
+            />
         </div>
         <div class="gallery-title">
             <h3>Independents</h3>
@@ -21,6 +25,10 @@
         >
             <p>{{ getParty.firstName + " " + getParty.lastName }}</p>
             <p>{{ getParty.party }}</p>
+            <img
+                :src="require(`../assets/images/${getParty.portrait}.jpg`)"
+                :alt="getParty.firstName + ' ' + getParty.lastName"
+            />
         </div>
         <div class="gallery-title">
             <h3>Republicans</h3>
@@ -32,6 +40,10 @@
         >
             <p>{{ getParty.firstName + " " + getParty.lastName }}</p>
             <p>{{ getParty.party }}</p>
+            <img
+                :src="require(`../assets/images/${getParty.portrait}.jpg`)"
+                :alt="getParty.firstName + ' ' + getParty.lastName"
+            />
         </div>
     </section>
 </template>

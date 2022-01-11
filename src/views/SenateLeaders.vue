@@ -11,6 +11,10 @@
         >
             <p>{{ getLeader.firstName + " " + getLeader.lastName }}</p>
             <p>{{ getLeader.leadershipPosition }}</p>
+            <img
+                :src="require(`../assets/images/${getLeader.portrait}.jpg`)"
+                :alt="getLeader.firstName + ' ' + getLeader.lastName"
+            />
         </div>
     </section>
 </template>
