@@ -10,6 +10,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Alaska</h3>
@@ -21,6 +25,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Arizona</h3>
@@ -32,6 +40,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Arkansas</h3>
@@ -43,6 +55,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>California</h3>
@@ -54,6 +70,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Colorado</h3>
@@ -65,6 +85,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Connecticut</h3>
@@ -76,6 +100,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Delaware</h3>
@@ -87,6 +115,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Florida</h3>
@@ -98,6 +130,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Georgia</h3>
@@ -109,6 +145,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Hawaii</h3>
@@ -120,6 +160,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Idaho</h3>
@@ -131,6 +175,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Illinois</h3>
@@ -142,6 +190,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Indiana</h3>
@@ -153,6 +205,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Iowa</h3>
@@ -164,6 +220,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Kansas</h3>
@@ -175,6 +235,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Kentucky</h3>
@@ -186,6 +250,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Louisiana</h3>
@@ -197,6 +265,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Maine</h3>
@@ -208,6 +280,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Maryland</h3>
@@ -219,6 +295,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Massachusetts</h3>
@@ -230,6 +310,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Michigan</h3>
@@ -241,6 +325,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Minnesota</h3>
@@ -252,6 +340,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Mississippi</h3>
@@ -263,8 +355,12 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
-         <div class="gallery-title">
+        <div class="gallery-title">
             <h3>Missouri</h3>
         </div>
         <div
@@ -274,6 +370,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Montana</h3>
@@ -285,6 +385,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Nebraska</h3>
@@ -296,6 +400,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Nevada</h3>
@@ -307,6 +415,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>New Hampshire</h3>
@@ -318,6 +430,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>New Jersey</h3>
@@ -329,6 +445,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>New Mexico</h3>
@@ -340,6 +460,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>New York</h3>
@@ -351,6 +475,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>North Carolina</h3>
@@ -362,6 +490,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>North Dakota</h3>
@@ -373,6 +505,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Ohio</h3>
@@ -384,6 +520,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Oklahoma</h3>
@@ -395,6 +535,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Oregon</h3>
@@ -406,6 +550,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Pennsylvania</h3>
@@ -417,6 +565,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Rhode Island</h3>
@@ -428,6 +580,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>South Carolina</h3>
@@ -439,6 +595,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>South Dakota</h3>
@@ -450,6 +610,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Tennessee</h3>
@@ -461,6 +625,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Texas</h3>
@@ -472,6 +640,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Utah</h3>
@@ -483,6 +655,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Vermont</h3>
@@ -494,6 +670,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Virginia</h3>
@@ -505,6 +685,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Washington</h3>
@@ -516,6 +700,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>West Virginia</h3>
@@ -527,6 +715,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Wisconsin</h3>
@@ -538,6 +730,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
         <div class="gallery-title">
             <h3>Wyoming</h3>
@@ -549,6 +745,10 @@
         >
             <p>{{ getState.firstName + " " + getState.lastName }}</p>
             <p>{{ getState.state }}</p>
+            <img
+                :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                :alt="getState.firstName + ' ' + getState.lastName"
+            >
         </div>
     </section>
 </template>
