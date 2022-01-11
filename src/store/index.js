@@ -1950,29 +1950,34 @@ export default createStore({
                 (senator) => senator.state === "Wyoming"
             );
         },
-        getClasses: (state) => {
-            return state.senators.map((senator) => {
-                return {
-                    fullName: senator.firstName + senator.lastName,
-                    sClass: senator.senateClass,
-                };
-            });
+        getClassOne: (state) => {
+            return state.senators.filter(
+                (senator) => senator.senateClass === "Class I"
+            );
         },
-        getParties: (state) => {
-            return state.senators.map((senator) => {
-                return {
-                    fullName: senator.firstName + senator.lastName,
-                    sParty: senator.party,
-                };
-            });
+        getClassTwo: (state) => {
+            return state.senators.filter(
+                (senator) => senator.senateClass === "Class II"
+            );
+        },
+        getClassThree: (state) => {
+            return state.senators.filter(
+                (senator) => senator.senateClass === "Class III"
+            );
+        },
+        getDemocrats: (state) => {
+            return state.senators.filter((senator) => senator.party === "D");
+        },
+        getIndependents: (state) => {
+            return state.senators.filter((senator) => senator.party === "I");
+        },
+        getRepublicans: (state) => {
+            return state.senators.filter((senator) => senator.party === "R");
         },
         getLeaders: (state) => {
-            return state.senators.map((senator) => {
-                return {
-                    fullName: senator.firstName + senator.lastName,
-                    lPosition: senator.leadershipPosition,
-                };
-            });
+            return state.senators.filter(
+                (senator) => senator.leadershipPosition !== null
+            );
         },
     },
     mutations: {},
