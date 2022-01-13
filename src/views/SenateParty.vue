@@ -8,27 +8,51 @@
             v-for="(getParty, index) in getParties.democrats"
             :key="index"
         >
-            <p>{{ getParty.firstName + " " + getParty.lastName }}</p>
-            <p>{{ getParty.party }}</p>
-            <img
-                :src="require(`../assets/images/${getParty.portrait}.jpg`)"
-                :alt="getParty.firstName + ' ' + getParty.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getParty.portrait}.jpg`)"
+                    :alt="getParty.firstName + ' ' + getParty.lastName"
+                />
+                <figcaption>
+                    {{
+                        getParty.firstName +
+                        " " +
+                        getParty.lastName +
+                        " (" +
+                        getParty.party +
+                        ")"
+                    }}
+                    <br />
+                    {{ getParty.state }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Independents</h3>
         </div>
         <div
             class="senator-card"
-            v-for="(getParty, index) in getParties.indendents"
+            v-for="(getParty, index) in getParties.independents"
             :key="index"
         >
-            <p>{{ getParty.firstName + " " + getParty.lastName }}</p>
-            <p>{{ getParty.party }}</p>
-            <img
-                :src="require(`../assets/images/${getParty.portrait}.jpg`)"
-                :alt="getParty.firstName + ' ' + getParty.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getParty.portrait}.jpg`)"
+                    :alt="getParty.firstName + ' ' + getParty.lastName"
+                />
+                <figcaption>
+                    {{
+                        getParty.firstName +
+                        " " +
+                        getParty.lastName +
+                        " (" +
+                        getParty.party +
+                        ")"
+                    }}
+                    <br />
+                    {{ getParty.state }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Republicans</h3>
@@ -38,12 +62,24 @@
             v-for="(getParty, index) in getParties.republicans"
             :key="index"
         >
-            <p>{{ getParty.firstName + " " + getParty.lastName }}</p>
-            <p>{{ getParty.party }}</p>
-            <img
-                :src="require(`../assets/images/${getParty.portrait}.jpg`)"
-                :alt="getParty.firstName + ' ' + getParty.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getParty.portrait}.jpg`)"
+                    :alt="getParty.firstName + ' ' + getParty.lastName"
+                />
+                <figcaption>
+                    {{
+                        getParty.firstName +
+                        " " +
+                        getParty.lastName +
+                        " (" +
+                        getParty.party +
+                        ")"
+                    }}
+                    <br />
+                    {{ getParty.state }}
+                </figcaption>
+            </figure>
         </div>
     </section>
 </template>
