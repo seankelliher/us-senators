@@ -8,12 +8,24 @@
             v-for="(getClass, index) in getClasses.classOne"
             :key="index"
         >
-            <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
-            <p>{{ getClass.senateClass }}</p>
-            <img
-                :src="require(`../assets/images/${getClass.portrait}.jpg`)"
-                :alt="getClass.firstName + ' ' + getClass.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getClass.portrait}.jpg`)"
+                    :alt="getClass.firstName + ' ' + getClass.lastName"
+                />
+                <figcaption>
+                    {{
+                        getClass.firstName +
+                        " " +
+                        getClass.lastName +
+                        " (" +
+                        getClass.party +
+                        ")"
+                    }}
+                    <br />
+                    {{ getClass.state }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Class II</h3>
@@ -23,12 +35,24 @@
             v-for="(getClass, index) in getClasses.classTwo"
             :key="index"
         >
-            <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
-            <p>{{ getClass.senateClass }}</p>
-            <img
-                :src="require(`../assets/images/${getClass.portrait}.jpg`)"
-                :alt="getClass.firstName + ' ' + getClass.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getClass.portrait}.jpg`)"
+                    :alt="getClass.firstName + ' ' + getClass.lastName"
+                />
+                <figcaption>
+                    {{
+                        getClass.firstName +
+                        " " +
+                        getClass.lastName +
+                        " (" +
+                        getClass.party +
+                        ")"
+                    }}
+                    <br />
+                    {{ getClass.state }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Class III</h3>
@@ -38,12 +62,24 @@
             v-for="(getClass, index) in getClasses.classThree"
             :key="index"
         >
-            <p>{{ getClass.firstName + " " + getClass.lastName }}</p>
-            <p>{{ getClass.senateClass }}</p>
-            <img
-                :src="require(`../assets/images/${getClass.portrait}.jpg`)"
-                :alt="getClass.firstName + ' ' + getClass.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getClass.portrait}.jpg`)"
+                    :alt="getClass.firstName + ' ' + getClass.lastName"
+                />
+                <figcaption>
+                    {{
+                        getClass.firstName +
+                        " " +
+                        getClass.lastName +
+                        " (" +
+                        getClass.party +
+                        ")"
+                    }}
+                    <br />
+                    {{ getClass.state }}
+                </figcaption>
+            </figure>
         </div>
     </section>
 </template>
