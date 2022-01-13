@@ -809,8 +809,8 @@ export default createStore({
                 bioguideId: "K000383",
                 eliteSchool: true, //Dartmouth
                 email: "king.senate.gov/contact",
-                firstName: "Angus S., Jr.",
-                lastName: "King",
+                firstName: "Angus S.",
+                lastName: "King, Jr.",
                 leadershipPosition: null,
                 party: "I",
                 phone: "(202) 224-5344",
