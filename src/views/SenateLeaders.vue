@@ -6,8 +6,8 @@
 
         <div
             class="senator-card"
-            v-for="(getLeader, index) in getLeaders"
-            :key="index.getLeader"
+            v-for="getLeader in getLeaders"
+            :key="getLeader.bioguideId"
         >
             <figure>
                 <img
@@ -22,14 +22,10 @@
                         ", " +
                         getLeader.party
                     }}
-                    <br>
-                    {{
-                        getLeader.state
-                    }}
-                    <br>
-                    {{
-                        getLeader.leadershipPosition
-                    }}
+                    <br />
+                    {{ getLeader.state }}
+                    <br />
+                    {{ getLeader.leadershipPosition }}
                 </figcaption>
             </figure>
         </div>

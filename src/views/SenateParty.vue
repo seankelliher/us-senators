@@ -5,8 +5,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getParty, index) in getParties.democrats"
-            :key="index"
+            v-for="getParty in getParties.democrats"
+            :key="getParty.bioguideId"
         >
             <figure>
                 <img
@@ -32,8 +32,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getParty, index) in getParties.independents"
-            :key="index"
+            v-for="getParty in getParties.independents"
+            :key="getParty.bioguideId"
         >
             <figure>
                 <img
@@ -59,8 +59,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getParty, index) in getParties.republicans"
-            :key="index"
+            v-for="getParty in getParties.republicans"
+            :key="getParty.bioguideId"
         >
             <figure>
                 <img

@@ -5,8 +5,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getClass, index) in getClasses.classOne"
-            :key="index"
+            v-for="getClass in getClasses.classOne"
+            :key="getClass.bioguideId"
         >
             <figure>
                 <img
@@ -32,8 +32,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getClass, index) in getClasses.classTwo"
-            :key="index"
+            v-for="getClass in getClasses.classTwo"
+            :key="getClass.bioguideId"
         >
             <figure>
                 <img
@@ -59,8 +59,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getClass, index) in getClasses.classThree"
-            :key="index"
+            v-for="getClass in getClasses.classThree"
+            :key="getClass.bioguideId"
         >
             <figure>
                 <img

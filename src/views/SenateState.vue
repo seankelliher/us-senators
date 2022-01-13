@@ -1,12 +1,13 @@
 <template>
+    <!--FOR FUTURE-<SenatorCards msg="This is just a test message!" />-->
     <section>
         <div class="gallery-title">
             <h3>Alabama</h3>
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.alabama"
-            :key="index"
+            v-for="getState in getStates.alabama"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -30,8 +31,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.alaska"
-            :key="index"
+            v-for="getState in getStates.alaska"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -55,8 +56,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.arizona"
-            :key="index"
+            v-for="getState in getStates.arizona"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -81,8 +82,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.arkansas"
-            :key="index"
+            v-for="getState in getStates.arkansas"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -106,8 +107,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.california"
-            :key="index"
+            v-for="getState in getStates.california"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -131,8 +132,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.colorado"
-            :key="index"
+            v-for="getState in getStates.colorado"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -156,8 +157,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.connecticut"
-            :key="index"
+            v-for="getState in getStates.connecticut"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -181,8 +182,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.delaware"
-            :key="index"
+            v-for="getState in getStates.delaware"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -206,8 +207,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.florida"
-            :key="index"
+            v-for="getState in getStates.florida"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -231,8 +232,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.georgia"
-            :key="index"
+            v-for="getState in getStates.georgia"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -256,8 +257,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.hawaii"
-            :key="index"
+            v-for="getState in getStates.hawaii"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -281,8 +282,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.idaho"
-            :key="index"
+            v-for="getState in getStates.idaho"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -306,8 +307,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.illinois"
-            :key="index"
+            v-for="getState in getStates.illinois"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -331,8 +332,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.indiana"
-            :key="index"
+            v-for="getState in getStates.indiana"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -356,8 +357,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.iowa"
-            :key="index"
+            v-for="getState in getStates.iowa"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -381,8 +382,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.kansas"
-            :key="index"
+            v-for="getState in getStates.kansas"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -406,8 +407,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.kentucky"
-            :key="index"
+            v-for="getState in getStates.kentucky"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -431,8 +432,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.louisiana"
-            :key="index"
+            v-for="getState in getStates.louisiana"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -456,8 +457,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.maine"
-            :key="index"
+            v-for="getState in getStates.maine"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -481,8 +482,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.maryland"
-            :key="index"
+            v-for="getState in getStates.maryland"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -506,8 +507,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.massachusetts"
-            :key="index"
+            v-for="getState in getStates.massachusetts"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -531,8 +532,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.michigan"
-            :key="index"
+            v-for="getState in getStates.michigan"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -556,8 +557,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.minnesota"
-            :key="index"
+            v-for="getState in getStates.minnesota"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -581,8 +582,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.mississippi"
-            :key="index"
+            v-for="getState in getStates.mississippi"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -606,8 +607,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.missouri"
-            :key="index"
+            v-for="getState in getStates.missouri"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -631,8 +632,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.montana"
-            :key="index"
+            v-for="getState in getStates.montana"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -656,8 +657,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.nebraska"
-            :key="index"
+            v-for="getState in getStates.nebraska"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -681,8 +682,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.nevada"
-            :key="index"
+            v-for="getState in getStates.nevada"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -706,8 +707,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.newHampshire"
-            :key="index"
+            v-for="getState in getStates.newHampshire"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -731,8 +732,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.newJersey"
-            :key="index"
+            v-for="getState in getStates.newJersey"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -756,8 +757,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.newMexico"
-            :key="index"
+            v-for="getState in getStates.newMexico"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -781,8 +782,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.newYork"
-            :key="index"
+            v-for="getState in getStates.newYork"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -806,8 +807,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.northCarolina"
-            :key="index"
+            v-for="getState in getStates.northCarolina"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -831,8 +832,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.northDakota"
-            :key="index"
+            v-for="getState in getStates.northDakota"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -856,8 +857,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.ohio"
-            :key="index"
+            v-for="getState in getStates.ohio"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -881,8 +882,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.oklahoma"
-            :key="index"
+            v-for="getState in getStates.oklahoma"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -906,8 +907,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.oregon"
-            :key="index"
+            v-for="getState in getStates.oregon"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -931,8 +932,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.pennsylvania"
-            :key="index"
+            v-for="getState in getStates.pennsylvania"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -956,8 +957,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.rhodeIsland"
-            :key="index"
+            v-for="getState in getStates.rhodeIsland"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -981,8 +982,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.southCarolina"
-            :key="index"
+            v-for="getState in getStates.southCarolina"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1006,8 +1007,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.southDakota"
-            :key="index"
+            v-for="getState in getStates.southDakota"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1031,8 +1032,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.tennessee"
-            :key="index"
+            v-for="getState in getStates.tennessee"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1056,8 +1057,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.texas"
-            :key="index"
+            v-for="getState in getStates.texas"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1081,8 +1082,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.utah"
-            :key="index"
+            v-for="getState in getStates.utah"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1106,8 +1107,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.vermont"
-            :key="index"
+            v-for="getState in getStates.vermont"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1131,8 +1132,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.virginia"
-            :key="index"
+            v-for="getState in getStates.virginia"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1156,8 +1157,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.washington"
-            :key="index"
+            v-for="getState in getStates.washington"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1181,8 +1182,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.westVirginia"
-            :key="index"
+            v-for="getState in getStates.westVirginia"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1206,8 +1207,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.wisconsin"
-            :key="index"
+            v-for="getState in getStates.wisconsin"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1231,8 +1232,8 @@
         </div>
         <div
             class="senator-card"
-            v-for="(getState, index) in getStates.wyoming"
-            :key="index"
+            v-for="getState in getStates.wyoming"
+            :key="getState.bioguideId"
         >
             <figure>
                 <img
@@ -1255,9 +1256,12 @@
 </template>
 
 <script>
+//FOR FUTURE - import SenatorCards from "@/components/SenatorCards.vue";
 export default {
     name: "SenateState",
-    components: {},
+    components: {
+        //FOR FUTURE - SenatorCards,
+    },
     methods: {},
     computed: {
         getStates() {
