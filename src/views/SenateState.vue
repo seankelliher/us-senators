@@ -8,12 +8,22 @@
             v-for="(getState, index) in getStates.alabama"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Alaska</h3>
@@ -23,12 +33,22 @@
             v-for="(getState, index) in getStates.alaska"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Arizona</h3>
@@ -38,12 +58,23 @@
             v-for="(getState, index) in getStates.arizona"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        ", " +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Arkansas</h3>
@@ -53,12 +84,22 @@
             v-for="(getState, index) in getStates.arkansas"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>California</h3>
@@ -68,12 +109,22 @@
             v-for="(getState, index) in getStates.california"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Colorado</h3>
@@ -83,12 +134,22 @@
             v-for="(getState, index) in getStates.colorado"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Connecticut</h3>
@@ -98,12 +159,22 @@
             v-for="(getState, index) in getStates.connecticut"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Delaware</h3>
@@ -113,12 +184,22 @@
             v-for="(getState, index) in getStates.delaware"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Florida</h3>
@@ -128,12 +209,22 @@
             v-for="(getState, index) in getStates.florida"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Georgia</h3>
@@ -143,12 +234,22 @@
             v-for="(getState, index) in getStates.georgia"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Hawaii</h3>
@@ -158,12 +259,22 @@
             v-for="(getState, index) in getStates.hawaii"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Idaho</h3>
@@ -173,12 +284,22 @@
             v-for="(getState, index) in getStates.idaho"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Illinois</h3>
@@ -188,12 +309,22 @@
             v-for="(getState, index) in getStates.illinois"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Indiana</h3>
@@ -203,12 +334,22 @@
             v-for="(getState, index) in getStates.indiana"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Iowa</h3>
@@ -218,12 +359,22 @@
             v-for="(getState, index) in getStates.iowa"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Kansas</h3>
@@ -233,12 +384,22 @@
             v-for="(getState, index) in getStates.kansas"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Kentucky</h3>
@@ -248,12 +409,22 @@
             v-for="(getState, index) in getStates.kentucky"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Louisiana</h3>
@@ -263,12 +434,22 @@
             v-for="(getState, index) in getStates.louisiana"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Maine</h3>
@@ -278,12 +459,22 @@
             v-for="(getState, index) in getStates.maine"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Maryland</h3>
@@ -293,12 +484,22 @@
             v-for="(getState, index) in getStates.maryland"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Massachusetts</h3>
@@ -308,12 +509,22 @@
             v-for="(getState, index) in getStates.massachusetts"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Michigan</h3>
@@ -323,12 +534,22 @@
             v-for="(getState, index) in getStates.michigan"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Minnesota</h3>
@@ -338,12 +559,22 @@
             v-for="(getState, index) in getStates.minnesota"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Mississippi</h3>
@@ -353,12 +584,22 @@
             v-for="(getState, index) in getStates.mississippi"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Missouri</h3>
@@ -368,12 +609,22 @@
             v-for="(getState, index) in getStates.missouri"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Montana</h3>
@@ -383,12 +634,22 @@
             v-for="(getState, index) in getStates.montana"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Nebraska</h3>
@@ -398,12 +659,22 @@
             v-for="(getState, index) in getStates.nebraska"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Nevada</h3>
@@ -413,12 +684,22 @@
             v-for="(getState, index) in getStates.nevada"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>New Hampshire</h3>
@@ -428,12 +709,22 @@
             v-for="(getState, index) in getStates.newHampshire"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>New Jersey</h3>
@@ -443,12 +734,22 @@
             v-for="(getState, index) in getStates.newJersey"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>New Mexico</h3>
@@ -458,12 +759,22 @@
             v-for="(getState, index) in getStates.newMexico"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>New York</h3>
@@ -473,12 +784,22 @@
             v-for="(getState, index) in getStates.newYork"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>North Carolina</h3>
@@ -488,12 +809,22 @@
             v-for="(getState, index) in getStates.northCarolina"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>North Dakota</h3>
@@ -503,12 +834,22 @@
             v-for="(getState, index) in getStates.northDakota"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Ohio</h3>
@@ -518,12 +859,22 @@
             v-for="(getState, index) in getStates.ohio"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Oklahoma</h3>
@@ -533,12 +884,22 @@
             v-for="(getState, index) in getStates.oklahoma"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Oregon</h3>
@@ -548,12 +909,22 @@
             v-for="(getState, index) in getStates.oregon"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Pennsylvania</h3>
@@ -563,12 +934,22 @@
             v-for="(getState, index) in getStates.pennsylvania"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Rhode Island</h3>
@@ -578,12 +959,22 @@
             v-for="(getState, index) in getStates.rhodeIsland"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>South Carolina</h3>
@@ -593,12 +984,22 @@
             v-for="(getState, index) in getStates.southCarolina"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>South Dakota</h3>
@@ -608,12 +1009,22 @@
             v-for="(getState, index) in getStates.southDakota"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Tennessee</h3>
@@ -623,12 +1034,22 @@
             v-for="(getState, index) in getStates.tennessee"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Texas</h3>
@@ -638,12 +1059,22 @@
             v-for="(getState, index) in getStates.texas"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Utah</h3>
@@ -653,12 +1084,22 @@
             v-for="(getState, index) in getStates.utah"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Vermont</h3>
@@ -668,12 +1109,22 @@
             v-for="(getState, index) in getStates.vermont"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Virginia</h3>
@@ -683,12 +1134,22 @@
             v-for="(getState, index) in getStates.virginia"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Washington</h3>
@@ -698,12 +1159,22 @@
             v-for="(getState, index) in getStates.washington"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>West Virginia</h3>
@@ -713,12 +1184,22 @@
             v-for="(getState, index) in getStates.westVirginia"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Wisconsin</h3>
@@ -728,12 +1209,22 @@
             v-for="(getState, index) in getStates.wisconsin"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
         <div class="gallery-title">
             <h3>Wyoming</h3>
@@ -743,12 +1234,22 @@
             v-for="(getState, index) in getStates.wyoming"
             :key="index"
         >
-            <p>{{ getState.firstName + " " + getState.lastName }}</p>
-            <p>{{ getState.state }}</p>
-            <img
-                :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                :alt="getState.firstName + ' ' + getState.lastName"
-            />
+            <figure>
+                <img
+                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
+                    :alt="getState.firstName + ' ' + getState.lastName"
+                />
+                <figcaption>
+                    {{
+                        getState.firstName +
+                        " " +
+                        getState.lastName +
+                        " (" +
+                        getState.party +
+                        ")"
+                    }}
+                </figcaption>
+            </figure>
         </div>
     </section>
 </template>
