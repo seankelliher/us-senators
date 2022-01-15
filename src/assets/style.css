@@ -61,6 +61,17 @@ section {
     align-items: flex-start; /*cross axis*/
 }
 
+.info-panel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
 .gallery-title {
     width: 100%;
     margin: 0;
