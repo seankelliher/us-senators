@@ -1,7 +1,11 @@
 <template>
     <section>
         <div class="gallery-title">
-            <h3>Class I</h3>
+            <InfoPanel
+                heading="Class I"
+                msg1="A class is a grouping of senators who are up for election in the same year. Article I, section 3 of the Constitution divides senators into three classes, Class I, Class II, and Class III. Each class is elected two years apart."
+                msg2="Class I terms run from the beginning of the 116th Congress on January 3, 2019, to the end of the 118th Congress on January 3, 2025. Senators in Class I were elected to office in the November 2018 general election, unless they took their seat through appointment or special election."
+            />
         </div>
         <div
             class="senator-card"
@@ -28,7 +32,10 @@
             </figure>
         </div>
         <div class="gallery-title">
-            <h3>Class II</h3>
+            <InfoPanel
+                heading="Class II"
+                msg1="Class II terms run from the beginning of the 117th Congress on January 3, 2021, to the end of the 119th Congress on January 3, 2027. Senators in Class II were elected to office in the November 2020 general election, unless they took their seat through appointment or special election."
+            />
         </div>
         <div
             class="senator-card"
@@ -55,7 +62,10 @@
             </figure>
         </div>
         <div class="gallery-title">
-            <h3>Class III</h3>
+            <InfoPanel
+                heading="Class III"
+                msg1="Class III terms run from the beginning of the 115th Congress on January 3, 2017, to the end of the 117th Congress on January 3, 2023. Senators in Class III were elected to office in the November 2016 general election, unless they took their seat through appointment or special election."
+            />
         </div>
         <div
             class="senator-card"
@@ -85,9 +95,12 @@
 </template>
 
 <script>
+import InfoPanel from "@/components/InfoPanel.vue";
 export default {
     name: "SenateClass",
-    components: {},
+    components: {
+        InfoPanel,
+    },
     computed: {
         getClasses() {
             return {
