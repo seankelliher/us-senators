@@ -1704,6 +1704,258 @@ export default createStore({
                 website: "young.senate.gov",
             },
         ],
+        stats: {
+            alabama: {
+                population: 5024279,
+                rank: 24,
+                houseSeats: 7,
+            },
+            alaska: {
+                population: 733391,
+                rank: 48,
+                houseSeats: 1,
+            },
+            arizona: {
+                population: 7151502,
+                rank: 14,
+                houseSeats: 9,
+            },
+            arkansas: {
+                population: 3011524,
+                rank: 33,
+                houseSeats: 4,
+            },
+            california: {
+                population: 39538223,
+                rank: 1,
+                houseSeats: 52,
+            },
+            colorado: {
+                population: 5773714,
+                rank: 21,
+                houseSeats: 8,
+            },
+            connecticut: {
+                population: 3605944,
+                rank: 29,
+                houseSeats: 5,
+            },
+            delaware: {
+                population: 989948,
+                rank: 45,
+                houseSeats: 1,
+            },
+            florida: {
+                population: 21538187,
+                rank: 3,
+                houseSeats: 28,
+            },
+            georgia: {
+                population: 10711908,
+                rank: 8,
+                houseSeats: 14,
+            },
+            hawaii: {
+                population: 1455271,
+                rank: 40,
+                houseSeats: 2,
+            },
+            idaho: {
+                population: 1839106,
+                rank: 38,
+                houseSeats: 2,
+            },
+            illinois: {
+                population: 12812508,
+                rank: 6,
+                houseSeats: 17,
+            },
+            indiana: {
+                population: 6785528,
+                rank: 17,
+                houseSeats: 9,
+            },
+            iowa: {
+                population: 3190369,
+                rank: 31,
+                houseSeats: 4,
+            },
+            kansas: {
+                population: 2937880,
+                rank: 35,
+                houseSeats: 4,
+            },
+            kentucky: {
+                population: 4505836,
+                rank: 26,
+                houseSeats: 6,
+            },
+            louisiana: {
+                population: 4657757,
+                rank: 25,
+                houseSeats: 6,
+            },
+            maine: {
+                population: 1362359,
+                rank: 42,
+                houseSeats: 2,
+            },
+            maryland: {
+                population: 6177224,
+                rank: 18,
+                houseSeats: 8,
+            },
+            massachusetts: {
+                population: 7029917,
+                rank: 15,
+                houseSeats: 9,
+            },
+            michigan: {
+                population: 10077331,
+                rank: 10,
+                houseSeats: 13,
+            },
+            minnesota: {
+                population: 5706494,
+                rank: 22,
+                houseSeats: 8,
+            },
+            mississippi: {
+                population: 2961279,
+                rank: 34,
+                houseSeats: 4,
+            },
+            missouri: {
+                population: 6154913,
+                rank: 19,
+                houseSeats: 8,
+            },
+            montana: {
+                population: 1084225,
+                rank: 44,
+                houseSeats: 2,
+            },
+            nebraska: {
+                population: 1961504,
+                rank: 37,
+                houseSeats: 3,
+            },
+            nevada: {
+                population: 3104614,
+                rank: 32,
+                houseSeats: 4,
+            },
+            newHampshire: {
+                population: 1377529,
+                rank: 41,
+                houseSeats: 2,
+            },
+            newJersey: {
+                population: 9288994,
+                rank: 11,
+                houseSeats: 12,
+            },
+            newMexico: {
+                population: 2117522,
+                rank: 36,
+                houseSeats: 3,
+            },
+            newYork: {
+                population: 20201249,
+                rank: 4,
+                houseSeats: 26,
+            },
+            northCarolina: {
+                population: 10439388,
+                rank: 9,
+                houseSeats: 14,
+            },
+            northDakota: {
+                population: 779094,
+                rank: 47,
+                houseSeats: 1,
+            },
+            ohio: {
+                population: 11799448,
+                rank: 7,
+                houseSeats: 15,
+            },
+            oklahoma: {
+                population: 3959353,
+                rank: 28,
+                houseSeats: 5,
+            },
+            oregon: {
+                population: 4237256,
+                rank: 27,
+                houseSeats: 6,
+            },
+            pennsylvania: {
+                population: 13002700,
+                rank: 5,
+                houseSeats: 17,
+            },
+            rhodeIsland: {
+                population: 1097379,
+                rank: 43,
+                houseSeats: 2,
+            },
+            southCarolina: {
+                population: 5118425,
+                rank: 23,
+                houseSeats: 7,
+            },
+            southDakota: {
+                population: 886667,
+                rank: 46,
+                houseSeats: 1,
+            },
+            tennessee: {
+                population: 6910840,
+                rank: 16,
+                houseSeats: 9,
+            },
+            texas: {
+                population: 29145505,
+                rank: 2,
+                houseSeats: 38,
+            },
+            utah: {
+                population: 3271616,
+                rank: 30,
+                houseSeats: 4,
+            },
+            vermont: {
+                population: 643077,
+                rank: 49,
+                houseSeats: 1,
+            },
+            virginia: {
+                population: 8631393,
+                rank: 12,
+                houseSeats: 11,
+            },
+            washington: {
+                population: 7705281,
+                rank: 13,
+                houseSeats: 10,
+            },
+            westVirginia: {
+                population: 1793716,
+                rank: 39,
+                houseSeats: 2,
+            },
+            wisconsin: {
+                population: 5893718,
+                rank: 20,
+                houseSeats: 8,
+            },
+            wyoming: {
+                population: 576851,
+                rank: 50,
+                houseSeats: 1,
+            },
+        },
     },
     getters: {
         getAlabama: (state) => {
@@ -1949,6 +2201,356 @@ export default createStore({
             return state.senators.filter(
                 (senator) => senator.state === "Wyoming"
             );
+        },
+        getStatsAlabama: (state) => {
+            return {
+                pop: state.stats.alabama.population.toLocaleString(),
+                rank: state.stats.alabama.rank,
+                seats: state.stats.alabama.houseSeats,
+            };
+        },
+        getStatsAlaska: (state) => {
+            return {
+                pop: state.stats.alaska.population.toLocaleString(),
+                rank: state.stats.alaska.rank,
+                seats: state.stats.alaska.houseSeats,
+            };
+        },
+        getStatsArizona: (state) => {
+            return {
+                pop: state.stats.arizona.population.toLocaleString(),
+                rank: state.stats.arizona.rank,
+                seats: state.stats.arizona.houseSeats,
+            };
+        },
+        getStatsArkansas: (state) => {
+            return {
+                pop: state.stats.arkansas.population.toLocaleString(),
+                rank: state.stats.arkansas.rank,
+                seats: state.stats.arkansas.houseSeats,
+            };
+        },
+        getStatsCalifornia: (state) => {
+            return {
+                pop: state.stats.california.population.toLocaleString(),
+                rank: state.stats.california.rank,
+                seats: state.stats.california.houseSeats,
+            };
+        },
+        getStatsColorado: (state) => {
+            return {
+                pop: state.stats.colorado.population.toLocaleString(),
+                rank: state.stats.colorado.rank,
+                seats: state.stats.colorado.houseSeats,
+            };
+        },
+        getStatsConnecticut: (state) => {
+            return {
+                pop: state.stats.connecticut.population.toLocaleString(),
+                rank: state.stats.connecticut.rank,
+                seats: state.stats.connecticut.houseSeats,
+            };
+        },
+        getStatsDelaware: (state) => {
+            return {
+                pop: state.stats.delaware.population.toLocaleString(),
+                rank: state.stats.delaware.rank,
+                seats: state.stats.delaware.houseSeats,
+            };
+        },
+        getStatsFlorida: (state) => {
+            return {
+                pop: state.stats.florida.population.toLocaleString(),
+                rank: state.stats.florida.rank,
+                seats: state.stats.florida.houseSeats,
+            };
+        },
+        getStatsGeorgia: (state) => {
+            return {
+                pop: state.stats.georgia.population.toLocaleString(),
+                rank: state.stats.georgia.rank,
+                seats: state.stats.georgia.houseSeats,
+            };
+        },
+        getStatsHawaii: (state) => {
+            return {
+                pop: state.stats.hawaii.population.toLocaleString(),
+                rank: state.stats.hawaii.rank,
+                seats: state.stats.hawaii.houseSeats,
+            };
+        },
+        getStatsIdaho: (state) => {
+            return {
+                pop: state.stats.idaho.population.toLocaleString(),
+                rank: state.stats.idaho.rank,
+                seats: state.stats.idaho.houseSeats,
+            };
+        },
+        getStatsIllinois: (state) => {
+            return {
+                pop: state.stats.illinois.population.toLocaleString(),
+                rank: state.stats.illinois.rank,
+                seats: state.stats.illinois.houseSeats,
+            };
+        },
+        getStatsIndiana: (state) => {
+            return {
+                pop: state.stats.indiana.population.toLocaleString(),
+                rank: state.stats.indiana.rank,
+                seats: state.stats.indiana.houseSeats,
+            };
+        },
+        getStatsIowa: (state) => {
+            return {
+                pop: state.stats.iowa.population.toLocaleString(),
+                rank: state.stats.iowa.rank,
+                seats: state.stats.iowa.houseSeats,
+            };
+        },
+        getStatsKansas: (state) => {
+            return {
+                pop: state.stats.kansas.population.toLocaleString(),
+                rank: state.stats.kansas.rank,
+                seats: state.stats.kansas.houseSeats,
+            };
+        },
+        getStatsKentucky: (state) => {
+            return {
+                pop: state.stats.kentucky.population.toLocaleString(),
+                rank: state.stats.kentucky.rank,
+                seats: state.stats.kentucky.houseSeats,
+            };
+        },
+        getStatsLouisiana: (state) => {
+            return {
+                pop: state.stats.louisiana.population.toLocaleString(),
+                rank: state.stats.louisiana.rank,
+                seats: state.stats.louisiana.houseSeats,
+            };
+        },
+        getStatsMaine: (state) => {
+            return {
+                pop: state.stats.maine.population.toLocaleString(),
+                rank: state.stats.maine.rank,
+                seats: state.stats.maine.houseSeats,
+            };
+        },
+        getStatsMaryland: (state) => {
+            return {
+                pop: state.stats.maryland.population.toLocaleString(),
+                rank: state.stats.maryland.rank,
+                seats: state.stats.maryland.houseSeats,
+            };
+        },
+        getStatsMassachusetts: (state) => {
+            return {
+                pop: state.stats.massachusetts.population.toLocaleString(),
+                rank: state.stats.massachusetts.rank,
+                seats: state.stats.massachusetts.houseSeats,
+            };
+        },
+        getStatsMichigan: (state) => {
+            return {
+                pop: state.stats.michigan.population.toLocaleString(),
+                rank: state.stats.michigan.rank,
+                seats: state.stats.michigan.houseSeats,
+            };
+        },
+        getStatsMinnesota: (state) => {
+            return {
+                pop: state.stats.minnesota.population.toLocaleString(),
+                rank: state.stats.minnesota.rank,
+                seats: state.stats.minnesota.houseSeats,
+            };
+        },
+        getStatsMississippi: (state) => {
+            return {
+                pop: state.stats.mississippi.population.toLocaleString(),
+                rank: state.stats.mississippi.rank,
+                seats: state.stats.mississippi.houseSeats,
+            };
+        },
+        getStatsMissouri: (state) => {
+            return {
+                pop: state.stats.missouri.population.toLocaleString(),
+                rank: state.stats.missouri.rank,
+                seats: state.stats.missouri.houseSeats,
+            };
+        },
+        getStatsMontana: (state) => {
+            return {
+                pop: state.stats.montana.population.toLocaleString(),
+                rank: state.stats.montana.rank,
+                seats: state.stats.montana.houseSeats,
+            };
+        },
+        getStatsNebraska: (state) => {
+            return {
+                pop: state.stats.nebraska.population.toLocaleString(),
+                rank: state.stats.nebraska.rank,
+                seats: state.stats.nebraska.houseSeats,
+            };
+        },
+        getStatsNevada: (state) => {
+            return {
+                pop: state.stats.nevada.population.toLocaleString(),
+                rank: state.stats.nevada.rank,
+                seats: state.stats.nevada.houseSeats,
+            };
+        },
+        getStatsNewHampshire: (state) => {
+            return {
+                pop: state.stats.newHampshire.population.toLocaleString(),
+                rank: state.stats.newHampshire.rank,
+                seats: state.stats.newHampshire.houseSeats,
+            };
+        },
+        getStatsNewJersey: (state) => {
+            return {
+                pop: state.stats.newJersey.population.toLocaleString(),
+                rank: state.stats.newJersey.rank,
+                seats: state.stats.newJersey.houseSeats,
+            };
+        },
+        getStatsNewMexico: (state) => {
+            return {
+                pop: state.stats.newMexico.population.toLocaleString(),
+                rank: state.stats.newMexico.rank,
+                seats: state.stats.newMexico.houseSeats,
+            };
+        },
+        getStatsNewYork: (state) => {
+            return {
+                pop: state.stats.newYork.population.toLocaleString(),
+                rank: state.stats.newYork.rank,
+                seats: state.stats.newYork.houseSeats,
+            };
+        },
+        getStatsNorthCarolina: (state) => {
+            return {
+                pop: state.stats.northCarolina.population.toLocaleString(),
+                rank: state.stats.northCarolina.rank,
+                seats: state.stats.northCarolina.houseSeats,
+            };
+        },
+        getStatsNorthDakota: (state) => {
+            return {
+                pop: state.stats.northDakota.population.toLocaleString(),
+                rank: state.stats.northDakota.rank,
+                seats: state.stats.northDakota.houseSeats,
+            };
+        },
+        getStatsOhio: (state) => {
+            return {
+                pop: state.stats.ohio.population.toLocaleString(),
+                rank: state.stats.ohio.rank,
+                seats: state.stats.ohio.houseSeats,
+            };
+        },
+        getStatsOklahoma: (state) => {
+            return {
+                pop: state.stats.oklahoma.population.toLocaleString(),
+                rank: state.stats.oklahoma.rank,
+                seats: state.stats.oklahoma.houseSeats,
+            };
+        },
+        getStatsOregon: (state) => {
+            return {
+                pop: state.stats.oregon.population.toLocaleString(),
+                rank: state.stats.oregon.rank,
+                seats: state.stats.oregon.houseSeats,
+            };
+        },
+        getStatsPennsylvania: (state) => {
+            return {
+                pop: state.stats.pennsylvania.population.toLocaleString(),
+                rank: state.stats.pennsylvania.rank,
+                seats: state.stats.pennsylvania.houseSeats,
+            };
+        },
+        getStatsRhodeIsland: (state) => {
+            return {
+                pop: state.stats.rhodeIsland.population.toLocaleString(),
+                rank: state.stats.rhodeIsland.rank,
+                seats: state.stats.rhodeIsland.houseSeats,
+            };
+        },
+        getStatsSouthCarolina: (state) => {
+            return {
+                pop: state.stats.southCarolina.population.toLocaleString(),
+                rank: state.stats.southCarolina.rank,
+                seats: state.stats.southCarolina.houseSeats,
+            };
+        },
+        getStatsSouthDakota: (state) => {
+            return {
+                pop: state.stats.southDakota.population.toLocaleString(),
+                rank: state.stats.southDakota.rank,
+                seats: state.stats.southDakota.houseSeats,
+            };
+        },
+        getStatsTennessee: (state) => {
+            return {
+                pop: state.stats.tennessee.population.toLocaleString(),
+                rank: state.stats.tennessee.rank,
+                seats: state.stats.tennessee.houseSeats,
+            };
+        },
+        getStatsTexas: (state) => {
+            return {
+                pop: state.stats.texas.population.toLocaleString(),
+                rank: state.stats.texas.rank,
+                seats: state.stats.texas.houseSeats,
+            };
+        },
+        getStatsUtah: (state) => {
+            return {
+                pop: state.stats.utah.population.toLocaleString(),
+                rank: state.stats.utah.rank,
+                seats: state.stats.utah.houseSeats,
+            };
+        },
+        getStatsVermont: (state) => {
+            return {
+                pop: state.stats.vermont.population.toLocaleString(),
+                rank: state.stats.vermont.rank,
+                seats: state.stats.vermont.houseSeats,
+            };
+        },
+        getStatsVirginia: (state) => {
+            return {
+                pop: state.stats.virginia.population.toLocaleString(),
+                rank: state.stats.virginia.rank,
+                seats: state.stats.virginia.houseSeats,
+            };
+        },
+        getStatsWashington: (state) => {
+            return {
+                pop: state.stats.washington.population.toLocaleString(),
+                rank: state.stats.washington.rank,
+                seats: state.stats.washington.houseSeats,
+            };
+        },
+        getStatsWestVirginia: (state) => {
+            return {
+                pop: state.stats.westVirginia.population.toLocaleString(),
+                rank: state.stats.westVirginia.rank,
+                seats: state.stats.westVirginia.houseSeats,
+            };
+        },
+        getStatsWisconsin: (state) => {
+            return {
+                pop: state.stats.wisconsin.population.toLocaleString(),
+                rank: state.stats.wisconsin.rank,
+                seats: state.stats.wisconsin.houseSeats,
+            };
+        },
+        getStatsWyoming: (state) => {
+            return {
+                pop: state.stats.wyoming.population.toLocaleString(),
+                rank: state.stats.wyoming.rank,
+                seats: state.stats.wyoming.houseSeats,
+            };
         },
         getClassOne: (state) => {
             return state.senators.filter(
