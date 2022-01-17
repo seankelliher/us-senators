@@ -31,3 +31,8 @@ export default {
     },
 };
 </script>
+<style scoped>
+.gallery-title h3 {
+    margin-bottom: 0;
+}
+</style>
