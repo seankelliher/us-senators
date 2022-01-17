@@ -1,7 +1,15 @@
 <template>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="democrats">
             <h3>Democrats</h3>
+        </div>
+        <div class="jumps-panel">
+            <JumpsPanel
+                link1="#independents"
+                name1="Independents"
+                link2="#republicans"
+                name2="Republicans"
+            />
         </div>
         <div
             class="senator-card"
@@ -27,8 +35,18 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="gallery-title">
+    </section>
+    <section>
+        <div class="gallery-title" id="independents">
             <h3>Independents</h3>
+        </div>
+        <div class="jumps-panel">
+            <JumpsPanel
+                link1="#democrats"
+                name1="Democrats"
+                link2="#republicans"
+                name2="Republicans"
+            />
         </div>
         <div
             class="senator-card"
@@ -54,8 +72,18 @@
                 </figcaption>
             </figure>
         </div>
-        <div class="gallery-title">
+    </section>
+    <section>
+        <div class="gallery-title" id="republicans">
             <h3>Republicans</h3>
+        </div>
+        <div class="jumps-panel">
+            <JumpsPanel
+                link1="#democrats"
+                name1="Democrats"
+                link2="#independents"
+                name2="Independents"
+            />
         </div>
         <div
             class="senator-card"
@@ -85,9 +113,12 @@
 </template>
 
 <script>
+import JumpsPanel from "@/components/JumpsPanel.vue";
 export default {
     name: "SenateParty",
-    components: {},
+    components: {
+        JumpsPanel,
+    },
     computed: {
         getParties() {
             return {
@@ -99,3 +130,8 @@ export default {
     },
 };
 </script>
+<style scoped>
+.gallery-title h3 {
+    margin-bottom: 0;
+}
+</style>
