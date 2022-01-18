@@ -3,6 +3,7 @@ import SenateState from "../views/SenateState.vue";
 import SenateClass from "../views/SenateClass.vue";
 import SenateParty from "../views/SenateParty.vue";
 import SenateLeaders from "../views/SenateLeaders.vue";
+import NotFound from "../views/NotFound.vue";
 import NProgress from "nprogress";
 
 const routes = [
@@ -37,6 +38,11 @@ const routes = [
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
         //component: () => import("../views/SenateLeaders.vue"),
+    },
+    {
+        path: "/:catchAll(.*)",
+        name: "NotFound",
+        component: NotFound,
     },
 ];
 
