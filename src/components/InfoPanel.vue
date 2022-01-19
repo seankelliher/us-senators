@@ -1,11 +1,11 @@
 <template>
     <div class="info-panel">
-        <h3
+        <p
             class="cursor-pointer"
             v-on:click="seen === true ? (seen = false) : (seen = true)"
         >
-            {{ heading }} <information-icon fillColor="#f44336" />
-        </h3>
+            <information-icon fillColor="#f44336" /> {{ heading }}
+        </p>
         <p v-show="seen">{{ msg1 }}</p>
         <p v-show="seen">{{ msg2 }}</p>
     </div>
