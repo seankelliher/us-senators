@@ -3,6 +3,10 @@
         <div class="gallery-title" id="democrats">
             <h3>Democrats</h3>
         </div>
+        <InfoPanel
+            heading="How many Democrats?"
+            :msg1="`There are currently ${getParties.democratsL} Democrats in the US Senate. There are also currently ${getParties.independentsL} Independents who generally vote with them.`"
+        />
         <JumpsPanel
             link1="#independents"
             name1="Independents"
@@ -20,14 +24,7 @@
                     :alt="getParty.firstName + ' ' + getParty.lastName"
                 />
                 <figcaption>
-                    {{
-                        getParty.firstName +
-                        " " +
-                        getParty.lastName +
-                        " (" +
-                        getParty.party +
-                        ")"
-                    }}
+                    {{ getParty.firstName + " " + getParty.lastName }}
                     <br />
                     {{ getParty.state }}
                 </figcaption>
@@ -38,6 +35,10 @@
         <div class="gallery-title" id="independents">
             <h3>Independents</h3>
         </div>
+        <InfoPanel
+            heading="How many Independents?"
+            :msg1="`There are currently ${getParties.independentsL} Independents in the US Senate.`"
+        />
         <JumpsPanel
             link1="#democrats"
             name1="Democrats"
@@ -55,14 +56,7 @@
                     :alt="getParty.firstName + ' ' + getParty.lastName"
                 />
                 <figcaption>
-                    {{
-                        getParty.firstName +
-                        " " +
-                        getParty.lastName +
-                        " (" +
-                        getParty.party +
-                        ")"
-                    }}
+                    {{ getParty.firstName + " " + getParty.lastName }}
                     <br />
                     {{ getParty.state }}
                 </figcaption>
@@ -73,6 +67,10 @@
         <div class="gallery-title" id="republicans">
             <h3>Republicans</h3>
         </div>
+        <InfoPanel
+            heading="How many Republicans?"
+            :msg1="`There are currently ${getParties.republicansL} Republicans in the US Senate.`"
+        />
         <JumpsPanel
             link1="#democrats"
             name1="Democrats"
@@ -90,14 +88,7 @@
                     :alt="getParty.firstName + ' ' + getParty.lastName"
                 />
                 <figcaption>
-                    {{
-                        getParty.firstName +
-                        " " +
-                        getParty.lastName +
-                        " (" +
-                        getParty.party +
-                        ")"
-                    }}
+                    {{ getParty.firstName + " " + getParty.lastName }}
                     <br />
                     {{ getParty.state }}
                 </figcaption>
@@ -107,25 +98,25 @@
 </template>
 
 <script>
+import InfoPanel from "@/components/InfoPanel.vue";
 import JumpsPanel from "@/components/JumpsPanel.vue";
 export default {
     name: "SenateParty",
     components: {
         JumpsPanel,
+        InfoPanel,
     },
     computed: {
         getParties() {
             return {
                 democrats: this.$store.getters.getDemocrats,
+                democratsL: this.$store.getters.getDemocrats.length,
                 independents: this.$store.getters.getIndependents,
+                independentsL: this.$store.getters.getIndependents.length,
                 republicans: this.$store.getters.getRepublicans,
+                republicansL: this.$store.getters.getRepublicans.length,
             };
         },
     },
 };
 </script>
-<style scoped>
-.gallery-title h3 {
-    margin-bottom: 0;
-}
-</style>
