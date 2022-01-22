@@ -33,19 +33,19 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-    color: #80d6ff; /*blue 400 light*/
+    color: #F2E205;
 }
 
 nav {
-    border-top: 1px solid #eee; /*grey 200*/
-    border-bottom: 1px solid #eee; /*grey 200*/
+    border-top: 1px solid #afd2e0;
+    border-bottom: 1px solid #afd2e0;
 }
 
 button {
     margin-right: 1em;
     padding-right: 1.4em;
     padding-left: 1.4em;
-    background: #004ba0; /*blue 700 dark*/
+    background: #348fb3;
     border: 1px solid #eee; /*grey 200*/
     border-radius: 6px;
 }
@@ -72,7 +72,7 @@ section {
     width: 90%;
     margin: 0 5%;
     padding: 0%;
-    background: #707070; /*grey 500*/
+    background: #348fb3;
     opacity: 0.95;
     position: sticky;
     bottom: 0;
@@ -132,6 +132,11 @@ p {
     font-weight: 400;
 }
 
+header p {
+    line-height: 1.2;
+    margin-bottom: .5em;
+}
+
 .jumps-panel p {
     color: #fff;
     line-height: 1.2;
@@ -152,8 +157,9 @@ button {
 
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: 700;
+    margin-bottom: .25em;
 }
 
 h2 {
