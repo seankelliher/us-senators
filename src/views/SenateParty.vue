@@ -7,12 +7,6 @@
             heading="How many Democrats?"
             :msg1="`There are currently ${getParties.democratsL} Democrats in the US Senate. There are also currently ${getParties.independentsL} Independents who generally vote with them.`"
         />
-        <JumpsPanel
-            link1="#independents"
-            name1="Independents"
-            link2="#republicans"
-            name2="Republicans"
-        />
         <div
             class="senator-card"
             v-for="getParty in getParties.democrats"
@@ -38,12 +32,6 @@
         <InfoPanel
             heading="How many Independents?"
             :msg1="`There are currently ${getParties.independentsL} Independents in the US Senate.`"
-        />
-        <JumpsPanel
-            link1="#democrats"
-            name1="Democrats"
-            link2="#republicans"
-            name2="Republicans"
         />
         <div
             class="senator-card"
@@ -71,12 +59,6 @@
             heading="How many Republicans?"
             :msg1="`There are currently ${getParties.republicansL} Republicans in the US Senate.`"
         />
-        <JumpsPanel
-            link1="#democrats"
-            name1="Democrats"
-            link2="#independents"
-            name2="Independents"
-        />
         <div
             class="senator-card"
             v-for="getParty in getParties.republicans"
@@ -95,15 +77,23 @@
             </figure>
         </div>
     </section>
+    <JumpsPanelO
+        link1="#democrats"
+        name1="Democrats"
+        link2="#independents"
+        name2="Independents"
+        link3="#republicans"
+        name3="Republicans"
+    />
 </template>
 
 <script>
 import InfoPanel from "@/components/InfoPanel.vue";
-import JumpsPanel from "@/components/JumpsPanel.vue";
+import JumpsPanelO from "@/components/JumpsPanelO.vue";
 export default {
     name: "SenateParty",
     components: {
-        JumpsPanel,
+        JumpsPanelO,
         InfoPanel,
     },
     computed: {
