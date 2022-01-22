@@ -19,8 +19,8 @@ header {
 
 nav {
     width: 90%;
-    margin: 0;
-    padding: 1em 5%;
+    margin: 0 5%;
+    padding: 1em 0;
     flex: initial; /*flex: 0 1 auto*/
     text-align: center;
 }
@@ -69,18 +69,21 @@ section {
 }
 
 .jumps-panel {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    width: 90%;
+    margin: 0 5%;
+    padding: 0%;
+    background: #707070; /*grey 500*/
+    opacity: 0.95;
+    position: sticky;
+    bottom: 0;
     flex: initial; /*flex: 0 1 auto*/
+    text-align: center;
 }
 
 .info-panel {
     width: 100%;
     margin: 0;
     padding: 0;
-    border-top: 1px solid #eee; /*grey 200*/
-    border-bottom: 1px solid #eee; /*grey 200*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
@@ -130,11 +133,14 @@ p {
 }
 
 .jumps-panel p {
-    color: #616161; /*grey 700*/
+    color: #fff;
+    line-height: 1.2;
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .jumps-panel a {
-    color: #616161; /*grey 700*/;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -164,6 +170,7 @@ h3 {
 
 .gallery-title h3 {
     margin-top: .25em;
+    margin-bottom: .25em;
 }
 
 @media all and (min-width: 300px) {
@@ -217,19 +224,5 @@ h3 {
 
     h3 {
         font-size: 1.2em;
-    }
-}
-
-@media all and (min-width: 900px) {
-    h1 {
-        font-size: 1.8em;
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    h3 {
-        font-size: 1.4em;
     }
 }
