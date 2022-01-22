@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="gallery-title" id="democrats">
-            <h3>Democrats</h3>
+            <h2>Democrats</h2>
         </div>
         <InfoPanel
             heading="How many Democrats?"
@@ -27,7 +27,7 @@
     </section>
     <section>
         <div class="gallery-title" id="independents">
-            <h3>Independents</h3>
+            <h2>Independents</h2>
         </div>
         <InfoPanel
             heading="How many Independents?"
@@ -53,7 +53,7 @@
     </section>
     <section>
         <div class="gallery-title" id="republicans">
-            <h3>Republicans</h3>
+            <h2>Republicans</h2>
         </div>
         <InfoPanel
             heading="How many Republicans?"

@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="gallery-title" id="leaders">
-            <h3>Leaders</h3>
+            <h2>Leaders</h2>
         </div>
         <InfoPanel
             heading="What are Leaders?"
@@ -36,7 +36,7 @@
     </section>
     <section>
         <div class="gallery-title" id="whips">
-            <h3>Whips</h3>
+            <h2>Whips</h2>
         </div>
         <InfoPanel
             heading="What are Whips?"
@@ -71,7 +71,7 @@
     </section>
     <section>
         <div class="gallery-title" id="pros">
-            <h3>Pro Tempore</h3>
+            <h2>Pro Tempore</h2>
         </div>
         <InfoPanel
             heading="What is the Pro Tempore?"

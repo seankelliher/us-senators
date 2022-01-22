@@ -158,17 +158,11 @@ h1 {
 
 h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 700;
-}
-
-h3 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.2;
     font-weight: 700;
 }
 
-.gallery-title h3 {
+.gallery-title h2 {
     margin-top: .25em;
     margin-bottom: .25em;
 }
@@ -183,10 +177,6 @@ h3 {
     }
 
     h2, button {
-        font-size: 1em;
-    }
-
-    h3 {
         font-size: .9375em;
     }
 }
@@ -201,10 +191,6 @@ h3 {
     }
 
     h2 {
-        font-size: 1.2em;
-    }
-    
-    h3 {
         font-size: 1em;
     }
 }
@@ -219,10 +205,6 @@ h3 {
     }
 
     h2 {
-        font-size: 1.4em;
-    }
-
-    h3 {
         font-size: 1.2em;
     }
 }

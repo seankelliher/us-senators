@@ -32,7 +32,7 @@ export default {
 };
 </script>
 <style scoped>
-.gallery-title h3 {
+.gallery-title h2 {
     margin-bottom: 0;
 }
 </style>

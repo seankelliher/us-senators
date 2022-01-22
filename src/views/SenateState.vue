@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="gallery-title" id="states-a">
-            <h3>Alabama</h3>
+            <h2>Alabama</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.alabama.pop"
@@ -33,7 +33,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Alaska</h3>
+            <h2>Alaska</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.alaska.pop"
@@ -65,7 +65,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Arizona</h3>
+            <h2>Arizona</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.arizona.pop"
@@ -98,7 +98,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Arkansas</h3>
+            <h2>Arkansas</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.arkansas.pop"
@@ -130,7 +130,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-c">
-            <h3>California</h3>
+            <h2>California</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.california.pop"
@@ -162,7 +162,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Colorado</h3>
+            <h2>Colorado</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.colorado.pop"
@@ -194,7 +194,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Connecticut</h3>
+            <h2>Connecticut</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.connecticut.pop"
@@ -226,7 +226,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-d">
-            <h3>Delaware</h3>
+            <h2>Delaware</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.delaware.pop"
@@ -258,7 +258,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-f">
-            <h3>Florida</h3>
+            <h2>Florida</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.florida.pop"
@@ -290,7 +290,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-g">
-            <h3>Georgia</h3>
+            <h2>Georgia</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.georgia.pop"
@@ -322,7 +322,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-h">
-            <h3>Hawaii</h3>
+            <h2>Hawaii</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.hawaii.pop"
@@ -354,7 +354,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-i">
-            <h3>Idaho</h3>
+            <h2>Idaho</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.idaho.pop"
@@ -386,7 +386,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Illinois</h3>
+            <h2>Illinois</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.illinois.pop"
@@ -418,7 +418,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Indiana</h3>
+            <h2>Indiana</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.indiana.pop"
@@ -450,7 +450,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Iowa</h3>
+            <h2>Iowa</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.iowa.pop"
@@ -482,7 +482,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-k">
-            <h3>Kansas</h3>
+            <h2>Kansas</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.kansas.pop"
@@ -514,7 +514,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Kentucky</h3>
+            <h2>Kentucky</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.kentucky.pop"
@@ -546,7 +546,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-l">
-            <h3>Louisiana</h3>
+            <h2>Louisiana</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.louisiana.pop"
@@ -578,7 +578,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-m">
-            <h3>Maine</h3>
+            <h2>Maine</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.maine.pop"
@@ -610,7 +610,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Maryland</h3>
+            <h2>Maryland</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.maryland.pop"
@@ -642,7 +642,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Massachusetts</h3>
+            <h2>Massachusetts</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.massachusetts.pop"
@@ -674,7 +674,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Michigan</h3>
+            <h2>Michigan</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.michigan.pop"
@@ -706,7 +706,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Minnesota</h3>
+            <h2>Minnesota</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.minnesota.pop"
@@ -738,7 +738,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Mississippi</h3>
+            <h2>Mississippi</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.mississippi.pop"
@@ -770,7 +770,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Missouri</h3>
+            <h2>Missouri</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.missouri.pop"
@@ -802,7 +802,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Montana</h3>
+            <h2>Montana</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.montana.pop"
@@ -834,7 +834,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-n">
-            <h3>Nebraska</h3>
+            <h2>Nebraska</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.nebraska.pop"
@@ -866,7 +866,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Nevada</h3>
+            <h2>Nevada</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.nevada.pop"
@@ -898,7 +898,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>New Hampshire</h3>
+            <h2>New Hampshire</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.newHampshire.pop"
@@ -930,7 +930,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>New Jersey</h3>
+            <h2>New Jersey</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.newJersey.pop"
@@ -962,7 +962,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>New Mexico</h3>
+            <h2>New Mexico</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.newMexico.pop"
@@ -994,7 +994,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>New York</h3>
+            <h2>New York</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.newYork.pop"
@@ -1026,7 +1026,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>North Carolina</h3>
+            <h2>North Carolina</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.northCarolina.pop"
@@ -1058,7 +1058,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>North Dakota</h3>
+            <h2>North Dakota</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.northDakota.pop"
@@ -1090,7 +1090,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-o">
-            <h3>Ohio</h3>
+            <h2>Ohio</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.ohio.pop"
@@ -1122,7 +1122,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Oklahoma</h3>
+            <h2>Oklahoma</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.oklahoma.pop"
@@ -1154,7 +1154,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Oregon</h3>
+            <h2>Oregon</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.oregon.pop"
@@ -1186,7 +1186,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-p">
-            <h3>Pennsylvania</h3>
+            <h2>Pennsylvania</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.pennsylvania.pop"
@@ -1218,7 +1218,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-r">
-            <h3>Rhode Island</h3>
+            <h2>Rhode Island</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.rhodeIsland.pop"
@@ -1250,7 +1250,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-s">
-            <h3>South Carolina</h3>
+            <h2>South Carolina</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.southCarolina.pop"
@@ -1282,7 +1282,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>South Dakota</h3>
+            <h2>South Dakota</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.southDakota.pop"
@@ -1314,7 +1314,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-t">
-            <h3>Tennessee</h3>
+            <h2>Tennessee</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.tennessee.pop"
@@ -1346,7 +1346,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Texas</h3>
+            <h2>Texas</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.texas.pop"
@@ -1378,7 +1378,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-u">
-            <h3>Utah</h3>
+            <h2>Utah</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.utah.pop"
@@ -1410,7 +1410,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-v">
-            <h3>Vermont</h3>
+            <h2>Vermont</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.vermont.pop"
@@ -1442,7 +1442,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Virginia</h3>
+            <h2>Virginia</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.virginia.pop"
@@ -1474,7 +1474,7 @@
     </section>
     <section>
         <div class="gallery-title" id="states-w">
-            <h3>Washington</h3>
+            <h2>Washington</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.washington.pop"
@@ -1506,7 +1506,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>West Virginia</h3>
+            <h2>West Virginia</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.westVirginia.pop"
@@ -1538,7 +1538,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Wisconsin</h3>
+            <h2>Wisconsin</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.wisconsin.pop"
@@ -1570,7 +1570,7 @@
     </section>
     <section>
         <div class="gallery-title">
-            <h3>Wyoming</h3>
+            <h2>Wyoming</h2>
         </div>
         <StatsPanel
             v-bind:stat1="getStats.wyoming.pop"

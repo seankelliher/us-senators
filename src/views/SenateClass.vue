@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="gallery-title" id="class1">
-            <h3>Class I</h3>
+            <h2>Class I</h2>
         </div>
         <InfoPanel
             heading="What is Class I?"
@@ -35,7 +35,7 @@
     </section>
     <section>
         <div class="gallery-title" id="class2">
-            <h3>Class II</h3>
+            <h2>Class II</h2>
         </div>
         <InfoPanel
             heading="What is Class II?"
@@ -68,7 +68,7 @@
     </section>
     <section>
         <div class="gallery-title" id="class3">
-            <h3>Class III</h3>
+            <h2>Class III</h2>
         </div>
         <InfoPanel
             heading="What is Class III?"
