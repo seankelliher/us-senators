@@ -1,6 +1,6 @@
 <template>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-a">
             <h3>Alabama</h3>
         </div>
         <StatsPanel
@@ -129,7 +129,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-c">
             <h3>California</h3>
         </div>
         <StatsPanel
@@ -225,7 +225,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-d">
             <h3>Delaware</h3>
         </div>
         <StatsPanel
@@ -257,7 +257,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-f">
             <h3>Florida</h3>
         </div>
         <StatsPanel
@@ -289,7 +289,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-g">
             <h3>Georgia</h3>
         </div>
         <StatsPanel
@@ -321,7 +321,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-h">
             <h3>Hawaii</h3>
         </div>
         <StatsPanel
@@ -353,7 +353,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-i">
             <h3>Idaho</h3>
         </div>
         <StatsPanel
@@ -481,7 +481,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-k">
             <h3>Kansas</h3>
         </div>
         <StatsPanel
@@ -545,7 +545,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-l">
             <h3>Louisiana</h3>
         </div>
         <StatsPanel
@@ -577,7 +577,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-m">
             <h3>Maine</h3>
         </div>
         <StatsPanel
@@ -833,7 +833,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-n">
             <h3>Nebraska</h3>
         </div>
         <StatsPanel
@@ -1089,7 +1089,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-o">
             <h3>Ohio</h3>
         </div>
         <StatsPanel
@@ -1185,7 +1185,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-p">
             <h3>Pennsylvania</h3>
         </div>
         <StatsPanel
@@ -1217,7 +1217,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-r">
             <h3>Rhode Island</h3>
         </div>
         <StatsPanel
@@ -1249,7 +1249,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-s">
             <h3>South Carolina</h3>
         </div>
         <StatsPanel
@@ -1313,7 +1313,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-t">
             <h3>Tennessee</h3>
         </div>
         <StatsPanel
@@ -1377,7 +1377,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-u">
             <h3>Utah</h3>
         </div>
         <StatsPanel
@@ -1409,7 +1409,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-v">
             <h3>Vermont</h3>
         </div>
         <StatsPanel
@@ -1473,7 +1473,7 @@
         </div>
     </section>
     <section>
-        <div class="gallery-title">
+        <div class="gallery-title" id="states-w">
             <h3>Washington</h3>
         </div>
         <StatsPanel
@@ -1600,10 +1600,51 @@
             </figure>
         </div>
     </section>
+    <JumpsPanelS
+        link01="#states-a"
+        name01="A"
+        link02="#states-c"
+        name02="C"
+        link03="#states-d"
+        name03="D"
+        link04="#states-f"
+        name04="F"
+        link05="#states-g"
+        name05="G"
+        link06="#states-h"
+        name06="H"
+        link07="#states-i"
+        name07="I"
+        link08="#states-k"
+        name08="K"
+        link09="#states-l"
+        name09="L"
+        link10="#states-m"
+        name10="M"
+        link11="#states-n"
+        name11="N"
+        link12="#states-o"
+        name12="O"
+        link13="#states-p"
+        name13="P"
+        link14="#states-r"
+        name14="R"
+        link15="#states-s"
+        name15="S"
+        link16="#states-t"
+        name16="T"
+        link17="#states-u"
+        name17="U"
+        link18="#states-v"
+        name18="V"
+        link19="#states-w"
+        name19="W"
+    />
 </template>
 
 <script>
 import StatsPanel from "@/components/StatsPanel.vue";
+import JumpsPanelS from "@/components/JumpsPanelS.vue";
 export default {
     name: "SenateState",
     data() {
@@ -1615,6 +1656,7 @@ export default {
     },
     components: {
         StatsPanel,
+        JumpsPanelS,
     },
     methods: {},
     computed: {
@@ -1729,8 +1771,3 @@ export default {
     },
 };
 </script>
-<style scoped>
-.gallery-title h3 {
-    margin-bottom: 0;
-}
-</style>
