@@ -78,6 +78,8 @@
         </div>
     </section>
     <JumpsPanelO
+        linkT=""
+        nameT="⇧"
         link1="#democrats"
         name1="Democrats"
         link2="#independents"

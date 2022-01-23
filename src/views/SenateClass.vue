@@ -100,6 +100,8 @@
         </div>
     </section>
     <JumpsPanelO
+        linkT=""
+        nameT="⇧"
         link1="#class1"
         name1="Class I"
         link2="#class2"

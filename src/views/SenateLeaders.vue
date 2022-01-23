@@ -105,6 +105,8 @@
         </div>
     </section>
     <JumpsPanelO
+        linkT=""
+        nameT="⇧"
         link1="#leaders"
         name1="Leaders"
         link2="#whips"

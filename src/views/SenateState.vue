@@ -1601,6 +1601,8 @@
         </div>
     </section>
     <JumpsPanelS
+        link0T=""
+        name0T="⇧"
         link01="#states-a"
         name01="A"
         link02="#states-c"
