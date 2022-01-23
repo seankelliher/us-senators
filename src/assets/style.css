@@ -21,13 +21,13 @@ nav {
     width: 90%;
     margin: 0 5%;
     padding: 1em 0;
+    border-top: 1px solid #afd2e0;
+    border-bottom: 1px solid #afd2e0;
     flex: initial; /*flex: 0 1 auto*/
     text-align: center;
 }
 
 nav a {
-    font-weight: 600;
-    /*color: #1976d2; blue 700*/
     color: #fff;
     text-decoration: none;
 }
@@ -36,17 +36,12 @@ nav a.router-link-exact-active {
     color: #F2E205;
 }
 
-nav {
-    border-top: 1px solid #afd2e0;
-    border-bottom: 1px solid #afd2e0;
-}
-
 button {
     margin-right: 1em;
     padding-right: 1.4em;
     padding-left: 1.4em;
     background: #348fb3;
-    border: 1px solid #eee; /*grey 200*/
+    border: 1px solid #afd2e0;
     border-radius: 6px;
 }
 
@@ -73,12 +68,24 @@ section {
     margin: 0 5%;
     padding: 0%;
     background: #348fb3;
-    opacity: 0.95;
     position: sticky;
     bottom: 0;
     flex: initial; /*flex: 0 1 auto*/
     text-align: center;
+    animation: moveUp 3s ease 500ms 1 normal both;
 }
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translate(0, 2.2em);
+    }
+    100% {
+        opacity: 0.95;
+        transform: translate(0, 0);
+
+    }
+  }  
 
 .info-panel {
     width: 100%;
