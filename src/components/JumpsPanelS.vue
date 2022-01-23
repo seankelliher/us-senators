@@ -2,6 +2,8 @@
     <div class="jumps-panel">
         <p>
             <!--Go to:&nbsp;-->
+            <a v-bind:href="link0T">{{ name0T }}</a>
+            &nbsp;
             <a v-bind:href="link01">{{ name01 }}</a>
             &nbsp;
             <a v-bind:href="link02">{{ name02 }}</a>
@@ -47,6 +49,7 @@
 export default {
     name: "JumpsPanel",
     props: {
+        link0T: String,
         link01: String,
         link02: String,
         link03: String,
@@ -66,6 +69,7 @@ export default {
         link17: String,
         link18: String,
         link19: String,
+        name0T: String,
         name01: String,
         name02: String,
         name03: String,
