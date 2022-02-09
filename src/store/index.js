@@ -2691,6 +2691,11 @@ export default createStore({
                 (senator) => senator.leadershipType === "pro tempore"
             );
         },
+        getSenatorDetails: (state) => (port) => {
+            return state.senators.filter(
+                (senator) => senator.portrait === port
+            );
+        },
     },
     mutations: {},
     actions: {},
