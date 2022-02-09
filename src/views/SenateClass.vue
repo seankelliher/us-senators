@@ -13,7 +13,7 @@
             v-for="getClass in getClasses.classOne"
             :key="getClass.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getClass.portrait)">
                 <img
                     :src="require(`../assets/images/${getClass.portrait}.jpg`)"
                     :alt="getClass.firstName + ' ' + getClass.lastName"
@@ -119,6 +119,14 @@ export default {
     components: {
         JumpsPanelO,
         InfoPanel,
+    },
+    methods: {
+        goToDetail(portrait) {
+            this.$router.push({
+                name: "SenateDetail",
+                params: { portrait },
+            });
+        },
     },
     computed: {
         getClasses() {
