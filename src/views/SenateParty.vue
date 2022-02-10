@@ -12,7 +12,7 @@
             v-for="getParty in getParties.democrats"
             :key="getParty.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getParty.portrait)">
                 <img
                     :src="require(`../assets/images/${getParty.portrait}.jpg`)"
                     :alt="getParty.firstName + ' ' + getParty.lastName"
@@ -38,7 +38,7 @@
             v-for="getParty in getParties.independents"
             :key="getParty.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getParty.portrait)">
                 <img
                     :src="require(`../assets/images/${getParty.portrait}.jpg`)"
                     :alt="getParty.firstName + ' ' + getParty.lastName"
@@ -64,7 +64,7 @@
             v-for="getParty in getParties.republicans"
             :key="getParty.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getParty.portrait)">
                 <img
                     :src="require(`../assets/images/${getParty.portrait}.jpg`)"
                     :alt="getParty.firstName + ' ' + getParty.lastName"
@@ -89,6 +89,13 @@
     />
 </template>
 
+<style scoped>
+figure:hover {
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+</style>
+
 <script>
 import InfoPanel from "@/components/InfoPanel.vue";
 import JumpsPanelO from "@/components/JumpsPanelO.vue";
@@ -97,6 +104,14 @@ export default {
     components: {
         JumpsPanelO,
         InfoPanel,
+    },
+    methods: {
+        goToDetail(portrait) {
+            this.$router.push({
+                name: "SenateDetail",
+                params: { portrait },
+            });
+        },
     },
     computed: {
         getParties() {

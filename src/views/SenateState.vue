@@ -13,7 +13,7 @@
             v-for="getState in getStates.alabama"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -45,7 +45,7 @@
             v-for="getState in getStates.alaska"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -77,7 +77,7 @@
             v-for="getState in getStates.arizona"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -110,7 +110,7 @@
             v-for="getState in getStates.arkansas"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -142,7 +142,7 @@
             v-for="getState in getStates.california"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -174,7 +174,7 @@
             v-for="getState in getStates.colorado"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -206,7 +206,7 @@
             v-for="getState in getStates.connecticut"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -238,7 +238,7 @@
             v-for="getState in getStates.delaware"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -270,7 +270,7 @@
             v-for="getState in getStates.florida"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -302,7 +302,7 @@
             v-for="getState in getStates.georgia"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -334,7 +334,7 @@
             v-for="getState in getStates.hawaii"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -366,7 +366,7 @@
             v-for="getState in getStates.idaho"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -398,7 +398,7 @@
             v-for="getState in getStates.illinois"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -430,7 +430,7 @@
             v-for="getState in getStates.indiana"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -462,7 +462,7 @@
             v-for="getState in getStates.iowa"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -494,7 +494,7 @@
             v-for="getState in getStates.kansas"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -526,7 +526,7 @@
             v-for="getState in getStates.kentucky"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -558,7 +558,7 @@
             v-for="getState in getStates.louisiana"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -590,7 +590,7 @@
             v-for="getState in getStates.maine"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -622,7 +622,7 @@
             v-for="getState in getStates.maryland"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -654,7 +654,7 @@
             v-for="getState in getStates.massachusetts"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -686,7 +686,7 @@
             v-for="getState in getStates.michigan"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -718,7 +718,7 @@
             v-for="getState in getStates.minnesota"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -750,7 +750,7 @@
             v-for="getState in getStates.mississippi"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -782,7 +782,7 @@
             v-for="getState in getStates.missouri"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -814,7 +814,7 @@
             v-for="getState in getStates.montana"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -846,7 +846,7 @@
             v-for="getState in getStates.nebraska"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -878,7 +878,7 @@
             v-for="getState in getStates.nevada"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -910,7 +910,7 @@
             v-for="getState in getStates.newHampshire"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -942,7 +942,7 @@
             v-for="getState in getStates.newJersey"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -974,7 +974,7 @@
             v-for="getState in getStates.newMexico"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1006,7 +1006,7 @@
             v-for="getState in getStates.newYork"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1038,7 +1038,7 @@
             v-for="getState in getStates.northCarolina"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1070,7 +1070,7 @@
             v-for="getState in getStates.northDakota"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1102,7 +1102,7 @@
             v-for="getState in getStates.ohio"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1134,7 +1134,7 @@
             v-for="getState in getStates.oklahoma"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1166,7 +1166,7 @@
             v-for="getState in getStates.oregon"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1198,7 +1198,7 @@
             v-for="getState in getStates.pennsylvania"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1230,7 +1230,7 @@
             v-for="getState in getStates.rhodeIsland"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1262,7 +1262,7 @@
             v-for="getState in getStates.southCarolina"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1294,7 +1294,7 @@
             v-for="getState in getStates.southDakota"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1326,7 +1326,7 @@
             v-for="getState in getStates.tennessee"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1358,7 +1358,7 @@
             v-for="getState in getStates.texas"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1390,7 +1390,7 @@
             v-for="getState in getStates.utah"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1422,7 +1422,7 @@
             v-for="getState in getStates.vermont"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1454,7 +1454,7 @@
             v-for="getState in getStates.virginia"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1486,7 +1486,7 @@
             v-for="getState in getStates.washington"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1518,7 +1518,7 @@
             v-for="getState in getStates.westVirginia"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1550,7 +1550,7 @@
             v-for="getState in getStates.wisconsin"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1582,7 +1582,7 @@
             v-for="getState in getStates.wyoming"
             :key="getState.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getState.portrait)">
                 <img
                     :src="require(`../assets/images/${getState.portrait}.jpg`)"
                     :alt="getState.firstName + ' ' + getState.lastName"
@@ -1644,6 +1644,13 @@
     />
 </template>
 
+<style scoped>
+figure:hover {
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+</style>
+
 <script>
 import StatsPanel from "@/components/StatsPanel.vue";
 import JumpsPanelS from "@/components/JumpsPanelS.vue";
@@ -1660,7 +1667,14 @@ export default {
         StatsPanel,
         JumpsPanelS,
     },
-    methods: {},
+    methods: {
+        goToDetail(portrait) {
+            this.$router.push({
+                name: "SenateDetail",
+                params: { portrait },
+            });
+        },
+    },
     computed: {
         getStates() {
             return {

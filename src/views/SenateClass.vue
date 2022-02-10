@@ -46,7 +46,7 @@
             v-for="getClass in getClasses.classTwo"
             :key="getClass.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getClass.portrait)">
                 <img
                     :src="require(`../assets/images/${getClass.portrait}.jpg`)"
                     :alt="getClass.firstName + ' ' + getClass.lastName"
@@ -79,7 +79,7 @@
             v-for="getClass in getClasses.classThree"
             :key="getClass.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getClass.portrait)">
                 <img
                     :src="require(`../assets/images/${getClass.portrait}.jpg`)"
                     :alt="getClass.firstName + ' ' + getClass.lastName"
@@ -110,6 +110,13 @@
         name3="Class III"
     />
 </template>
+
+<style scoped>
+figure:hover {
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+</style>
 
 <script>
 import JumpsPanelO from "@/components/JumpsPanelO.vue";

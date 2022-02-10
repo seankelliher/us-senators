@@ -13,7 +13,7 @@
             v-for="getLeader in getLeadership.leaders"
             :key="getLeader.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getLeader.portrait)">
                 <img
                     :src="require(`../assets/images/${getLeader.portrait}.jpg`)"
                     :alt="getLeader.firstName + ' ' + getLeader.lastName"
@@ -48,7 +48,7 @@
             v-for="getLeader in getLeadership.whips"
             :key="getLeader.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getLeader.portrait)">
                 <img
                     :src="require(`../assets/images/${getLeader.portrait}.jpg`)"
                     :alt="getLeader.firstName + ' ' + getLeader.lastName"
@@ -83,7 +83,7 @@
             v-for="getLeader in getLeadership.pros"
             :key="getLeader.bioguideId"
         >
-            <figure>
+            <figure @click="goToDetail(getLeader.portrait)">
                 <img
                     :src="require(`../assets/images/${getLeader.portrait}.jpg`)"
                     :alt="getLeader.firstName + ' ' + getLeader.lastName"
@@ -116,6 +116,13 @@
     />
 </template>
 
+<style scoped>
+figure:hover {
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+</style>
+
 <script>
 import InfoPanel from "@/components/InfoPanel.vue";
 import JumpsPanelO from "@/components/JumpsPanelO.vue";
@@ -124,6 +131,14 @@ export default {
     components: {
         InfoPanel,
         JumpsPanelO,
+    },
+    methods: {
+        goToDetail(portrait) {
+            this.$router.push({
+                name: "SenateDetail",
+                params: { portrait },
+            });
+        },
     },
     computed: {
         getLeadership() {
