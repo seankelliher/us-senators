@@ -143,9 +143,9 @@ export default {
     computed: {
         getLeadership() {
             return {
-                leaders: this.$store.getters.getLeaders,
-                whips: this.$store.getters.getWhips,
-                pros: this.$store.getters.getPros,
+                leaders: this.$store.getters.getTheLeader("leader"),
+                whips: this.$store.getters.getTheLeader("whip"),
+                pros: this.$store.getters.getTheLeader("pro tempore"),
             };
         },
     },
