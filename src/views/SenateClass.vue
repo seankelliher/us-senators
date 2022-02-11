@@ -138,9 +138,9 @@ export default {
     computed: {
         getClasses() {
             return {
-                classOne: this.$store.getters.getClassOne,
-                classTwo: this.$store.getters.getClassTwo,
-                classThree: this.$store.getters.getClassThree,
+                classOne: this.$store.getters.getTheClass("Class I"),
+                classTwo: this.$store.getters.getTheClass("Class II"),
+                classThree: this.$store.getters.getTheClass("Class III"),
             };
         },
     },
