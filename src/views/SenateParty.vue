@@ -5,7 +5,7 @@
         </div>
         <InfoPanel
             heading="How many Democrats?"
-            :msg1="`There are currently ${getParties.democratsL} Democrats in the US Senate. There are also currently ${getParties.independentsL} Independents who generally vote with them.`"
+            :msg1="`There are currently ${getParties.democrats.length} Democrats in the US Senate. There are also currently ${getParties.independents.length} Independents who generally vote with them.`"
         />
         <div
             class="senator-card"
@@ -31,7 +31,7 @@
         </div>
         <InfoPanel
             heading="How many Independents?"
-            :msg1="`There are currently ${getParties.independentsL} Independents in the US Senate.`"
+            :msg1="`There are currently ${getParties.independents.length} Independents in the US Senate.`"
         />
         <div
             class="senator-card"
@@ -57,7 +57,7 @@
         </div>
         <InfoPanel
             heading="How many Republicans?"
-            :msg1="`There are currently ${getParties.republicansL} Republicans in the US Senate.`"
+            :msg1="`There are currently ${getParties.republicans.length} Republicans in the US Senate.`"
         />
         <div
             class="senator-card"
@@ -116,12 +116,9 @@ export default {
     computed: {
         getParties() {
             return {
-                democrats: this.$store.getters.getDemocrats,
-                democratsL: this.$store.getters.getDemocrats.length,
-                independents: this.$store.getters.getIndependents,
-                independentsL: this.$store.getters.getIndependents.length,
-                republicans: this.$store.getters.getRepublicans,
-                republicansL: this.$store.getters.getRepublicans.length,
+                democrats: this.$store.getters.getTheParty("D"),
+                independents: this.$store.getters.getTheParty("I"),
+                republicans: this.$store.getters.getTheParty("R"),
             };
         },
     },
