@@ -114,7 +114,6 @@
 <style scoped>
 figure:hover {
     cursor: pointer;
-    filter: grayscale(70%);
 }
 </style>
 
