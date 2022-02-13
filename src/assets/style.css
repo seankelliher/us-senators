@@ -14,37 +14,53 @@ header {
     margin: 0;
     padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
-    /*text-align: center;*/
 }
 
 nav {
     width: 90%;
     margin: 0 5%;
     padding: 1em 0;
-    border-top: 1px solid #afd2e0;
-    border-bottom: 1px solid #afd2e0;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly; /*main axis*/
+    justify-content: space-between; /*main axis*/
     align-items: flex-start; /*cross axis*/
 }
 
 nav a {
-    color: #fff;
+    color: #001f99; /*dark magenta*/
     text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-    color: #F2E205;
+    color: #f23005; /*orange*/
 }
 
 button {
-    width: 20%;
-    border: 1px solid #afd2e0;
-    background: #348fb3;
-    border-radius: 6px;
+    background: transparent;
+    border: 2px solid #001f99;
+    border-radius: 8px;
     flex: initial; /*flex: 0 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+    button {
+        width: 24%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    button {
+        width: 22%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    button {
+        width: 20%;
+    }
 }
 
 section {
@@ -54,7 +70,7 @@ section {
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start; /*main axis*/
+    justify-content: space-between; /*main axis*/
     align-items: flex-start; /*cross axis*/
 }
 
@@ -66,10 +82,13 @@ section {
 }
 
 .jumps-panel {
-    width: 90%;
-    margin: 0 5%;
+    width: 100%;
+    margin: 0;
     padding: 0%;
-    background: #348fb3;
+    background: #fff;
+    border-top: 2px solid #001f99; /*dark magenta*/
+    border-right: 2px solid #001f99; /*dark magenta*/
+    border-left: 2px solid #001f99; /*dark magenta*/
     position: sticky;
     bottom: 0;
     flex: initial; /*flex: 0 1 auto*/
@@ -77,6 +96,7 @@ section {
     animation: moveUp 3s ease 500ms 1 normal both;
 }
 
+/*animation for .jumps-panel*/
 @keyframes moveUp {
     0% {
         opacity: 0;
@@ -85,9 +105,8 @@ section {
     100% {
         opacity: 0.95;
         transform: translate(0, 0);
-
     }
-  }  
+}  
 
 .info-panel {
     width: 100%;
@@ -108,12 +127,28 @@ section {
 }
 
 .senator-card {
-    width: 40%;
     margin: 0;
-    padding: 1em 5%;
-    background: #f5f5f5; /*grey 100*/
+    padding: 1em 0;
     text-align: center;
     flex: initial; /*flex: 0 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+    .senator-card {
+        width: 50%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .senator-card {
+        width: 47.5%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .senator-card {
+        width: 45%;
+    }
 }
 
 .senator-card-detail {
@@ -136,10 +171,18 @@ img {
     display: block;
 }
 
+/*FONTS and thie media queries below*/
 figcaption {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
     font-weight: 400;
+    color: #616161; /*grey 700*/
+}
+
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 600;
 }
 
 p {
@@ -149,12 +192,12 @@ p {
 }
 
 p a {
-    color: #1976D2;
+    color: #1976d2; /*blue 700*/
     text-decoration: none;
 }
 
 p a:hover {
-    color: #1976D2;
+    color: #1976d2; /*blue 700*/
     text-decoration: underline;
 }
 
@@ -164,21 +207,15 @@ header p {
 }
 
 .jumps-panel p {
-    color: #fff;
+    color: #001f99; /*dark magenta*/
     line-height: 1.2;
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
 .jumps-panel a {
-    color: #fff;
+    color: #001f99; /*dark magenta*/
     text-decoration: none;
-}
-
-button {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    font-weight: 600;
 }
 
 h1 {
@@ -200,43 +237,108 @@ h2 {
 }
 
 @media all and (min-width: 300px) {
-    p, figcaption {
-        font-size: .875em;
+    figcaption {
+        font-size: .75em; /*12px*/
+    }
+
+    button {
+        font-size: .8125em; /*13px*/
+    }
+
+    p {
+        font-size: .875em; /*14px*/
+    }
+
+    .jumps-panel p {
+        font-size: .6875em; /*11px*/
     }
 
     h1 {
-        font-size: 1.2em;
+        font-size: 1em; /*16px*/
     }
 
-    h2, button {
-        font-size: .9375em;
+    h2 {
+        font-size: .9375em; /*15px*/
     }
+
 }
 
 @media all and (min-width: 400px) {
-    p, figcaption {
-        font-size: .9375em;
+    figcaption {
+        font-size: .8125em; /*13px*/
+    }
+
+    button {
+        font-size: .875em; /*14px*/
+    }
+
+    /*p {
+        font-size: same as above;
+    }*/
+
+    .jumps-panel p {
+        font-size: .75em; /*12px*/
     }
 
     h1 {
-        font-size: 1.4em;
+        font-size: 1.2em; /*19.2px*/
+    }
+
+    /*h2 {
+        font-size: same as above;
+    }*/
+
+}
+
+@media all and (min-width: 500px) {
+    figcaption {
+        font-size: .875em; /*14px*/
+    }
+
+    button {
+        font-size: .9375em; /*15px*/
+    }
+
+    p {
+        font-size: .9375em; /*15px*/
+    }
+
+    .jumps-panel p {
+        font-size: .875em; /*14px*/
+    }
+
+    h1 {
+        font-size: 1.4em; /*22.4px*/
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 1em; /*16px*/
     }
+
 }
 
 @media all and (min-width: 600px) {
-    p, figcaption {
-        font-size: 1em;
+    figcaption {
+        font-size: .9375em; /*15px*/
+    }
+
+    button {
+        font-size: 1em; /*16px*/
+    }
+
+    p {
+        font-size: 1em; /*16px*/
+    }
+
+    .jumps-panel p {
+        font-size: 1em; /*16px*/
     }
 
     h1 {
-        font-size: 1.6em;
+        font-size: 1.6em; /*25.6px*/
     }
 
-    h2 {
-        font-size: 1.2em;
-    }
+    /*h2 {
+        font-size: same as above;
+    }*/
 }
