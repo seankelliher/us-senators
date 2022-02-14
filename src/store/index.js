@@ -1,3 +1,4 @@
+//Note: The "eliteSchool" property is not used. It may be in future versions.
 import { createStore } from "vuex";
 
 export default createStore({
