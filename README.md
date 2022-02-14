@@ -5,10 +5,13 @@ Interactive Vue component with information on current United States Senators.
 
 ## Project Screen Shots
 
+* Starting view - Senators by State.
 ![screen shot of project](/screenshots/us-senators-screenshot1.png?s=600)
 
+* Senate Leaders.
 ![screen shot of project](/screenshots/us-senators-screenshot2.png?s=600)
 
+* Senate Leaders - with Leaders "info panel" open.
 ![screen shot of project](/screenshots/us-senators-screenshot3.png?s=600)
 
 ## Installation and Setup Instructions
