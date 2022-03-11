@@ -14,6 +14,9 @@ Interactive Vue component with information on current United States Senators.
 * Senate Leaders - with Leaders "info panel" open.
 ![screen shot of project](/screenshots/us-senators-screenshot3.png?s=600)
 
+* Detailed view - Senator Thom Tillis, North Carolina.
+![screen shot of project](/screenshots/us-senators-screenshot4.png?s=600)
+
 ## Installation and Setup Instructions
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.
