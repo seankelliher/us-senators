@@ -54,10 +54,10 @@ Lastly, I spent time exploring colors to try to get a design that looks a combin
 ## Acknowledgments
 
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
-* Senate roster from [US Senate(https://www.senate.gov/senators/index.htm).
-* Information on Senate leadership (Leaders) from [US Senate(https://www.senate.gov/general/common/generic/officer_responsiblities.htm).
-* Information on Senate leadership (Whips) from [US Senate[](https://www.senate.gov/artandhistory/history/common/briefing/Party_Whips.htm).
-* Information on Senate leadership (Pro Tempore) from [US Senate(https://www.senate.gov/about/officers-staff/president-pro-tempore.htm).
+* Senate roster from [US Senate](https://www.senate.gov/senators/index.htm).
+* Information on Senate leadership (Leaders) from [US Senate](https://www.senate.gov/general/common/generic/officer_responsiblities.htm).
+* Information on Senate leadership (Whips) from [US Senate](https://www.senate.gov/artandhistory/history/common/briefing/Party_Whips.htm).
+* Information on Senate leadership (Pro Tempore) from [US Senate](https://www.senate.gov/about/officers-staff/president-pro-tempore.htm).
 * Population data from the [United States Census Bureau](https://www.census.gov/library/visualizations/interactive/2020-population-and-housing-state-data.html).
 * House seats data from the [United States Census Bureau](https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html).
 * Photographs of Senators are from each Senator's office.
