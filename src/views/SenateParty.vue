@@ -7,23 +7,7 @@
             heading="How many Democrats?"
             :msg1="`There are currently ${getParties.democrats.length} Democrats in the US Senate. There are also currently ${getParties.independents.length} Independents who generally vote with them.`"
         />
-        <div
-            class="senator-card"
-            v-for="getParty in getParties.democrats"
-            :key="getParty.bioguideId"
-        >
-            <figure @click="goToDetail(getParty.portrait)">
-                <img
-                    :src="require(`../assets/images/${getParty.portrait}.jpg`)"
-                    :alt="getParty.firstName + ' ' + getParty.lastName"
-                />
-                <figcaption>
-                    {{ getParty.firstName + " " + getParty.lastName }}
-                    <br />
-                    {{ getParty.state }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard2 :details="getParties.democrats" />
     </section>
     <section>
         <div class="gallery-title" id="independents">
@@ -33,23 +17,7 @@
             heading="How many Independents?"
             :msg1="`There are currently ${getParties.independents.length} Independents in the US Senate.`"
         />
-        <div
-            class="senator-card"
-            v-for="getParty in getParties.independents"
-            :key="getParty.bioguideId"
-        >
-            <figure @click="goToDetail(getParty.portrait)">
-                <img
-                    :src="require(`../assets/images/${getParty.portrait}.jpg`)"
-                    :alt="getParty.firstName + ' ' + getParty.lastName"
-                />
-                <figcaption>
-                    {{ getParty.firstName + " " + getParty.lastName }}
-                    <br />
-                    {{ getParty.state }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard2 :details="getParties.independents" />
     </section>
     <section>
         <div class="gallery-title" id="republicans">
@@ -59,23 +27,7 @@
             heading="How many Republicans?"
             :msg1="`There are currently ${getParties.republicans.length} Republicans in the US Senate.`"
         />
-        <div
-            class="senator-card"
-            v-for="getParty in getParties.republicans"
-            :key="getParty.bioguideId"
-        >
-            <figure @click="goToDetail(getParty.portrait)">
-                <img
-                    :src="require(`../assets/images/${getParty.portrait}.jpg`)"
-                    :alt="getParty.firstName + ' ' + getParty.lastName"
-                />
-                <figcaption>
-                    {{ getParty.firstName + " " + getParty.lastName }}
-                    <br />
-                    {{ getParty.state }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard2 :details="getParties.republicans" />
     </section>
     <JumpsPanelO
         linkT=""
@@ -90,27 +42,29 @@
 </template>
 
 <style scoped>
-figure:hover {
+/*<figure:hover {
     cursor: pointer;
-}
+}*/
 </style>
 
 <script>
 import InfoPanel from "@/components/InfoPanel.vue";
+import SenatorCard2 from "@/components/SenatorCard2.vue";
 import JumpsPanelO from "@/components/JumpsPanelO.vue";
 export default {
     name: "SenateParty",
     components: {
-        JumpsPanelO,
         InfoPanel,
+        SenatorCard2,
+        JumpsPanelO,
     },
     methods: {
-        goToDetail(portrait) {
+        /*goToDetail(portrait) {
             this.$router.push({
                 name: "SenateDetail",
                 params: { portrait },
             });
-        },
+        },*/
     },
     computed: {
         getParties() {

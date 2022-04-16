@@ -8,28 +8,7 @@
             v-bind:stat2="getStats.alabama.rank"
             v-bind:stat3="getStats.alabama.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.alabama"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.alabama" />
     </section>
     <section>
         <div class="gallery-title">
@@ -40,28 +19,7 @@
             v-bind:stat2="getStats.alaska.rank"
             v-bind:stat3="getStats.alaska.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.alaska"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.alaska" />
     </section>
     <section>
         <div class="gallery-title">
@@ -72,29 +30,7 @@
             v-bind:stat2="getStats.arizona.rank"
             v-bind:stat3="getStats.arizona.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.arizona"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        ", " +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.arizona" />
     </section>
     <section>
         <div class="gallery-title">
@@ -105,28 +41,7 @@
             v-bind:stat2="getStats.arkansas.rank"
             v-bind:stat3="getStats.arkansas.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.arkansas"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.arkansas" />
     </section>
     <section>
         <div class="gallery-title" id="states-c">
@@ -137,28 +52,7 @@
             v-bind:stat2="getStats.california.rank"
             v-bind:stat3="getStats.california.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.california"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.california" />
     </section>
     <section>
         <div class="gallery-title">
@@ -169,28 +63,7 @@
             v-bind:stat2="getStats.colorado.rank"
             v-bind:stat3="getStats.colorado.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.colorado"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.colorado" />
     </section>
     <section>
         <div class="gallery-title">
@@ -201,28 +74,7 @@
             v-bind:stat2="getStats.connecticut.rank"
             v-bind:stat3="getStats.connecticut.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.connecticut"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.connecticut" />
     </section>
     <section>
         <div class="gallery-title" id="states-d">
@@ -233,28 +85,7 @@
             v-bind:stat2="getStats.delaware.rank"
             v-bind:stat3="getStats.delaware.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.delaware"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.delaware" />
     </section>
     <section>
         <div class="gallery-title" id="states-f">
@@ -265,28 +96,7 @@
             v-bind:stat2="getStats.florida.rank"
             v-bind:stat3="getStats.florida.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.florida"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.florida" />
     </section>
     <section>
         <div class="gallery-title" id="states-g">
@@ -297,28 +107,7 @@
             v-bind:stat2="getStats.georgia.rank"
             v-bind:stat3="getStats.georgia.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.georgia"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.georgia" />
     </section>
     <section>
         <div class="gallery-title" id="states-h">
@@ -329,28 +118,7 @@
             v-bind:stat2="getStats.hawaii.rank"
             v-bind:stat3="getStats.hawaii.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.hawaii"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.hawaii" />
     </section>
     <section>
         <div class="gallery-title" id="states-i">
@@ -361,28 +129,7 @@
             v-bind:stat2="getStats.idaho.rank"
             v-bind:stat3="getStats.idaho.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.idaho"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.idaho" />
     </section>
     <section>
         <div class="gallery-title">
@@ -393,28 +140,7 @@
             v-bind:stat2="getStats.illinois.rank"
             v-bind:stat3="getStats.illinois.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.illinois"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.illinois" />
     </section>
     <section>
         <div class="gallery-title">
@@ -425,28 +151,7 @@
             v-bind:stat2="getStats.indiana.rank"
             v-bind:stat3="getStats.indiana.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.indiana"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.indiana" />
     </section>
     <section>
         <div class="gallery-title">
@@ -457,28 +162,7 @@
             v-bind:stat2="getStats.iowa.rank"
             v-bind:stat3="getStats.iowa.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.iowa"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.iowa" />
     </section>
     <section>
         <div class="gallery-title" id="states-k">
@@ -489,28 +173,7 @@
             v-bind:stat2="getStats.kansas.rank"
             v-bind:stat3="getStats.kansas.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.kansas"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.kansas" />
     </section>
     <section>
         <div class="gallery-title">
@@ -521,28 +184,7 @@
             v-bind:stat2="getStats.kentucky.rank"
             v-bind:stat3="getStats.kentucky.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.kentucky"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.kentucky" />
     </section>
     <section>
         <div class="gallery-title" id="states-l">
@@ -553,28 +195,7 @@
             v-bind:stat2="getStats.louisiana.rank"
             v-bind:stat3="getStats.louisiana.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.louisiana"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.louisiana" />
     </section>
     <section>
         <div class="gallery-title" id="states-m">
@@ -585,28 +206,7 @@
             v-bind:stat2="getStats.maine.rank"
             v-bind:stat3="getStats.maine.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.maine"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.maine" />
     </section>
     <section>
         <div class="gallery-title">
@@ -617,28 +217,7 @@
             v-bind:stat2="getStats.maryland.rank"
             v-bind:stat3="getStats.maryland.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.maryland"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.maryland" />
     </section>
     <section>
         <div class="gallery-title">
@@ -649,28 +228,7 @@
             v-bind:stat2="getStats.massachusetts.rank"
             v-bind:stat3="getStats.massachusetts.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.massachusetts"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.massachusetts" />
     </section>
     <section>
         <div class="gallery-title">
@@ -681,28 +239,7 @@
             v-bind:stat2="getStats.michigan.rank"
             v-bind:stat3="getStats.michigan.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.michigan"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.michigan" />
     </section>
     <section>
         <div class="gallery-title">
@@ -713,28 +250,7 @@
             v-bind:stat2="getStats.minnesota.rank"
             v-bind:stat3="getStats.minnesota.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.minnesota"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.minnesota" />
     </section>
     <section>
         <div class="gallery-title">
@@ -745,28 +261,7 @@
             v-bind:stat2="getStats.mississippi.rank"
             v-bind:stat3="getStats.mississippi.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.mississippi"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.mississippi" />
     </section>
     <section>
         <div class="gallery-title">
@@ -777,28 +272,7 @@
             v-bind:stat2="getStats.missouri.rank"
             v-bind:stat3="getStats.missouri.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.missouri"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.missouri" />
     </section>
     <section>
         <div class="gallery-title">
@@ -809,28 +283,7 @@
             v-bind:stat2="getStats.montana.rank"
             v-bind:stat3="getStats.montana.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.montana"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.montana" />
     </section>
     <section>
         <div class="gallery-title" id="states-n">
@@ -841,28 +294,7 @@
             v-bind:stat2="getStats.nebraska.rank"
             v-bind:stat3="getStats.nebraska.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.nebraska"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.nebraska" />
     </section>
     <section>
         <div class="gallery-title">
@@ -873,28 +305,7 @@
             v-bind:stat2="getStats.nevada.rank"
             v-bind:stat3="getStats.nevada.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.nevada"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.nevada" />
     </section>
     <section>
         <div class="gallery-title">
@@ -905,28 +316,7 @@
             v-bind:stat2="getStats.newHampshire.rank"
             v-bind:stat3="getStats.newHampshire.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.newHampshire"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.newHampshire" />
     </section>
     <section>
         <div class="gallery-title">
@@ -937,28 +327,7 @@
             v-bind:stat2="getStats.newJersey.rank"
             v-bind:stat3="getStats.newJersey.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.newJersey"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.newJersey" />
     </section>
     <section>
         <div class="gallery-title">
@@ -969,28 +338,7 @@
             v-bind:stat2="getStats.newMexico.rank"
             v-bind:stat3="getStats.newMexico.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.newMexico"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.newMexico" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1001,28 +349,7 @@
             v-bind:stat2="getStats.newYork.rank"
             v-bind:stat3="getStats.newYork.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.newYork"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.newYork" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1033,28 +360,7 @@
             v-bind:stat2="getStats.northCarolina.rank"
             v-bind:stat3="getStats.northCarolina.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.northCarolina"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.northCarolina" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1065,28 +371,7 @@
             v-bind:stat2="getStats.northDakota.rank"
             v-bind:stat3="getStats.northDakota.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.northDakota"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.northDakota" />
     </section>
     <section>
         <div class="gallery-title" id="states-o">
@@ -1097,28 +382,7 @@
             v-bind:stat2="getStats.ohio.rank"
             v-bind:stat3="getStats.ohio.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.ohio"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.ohio" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1129,28 +393,7 @@
             v-bind:stat2="getStats.oklahoma.rank"
             v-bind:stat3="getStats.oklahoma.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.oklahoma"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.oklahoma" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1161,28 +404,7 @@
             v-bind:stat2="getStats.oregon.rank"
             v-bind:stat3="getStats.oregon.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.oregon"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.oregon" />
     </section>
     <section>
         <div class="gallery-title" id="states-p">
@@ -1193,28 +415,7 @@
             v-bind:stat2="getStats.pennsylvania.rank"
             v-bind:stat3="getStats.pennsylvania.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.pennsylvania"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.pennsylvania" />
     </section>
     <section>
         <div class="gallery-title" id="states-r">
@@ -1225,28 +426,7 @@
             v-bind:stat2="getStats.rhodeIsland.rank"
             v-bind:stat3="getStats.rhodeIsland.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.rhodeIsland"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.rhodeIsland" />
     </section>
     <section>
         <div class="gallery-title" id="states-s">
@@ -1257,28 +437,7 @@
             v-bind:stat2="getStats.southCarolina.rank"
             v-bind:stat3="getStats.southCarolina.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.southCarolina"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.southCarolina" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1289,28 +448,7 @@
             v-bind:stat2="getStats.southDakota.rank"
             v-bind:stat3="getStats.southDakota.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.southDakota"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.southDakota" />
     </section>
     <section>
         <div class="gallery-title" id="states-t">
@@ -1321,28 +459,7 @@
             v-bind:stat2="getStats.tennessee.rank"
             v-bind:stat3="getStats.tennessee.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.tennessee"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.tennessee" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1353,28 +470,7 @@
             v-bind:stat2="getStats.texas.rank"
             v-bind:stat3="getStats.texas.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.texas"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.texas" />
     </section>
     <section>
         <div class="gallery-title" id="states-u">
@@ -1385,28 +481,7 @@
             v-bind:stat2="getStats.utah.rank"
             v-bind:stat3="getStats.utah.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.utah"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.utah" />
     </section>
     <section>
         <div class="gallery-title" id="states-v">
@@ -1417,28 +492,7 @@
             v-bind:stat2="getStats.vermont.rank"
             v-bind:stat3="getStats.vermont.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.vermont"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.vermont" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1449,28 +503,7 @@
             v-bind:stat2="getStats.virginia.rank"
             v-bind:stat3="getStats.virginia.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.virginia"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.virginia" />
     </section>
     <section>
         <div class="gallery-title" id="states-w">
@@ -1481,28 +514,7 @@
             v-bind:stat2="getStats.washington.rank"
             v-bind:stat3="getStats.washington.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.washington"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.washington" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1513,28 +525,7 @@
             v-bind:stat2="getStats.westVirginia.rank"
             v-bind:stat3="getStats.westVirginia.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.westVirginia"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.westVirginia" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1545,28 +536,7 @@
             v-bind:stat2="getStats.wisconsin.rank"
             v-bind:stat3="getStats.wisconsin.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.wisconsin"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.wisconsin" />
     </section>
     <section>
         <div class="gallery-title">
@@ -1577,28 +547,7 @@
             v-bind:stat2="getStats.wyoming.rank"
             v-bind:stat3="getStats.wyoming.seats"
         />
-        <div
-            class="senator-card"
-            v-for="getState in getStates.wyoming"
-            :key="getState.bioguideId"
-        >
-            <figure @click="goToDetail(getState.portrait)">
-                <img
-                    :src="require(`../assets/images/${getState.portrait}.jpg`)"
-                    :alt="getState.firstName + ' ' + getState.lastName"
-                />
-                <figcaption>
-                    {{
-                        getState.firstName +
-                        " " +
-                        getState.lastName +
-                        " (" +
-                        getState.party +
-                        ")"
-                    }}
-                </figcaption>
-            </figure>
-        </div>
+        <SenatorCard1 :details="getStates.wyoming" />
     </section>
     <JumpsPanelS
         link0T=""
@@ -1645,13 +594,14 @@
 </template>
 
 <style scoped>
-figure:hover {
+/*figure:hover {
     cursor: pointer;
-}
+}*/
 </style>
 
 <script>
 import StatsPanel from "@/components/StatsPanel.vue";
+import SenatorCard1 from "@/components/SenatorCard1.vue";
 import JumpsPanelS from "@/components/JumpsPanelS.vue";
 export default {
     name: "SenateState",
@@ -1664,15 +614,16 @@ export default {
     },
     components: {
         StatsPanel,
+        SenatorCard1,
         JumpsPanelS,
     },
     methods: {
-        goToDetail(portrait) {
+        /*goToDetail(portrait) {
             this.$router.push({
                 name: "SenateDetail",
                 params: { portrait },
             });
-        },
+        },*/
     },
     computed: {
         getStates() {
