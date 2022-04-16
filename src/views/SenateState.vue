@@ -593,12 +593,6 @@
     />
 </template>
 
-<style scoped>
-/*figure:hover {
-    cursor: pointer;
-}*/
-</style>
-
 <script>
 import StatsPanel from "@/components/StatsPanel.vue";
 import SenatorCard1 from "@/components/SenatorCard1.vue";
@@ -606,25 +600,14 @@ import JumpsPanelS from "@/components/JumpsPanelS.vue";
 export default {
     name: "SenateState",
     data() {
-        return {
-            /*populations: {
-                alabama: 987654321,
-            },*/
-        };
+        return {};
     },
     components: {
         StatsPanel,
         SenatorCard1,
         JumpsPanelS,
     },
-    methods: {
-        /*goToDetail(portrait) {
-            this.$router.push({
-                name: "SenateDetail",
-                params: { portrait },
-            });
-        },*/
-    },
+    methods: {},
     computed: {
         getStates() {
             return {

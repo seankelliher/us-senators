@@ -42,12 +42,6 @@
     />
 </template>
 
-<style scoped>
-/*figure:hover {
-    cursor: pointer;
-}*/
-</style>
-
 <script>
 import InfoPanel from "@/components/InfoPanel.vue";
 import SenatorCard2 from "@/components/SenatorCard2.vue";
@@ -55,19 +49,15 @@ import JumpsPanelO from "@/components/JumpsPanelO.vue";
 
 export default {
     name: "SenateClass",
+    data() {
+        return {};
+    },
     components: {
         InfoPanel,
         SenatorCard2,
         JumpsPanelO,
     },
-    methods: {
-        /*goToDetail(portrait) {
-            this.$router.push({
-                name: "SenateDetail",
-                params: { portrait },
-            });
-        },*/
-    },
+    methods: {},
     computed: {
         getClasses() {
             return {
