@@ -1,6 +1,6 @@
 <template>
     <header>
-        <h1>United States Senate</h1>
+        <h1><router-link to="/">United States Senate</router-link></h1>
         <p>A guide to Senators in the 117th Congress</p>
     </header>
     <nav>
