@@ -20,8 +20,8 @@ nav {
     width: 90%;
     margin: 0 5%;
     padding: 1em 0;
-    border-top: 1px solid #bdbdbd;
-    border-bottom: 1px solid #bdbdbd;
+    border-top: 1px solid #bdbdbd; /*grey 400*/
+    border-bottom: 1px solid #bdbdbd; /*grey 400*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -40,7 +40,7 @@ nav a.router-link-exact-active {
 
 button {
     background: transparent;
-    border: 2px solid #001f99;
+    border: 2px solid #001f99; /*dark magenta*/
     border-radius: 8px;
     flex: initial; /*flex: 0 1 auto*/
 }
@@ -81,7 +81,7 @@ section {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-.jumps-panel {
+.jump-links {
     width: 100%;
     margin: 0;
     padding: 0%;
@@ -96,7 +96,7 @@ section {
     animation: moveUp 3s ease 500ms 1 normal both;
 }
 
-/*animation for .jumps-panel*/
+/*animation for .jump-links*/
 @keyframes moveUp {
     0% {
         opacity: 0;
@@ -171,7 +171,7 @@ img {
     display: block;
 }
 
-/*FONTS and thie media queries below*/
+/*FONTS and thier media queries below*/
 figcaption {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.8;
@@ -215,14 +215,14 @@ header p {
     margin-bottom: .5em;
 }
 
-.jumps-panel p {
+.jump-links p {
     color: #001f99; /*dark magenta*/
     line-height: 1.2;
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
-.jumps-panel a {
+.jump-links a {
     color: #001f99; /*dark magenta*/
     text-decoration: none;
 }
@@ -232,6 +232,15 @@ h1 {
     line-height: 1.2;
     font-weight: 700;
     margin-bottom: .25em;
+}
+
+h1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    text-decoration: none;
 }
 
 h2 {
@@ -258,7 +267,7 @@ h2 {
         font-size: .875em; /*14px*/
     }
 
-    .jumps-panel p {
+    .jump-links p {
         font-size: .6875em; /*11px*/
     }
 
@@ -281,22 +290,13 @@ h2 {
         font-size: .875em; /*14px*/
     }
 
-    /*p {
-        font-size: same as above;
-    }*/
-
-    .jumps-panel p {
+    .jump-links p {
         font-size: .75em; /*12px*/
     }
 
     h1 {
         font-size: 1.2em; /*19.2px*/
     }
-
-    /*h2 {
-        font-size: same as above;
-    }*/
-
 }
 
 @media all and (min-width: 500px) {
@@ -312,7 +312,7 @@ h2 {
         font-size: .9375em; /*15px*/
     }
 
-    .jumps-panel p {
+    .jump-links p {
         font-size: .875em; /*14px*/
     }
 
@@ -339,15 +339,11 @@ h2 {
         font-size: 1em; /*16px*/
     }
 
-    .jumps-panel p {
+    .jump-links p {
         font-size: 1em; /*16px*/
     }
 
     h1 {
         font-size: 1.6em; /*25.6px*/
     }
-
-    /*h2 {
-        font-size: same as above;
-    }*/
 }
