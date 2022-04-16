@@ -36,6 +36,7 @@ nav a {
 
 nav a.router-link-exact-active {
     color: #f23005; /*orange*/
+    color: #d90416; /*dark red ACCESS*/
 }
 
 button {
@@ -177,6 +178,15 @@ figcaption {
     line-height: 1.8;
     font-weight: 400;
     color: #616161; /*grey 700*/
+}
+
+figcaption a {
+    color: #616161; /*grey 700*/
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
 }
 
 button {
