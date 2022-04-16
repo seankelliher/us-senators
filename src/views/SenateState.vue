@@ -549,7 +549,7 @@
         />
         <SenatorCard1 :details="getStates.wyoming" />
     </section>
-    <JumpsPanelS
+    <JumpLinks2
         link0T=""
         name0T="⇧"
         link01="#states-a"
@@ -596,7 +596,7 @@
 <script>
 import StatsPanel from "@/components/StatsPanel.vue";
 import SenatorCard1 from "@/components/SenatorCard1.vue";
-import JumpsPanelS from "@/components/JumpsPanelS.vue";
+import JumpLinks2 from "@/components/JumpLinks2.vue";
 export default {
     name: "SenateState",
     data() {
@@ -605,7 +605,7 @@ export default {
     components: {
         StatsPanel,
         SenatorCard1,
-        JumpsPanelS,
+        JumpLinks2,
     },
     methods: {},
     computed: {

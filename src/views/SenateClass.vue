@@ -30,7 +30,7 @@
         />
         <SenatorCard2 :details="getClasses.classThree" />
     </section>
-    <JumpsPanelO
+    <JumpLinks1
         linkT=""
         nameT="⇧"
         link1="#class1"
@@ -45,7 +45,7 @@
 <script>
 import InfoPanel from "@/components/InfoPanel.vue";
 import SenatorCard2 from "@/components/SenatorCard2.vue";
-import JumpsPanelO from "@/components/JumpsPanelO.vue";
+import JumpLinks1 from "@/components/JumpLinks1.vue";
 
 export default {
     name: "SenateClass",
@@ -55,7 +55,7 @@ export default {
     components: {
         InfoPanel,
         SenatorCard2,
-        JumpsPanelO,
+        JumpLinks1,
     },
     methods: {},
     computed: {
