@@ -11,6 +11,7 @@
                     :src="require(`../assets/images/${getDetail.portrait}.jpg`)"
                     :alt="getDetail.firstName + ' ' + getDetail.lastName"
                 />
+                <figcaption>Senator {{ getDetail.lastName }}</figcaption>
             </figure>
             <p>
                 <strong>State:</strong> <br />
