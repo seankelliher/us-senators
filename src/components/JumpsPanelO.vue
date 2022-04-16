@@ -1,5 +1,7 @@
+<!--JumpLinks1: used for Class, Party, Leaders.-->
+<!--Contains slots for three links.-->
 <template>
-    <div class="jumps-panel">
+    <div class="jump-links">
         <p>
             <!--Go to:&nbsp;-->
             <a v-bind:href="linkT">{{ nameT }}</a>
@@ -15,7 +17,7 @@
 
 <script>
 export default {
-    name: "JumpsPanelO",
+    name: "JumpLinks1",
     props: {
         linkT: String,
         link1: String,

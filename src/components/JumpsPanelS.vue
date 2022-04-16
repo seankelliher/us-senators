@@ -1,5 +1,7 @@
+<!--JumpLinks2: used for State.-->
+<!--Contains slots for 20 links.-->
 <template>
-    <div class="jumps-panel">
+    <div class="jump-links">
         <p>
             <!--Go to:&nbsp;-->
             <a v-bind:href="link0T">{{ name0T }}</a>
@@ -47,7 +49,7 @@
 
 <script>
 export default {
-    name: "JumpsPanel",
+    name: "JumpLinks2",
     props: {
         link0T: String,
         link01: String,
