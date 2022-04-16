@@ -1,3 +1,14 @@
+body {
+    margin-bottom: 0;
+}
+
+/*img becomes no larger than actual size.*/
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 #app {
     width: 100%;
     max-width: 600px;
@@ -9,6 +20,7 @@
     align-items: flex-start; /*cross axis*/
 }
 
+/*MAIN SEMANTIC ELEMENTS ARE BELOW*/
 header {
     width: 90%;
     margin: 0;
@@ -38,6 +50,25 @@ nav a.router-link-exact-active {
     color: #d90416; /*dark red*/
 }
 
+section {
+    width: 90%;
+    margin: 0;
+    padding: 1em 5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+figure {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*BUTTON ELEMENTS ARE BELOW*/
+/*button for nav: State, Class, Party, Leaders*/
 button {
     background: transparent;
     border: 2px solid #001f99; /*dark magenta*/
@@ -63,17 +94,7 @@ button {
     }
 }
 
-section {
-    width: 90%;
-    margin: 0;
-    padding: 1em 5%;
-    flex: initial; /*flex: 0 1 auto*/
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; /*main axis*/
-    align-items: flex-start; /*cross axis*/
-}
-
+/*VARIOUS "CLASS" ELEMENTS ARE BELOW*/
 .stats-panel {
     width: 100%;
     margin: 0;
@@ -96,7 +117,7 @@ section {
     animation: moveUp 3s ease 500ms 1 normal both;
 }
 
-/*animation for .jump-links*/
+/*animation: fades ".jump-links" at bottom of pages in*/
 @keyframes moveUp {
     0% {
         opacity: 0;
@@ -158,75 +179,7 @@ section {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-figure {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/*Image becomes no larger than actual size.*/
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/*FONTS and thier media queries below*/
-figcaption {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    font-weight: 400;
-    color: #616161; /*grey 700*/
-}
-
-figcaption a {
-    color: #616161; /*grey 700*/
-    text-decoration: none;
-}
-
-figcaption a:hover {
-    text-decoration: underline;
-}
-
-button {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    font-weight: 600;
-}
-
-p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.8;
-    font-weight: 400;
-}
-
-p a {
-    color: #1976d2; /*blue 700*/
-    text-decoration: none;
-}
-
-p a:hover {
-    color: #1976d2; /*blue 700*/
-    text-decoration: underline;
-}
-
-header p {
-    line-height: 1.2;
-    margin-bottom: .5em;
-}
-
-.jump-links p {
-    color: #001f99; /*dark magenta*/
-    line-height: 1.2;
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-
-.jump-links a {
-    color: #001f99; /*dark magenta*/
-    text-decoration: none;
-}
-
+/*FONTS STYLES ARE BELOW*/
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.2;
@@ -254,13 +207,80 @@ h2 {
     margin-bottom: .25em;
 }
 
+button {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+figcaption {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #616161; /*grey 700*/
+}
+
+figcaption a {
+    color: #616161; /*grey 700*/
+    text-decoration: none;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+p a {
+    color: #1976d2; /*blue 700*/
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+header p {
+    line-height: 1.2;
+    margin-bottom: .5em;
+}
+
+.jump-links p {
+    color: #001f99; /*dark magenta*/
+    line-height: 1.2;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.jump-links p a {
+    color: #001f99; /*dark magenta*/
+    text-decoration: none;
+}
+
+.jump-links p a:hover {
+    text-decoration: underline;
+}
+
+/*FONTS MEDIA QUERIES ARE BELOW*/
 @media all and (min-width: 300px) {
-    figcaption {
-        font-size: .75em; /*12px*/
+    h1 {
+        font-size: 1em; /*16px*/
+    }
+
+    h2 {
+        font-size: .9375em; /*15px*/
     }
 
     button {
         font-size: .8125em; /*13px*/
+    }
+
+    figcaption {
+        font-size: .75em; /*12px*/
     }
 
     p {
@@ -270,52 +290,27 @@ h2 {
     .jump-links p {
         font-size: .6875em; /*11px*/
     }
-
-    h1 {
-        font-size: 1em; /*16px*/
-    }
-
-    h2 {
-        font-size: .9375em; /*15px*/
-    }
-
 }
 
 @media all and (min-width: 400px) {
-    figcaption {
-        font-size: .8125em; /*13px*/
+    h1 {
+        font-size: 1.2em; /*19.2px*/
     }
 
     button {
         font-size: .875em; /*14px*/
+    }
+
+    figcaption {
+        font-size: .8125em; /*13px*/
     }
 
     .jump-links p {
         font-size: .75em; /*12px*/
     }
-
-    h1 {
-        font-size: 1.2em; /*19.2px*/
-    }
 }
 
 @media all and (min-width: 500px) {
-    figcaption {
-        font-size: .875em; /*14px*/
-    }
-
-    button {
-        font-size: .9375em; /*15px*/
-    }
-
-    p {
-        font-size: .9375em; /*15px*/
-    }
-
-    .jump-links p {
-        font-size: .875em; /*14px*/
-    }
-
     h1 {
         font-size: 1.4em; /*22.4px*/
     }
@@ -324,15 +319,34 @@ h2 {
         font-size: 1em; /*16px*/
     }
 
+    button {
+        font-size: .9375em; /*15px*/
+    }
+
+    figcaption {
+        font-size: .875em; /*14px*/
+    }
+
+    p {
+        font-size: .9375em; /*15px*/
+    }
+
+    .jump-links p {
+        font-size: .875em; /*14px*/
+    }
 }
 
 @media all and (min-width: 600px) {
-    figcaption {
-        font-size: .9375em; /*15px*/
+    h1 {
+        font-size: 1.6em; /*25.6px*/
     }
 
     button {
         font-size: 1em; /*16px*/
+    }
+
+    figcaption {
+        font-size: .9375em; /*15px*/
     }
 
     p {
@@ -341,9 +355,5 @@ h2 {
 
     .jump-links p {
         font-size: 1em; /*16px*/
-    }
-
-    h1 {
-        font-size: 1.6em; /*25.6px*/
     }
 }
