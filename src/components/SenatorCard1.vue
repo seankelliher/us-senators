@@ -1,3 +1,5 @@
+<!--SenatorCard1: used for State.-->
+<!--Contains photo, first name, last name, party.-->
 <template>
     <div
         class="senator-card"
