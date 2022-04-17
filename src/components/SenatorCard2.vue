@@ -1,4 +1,4 @@
-<!--SenatorCard1: used for Class, Party, Leaders.-->
+<!--SenatorCard2: used for Class, Party.-->
 <!--Contains photo, first name, last name, party, state.-->
 <template>
     <div
