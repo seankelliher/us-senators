@@ -33,7 +33,7 @@
 
 <script>
 export default {
-    name: "SenatorCard2",
+    name: "SenatorCard3",
     props: {
         details: Object,
     },
