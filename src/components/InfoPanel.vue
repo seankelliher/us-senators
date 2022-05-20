@@ -1,15 +1,21 @@
 <template>
     <div class="info-panel">
-        <p
-            role="button"
-            tabindex="0"
-            class="cursor-pointer"
-            v-on:click="seen === true ? (seen = false) : (seen = true)"
-        >
-            <information-icon fillColor="#d90416" /> {{ heading }}
-        </p>
-        <p v-show="seen">{{ msg1 }}</p>
-        <p v-show="seen">{{ msg2 }}</p>
+        <Transition name="fade-in-slide-left" appear>
+            <p
+                role="button"
+                tabindex="0"
+                class="cursor-pointer"
+                v-on:click="seen === true ? (seen = false) : (seen = true)"
+            >
+                <information-icon fillColor="#d90416" /> {{ heading }}
+            </p>
+        </Transition>
+        <Transition name="slide-down-fade-in-out">
+            <div v-show="seen">
+                <p>{{ msg1 }}</p>
+                <p>{{ msg2 }}</p>
+            </div>
+        </Transition>
     </div>
 </template>
 
@@ -33,6 +39,7 @@ export default {
     },
 };
 </script>
+
 <style scoped>
 .gallery-title h2 {
     margin-bottom: 0;
