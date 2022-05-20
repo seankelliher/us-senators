@@ -11,7 +11,7 @@
 export default {
     name: "StatsPanel",
     props: {
-        stat1: Number,
+        stat1: String,
         stat2: Number,
         stat3: Number,
     },
