@@ -121,18 +121,6 @@ button a.router-link-exact-active {
     animation: moveUp 3s ease 500ms 1 normal both;
 }
 
-/*animation: fades ".jump-links" at bottom of pages in*/
-@keyframes moveUp {
-    0% {
-        opacity: 0;
-        transform: translate(0, 2.2em);
-    }
-    100% {
-        opacity: 0.95;
-        transform: translate(0, 0);
-    }
-}  
-
 .info-panel {
     width: 100%;
     margin: 0;
@@ -182,6 +170,60 @@ button a.router-link-exact-active {
     padding: 1em 5%;
     flex: initial; /*flex: 0 1 auto*/
 }
+
+/*TRANSITIONS ARE BELOW*/
+/*Makes content fade in and slide left*/
+/*Used on StatsPanel and InfoPanel*/
+.fade-in-slide-left-enter-from {
+    opacity: 0;
+    transform: translateX(10px);
+}
+
+.fade-in-slide-left-enter-enter-to {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-in-slide-left-enter-active {
+    transition: all 1s ease-out;
+}
+
+/*Makes content slide down and fade in, later fade out*/
+/*Used on InfoPanel*/
+.slide-down-fade-in-out-enter-from {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.slide-down-fade-in-out-leave-to {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.slide-down-fade-in-out-enter-active,
+.slide-down-fade-in-out-leave-active {
+    transition: all 1s ease-out;
+}
+
+/*/*Makes content slide up and fade in*/
+/*Used on JumpLinks1 and JumpLinks2*/
+.jump-links-move-up-enter-from {
+    opacity: 0;
+    transform: translateY(2.2em);
+}
+
+.jump-links-move-up-v-enter-to {
+    opacity: 0.95;
+    transform: translateY(0);
+}
+
+.jump-links-move-up-enter-active {
+    transition: all 1s ease-out 1500ms;
+}
+
+/*Shorthand Notes: [animation-name] [animation-duration] [animation-timing-function]
+[animation-delay] [animation-iteration-count] [animation-direction]
+animation-fill-mode*/
 
 /*FONTS STYLES ARE BELOW*/
 h1 {
