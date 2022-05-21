@@ -5,13 +5,13 @@
         <div class="jump-links">
             <p>
                 <!--Go to:&nbsp;-->
-                <a v-bind:href="linkT">{{ nameT }}</a>
+                <a v-bind:id="linkT" @click="scrollToTop()">{{ nameT }}</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a v-bind:href="link1">{{ name1 }}</a>
+                <a v-bind:id="link1" @click="scrollToAnchor()">{{ name1 }}</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a v-bind:href="link2">{{ name2 }}</a>
+                <a v-bind:id="link2" @click="scrollToAnchor()">{{ name2 }}</a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <a v-bind:href="link3">{{ name3 }}</a>
+                <a v-bind:id="link3" @click="scrollToAnchor()">{{ name3 }}</a>
             </p>
         </div>
     </Transition>
@@ -34,5 +34,20 @@ export default {
         return {};
     },
     components: {},
+    methods: {
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
+        },
+        scrollToAnchor() {
+            const anchor = document.getElementById(event.target.id);
+            anchor.scrollIntoView({
+                behavior: "smooth",
+            });
+        },
+    },
 };
 </script>
