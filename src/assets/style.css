@@ -1,4 +1,5 @@
 body {
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -25,15 +26,18 @@ header {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
+    background: #020659; /*very dark blue*/
     flex: initial; /*flex: 0 1 auto*/
 }
 
 nav {
     width: 90%;
-    margin: 0 5%;
-    padding: 1em 0;
-    border-top: 2px solid #f2f2f2; /*grey*/
-    border-bottom: 2px solid #f2f2f2; /*grey*/
+    margin: 0;
+    padding: 1em 5%;
+    background: #fafafa; /*grey 50*/
+    border-right: 2px solid #eee; /*grey 200*/
+    border-left: 2px solid #eee; /*grey 200*/
+    border-bottom: 2px solid #eee; /*grey 200*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -45,6 +49,8 @@ section {
     width: 90%;
     margin: 0;
     padding: 1em 5%;
+    border-right: 2px solid #eee; /*grey 200*/
+    border-left: 2px solid #eee; /*grey 200*/
     flex: initial; /*flex: 0 1 auto*/
     display: flex;
     flex-flow: row wrap;
@@ -62,13 +68,13 @@ figure {
 /*button for nav: State, Class, Party, Leaders*/
 button {
     background: transparent;
-    border: 2px solid #001f99; /*dark magenta*/
+    border: 2px solid #020659; /*very dark blue*/
     border-radius: 8px;
     flex: initial; /*flex: 0 1 auto*/
 }
 
 button a {
-    color: #001f99; /*dark magenta*/
+    color: #020659; /*very dark blue*/
     text-decoration: none;
 }
 
@@ -111,14 +117,13 @@ button a.router-link-exact-active {
     margin: 0;
     padding: 0%;
     background: #fff;
-    border-top: 2px solid #001f99; /*dark magenta*/
-    border-right: 2px solid #001f99; /*dark magenta*/
-    border-left: 2px solid #001f99; /*dark magenta*/
+    border-top: 2px solid #020659; /*very dark blue*/
+    border-right: 2px solid #020659; /*very dark blue*/
+    border-left: 2px solid #020659; /*very dark blue*/
     position: sticky;
     bottom: 0;
     flex: initial; /*flex: 0 1 auto*/
     text-align: center;
-    animation: moveUp 3s ease 500ms 1 normal both;
 }
 
 .info-panel {
@@ -172,7 +177,7 @@ button a.router-link-exact-active {
 }
 
 /*TRANSITIONS ARE BELOW*/
-/*Makes content fade in and slide left*/
+/*Content fades in and slides left*/
 /*Used on StatsPanel and InfoPanel*/
 .fade-in-slide-left-enter-from {
     opacity: 0;
@@ -188,7 +193,7 @@ button a.router-link-exact-active {
     transition: all 1s ease-out;
 }
 
-/*Makes content slide down and fade in, later fade out*/
+/*Content slides down and fades in, later fades out*/
 /*Used on InfoPanel*/
 .slide-down-fade-in-out-enter-from {
     opacity: 0;
@@ -205,7 +210,7 @@ button a.router-link-exact-active {
     transition: all 1s ease-out;
 }
 
-/*/*Makes content slide up and fade in*/
+/*/*Content slides up and fades in*/
 /*Used on JumpLinks1 and JumpLinks2*/
 .jump-links-move-up-enter-from {
     opacity: 0;
@@ -234,7 +239,7 @@ h1 {
 }
 
 h1 a {
-    color: #000;
+    color: #fff; /*white*/
     text-decoration: none;
 }
 
@@ -293,17 +298,17 @@ p a:hover {
 header p {
     line-height: 1.2;
     margin-bottom: .5em;
+    color: #fff;
 }
 
 .jump-links p {
-    color: #001f99; /*dark magenta*/
     line-height: 1.2;
     margin-top: .5em;
     margin-bottom: .5em;
 }
 
 .jump-links p a {
-    color: #001f99; /*dark magenta*/
+    color: #020659; /*very dark blue*/
     text-decoration: none;
 }
 
