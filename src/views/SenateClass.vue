@@ -31,13 +31,13 @@
         <SenatorCard2 :details="getClasses.classThree" />
     </section>
     <JumpLinks1
-        linkT=""
+        linkT="top"
         nameT="⇧"
-        link1="#class1"
+        link1="class1"
         name1="Class I"
-        link2="#class2"
+        link2="class2"
         name2="Class II"
-        link3="#class3"
+        link3="class3"
         name3="Class III"
     />
 </template>

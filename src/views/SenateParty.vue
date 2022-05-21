@@ -30,13 +30,13 @@
         <SenatorCard2 :details="getParties.republicans" />
     </section>
     <JumpLinks1
-        linkT=""
+        linkT="top"
         nameT="⇧"
-        link1="#democrats"
+        link1="democrats"
         name1="Democrats"
-        link2="#independents"
+        link2="independents"
         name2="Independents"
-        link3="#republicans"
+        link3="republicans"
         name3="Republicans"
     />
 </template>

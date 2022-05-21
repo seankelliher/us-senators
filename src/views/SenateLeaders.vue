@@ -33,13 +33,13 @@
         <SenatorCard3 :details="getLeadership.pros" />
     </section>
     <JumpLinks1
-        linkT=""
+        linkT="top"
         nameT="⇧"
-        link1="#leaders"
+        link1="leaders"
         name1="Leaders"
-        link2="#whips"
+        link2="whips"
         name2="Whips"
-        link3="#pros"
+        link3="pros"
         name3="Pro Tempore"
     />
 </template>
