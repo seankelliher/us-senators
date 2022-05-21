@@ -5,45 +5,45 @@
         <div class="jump-links">
             <p>
                 <!--Go to:&nbsp;-->
-                <a v-bind:href="link0T">{{ name0T }}</a>
+                <a v-bind:id="link0T" @click="scrollToTop()">{{ name0T }}</a>
                 &nbsp;
-                <a v-bind:href="link01">{{ name01 }}</a>
+                <a v-bind:id="link01" @click="scrollToAnchor()">{{ name01 }}</a>
                 &nbsp;
-                <a v-bind:href="link02">{{ name02 }}</a>
+                <a v-bind:id="link02" @click="scrollToAnchor()">{{ name02 }}</a>
                 &nbsp;
-                <a v-bind:href="link03">{{ name03 }}</a>
+                <a v-bind:id="link03" @click="scrollToAnchor()">{{ name03 }}</a>
                 &nbsp;
-                <a v-bind:href="link04">{{ name04 }}</a>
+                <a v-bind:id="link04" @click="scrollToAnchor()">{{ name04 }}</a>
                 &nbsp;
-                <a v-bind:href="link05">{{ name05 }}</a>
+                <a v-bind:id="link05" @click="scrollToAnchor()">{{ name05 }}</a>
                 &nbsp;
-                <a v-bind:href="link06">{{ name06 }}</a>
+                <a v-bind:id="link06" @click="scrollToAnchor()">{{ name06 }}</a>
                 &nbsp;
-                <a v-bind:href="link07">{{ name07 }}</a>
+                <a v-bind:id="link07" @click="scrollToAnchor()">{{ name07 }}</a>
                 &nbsp;
-                <a v-bind:href="link08">{{ name08 }}</a>
+                <a v-bind:id="link08" @click="scrollToAnchor()">{{ name08 }}</a>
                 &nbsp;
-                <a v-bind:href="link09">{{ name09 }}</a>
+                <a v-bind:id="link09" @click="scrollToAnchor()">{{ name09 }}</a>
                 &nbsp;
-                <a v-bind:href="link10">{{ name10 }}</a>
+                <a v-bind:id="link10" @click="scrollToAnchor()">{{ name10 }}</a>
                 &nbsp;
-                <a v-bind:href="link11">{{ name11 }}</a>
+                <a v-bind:id="link11" @click="scrollToAnchor()">{{ name11 }}</a>
                 &nbsp;
-                <a v-bind:href="link12">{{ name12 }}</a>
+                <a v-bind:id="link12" @click="scrollToAnchor()">{{ name12 }}</a>
                 &nbsp;
-                <a v-bind:href="link13">{{ name13 }}</a>
+                <a v-bind:id="link13" @click="scrollToAnchor()">{{ name13 }}</a>
                 &nbsp;
-                <a v-bind:href="link14">{{ name14 }}</a>
+                <a v-bind:id="link14" @click="scrollToAnchor()">{{ name14 }}</a>
                 &nbsp;
-                <a v-bind:href="link15">{{ name15 }}</a>
+                <a v-bind:id="link15" @click="scrollToAnchor()">{{ name15 }}</a>
                 &nbsp;
-                <a v-bind:href="link16">{{ name16 }}</a>
+                <a v-bind:id="link16" @click="scrollToAnchor()">{{ name16 }}</a>
                 &nbsp;
-                <a v-bind:href="link17">{{ name17 }}</a>
+                <a v-bind:id="link17" @click="scrollToAnchor()">{{ name17 }}</a>
                 &nbsp;
-                <a v-bind:href="link18">{{ name18 }}</a>
+                <a v-bind:id="link18" @click="scrollToAnchor()">{{ name18 }}</a>
                 &nbsp;
-                <a v-bind:href="link19">{{ name19 }}</a>
+                <a v-bind:id="link19" @click="scrollToAnchor()">{{ name19 }}</a>
             </p>
         </div>
     </Transition>
@@ -98,5 +98,20 @@ export default {
         return {};
     },
     components: {},
+    methods: {
+        scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
+        },
+        scrollToAnchor() {
+            const anchor = document.getElementById(event.target.id);
+            anchor.scrollIntoView({
+                behavior: "smooth",
+            });
+        },
+    },
 };
 </script>
