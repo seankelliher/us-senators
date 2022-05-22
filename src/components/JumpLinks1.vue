@@ -4,14 +4,18 @@
     <Transition name="jump-links-move-up" appear>
         <div class="jump-links">
             <p>
-                <!--Go to:&nbsp;-->
-                <a v-bind:id="linkT" @click="scrollToTop()">{{ nameT }}</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a v-bind:id="link1" @click="scrollToAnchor()">{{ name1 }}</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a v-bind:id="link2" @click="scrollToAnchor()">{{ name2 }}</a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <a v-bind:id="link3" @click="scrollToAnchor()">{{ name3 }}</a>
+                <span v-bind:id="linkT" @click="scrollToTop()">
+                    {{ nameT }}
+                </span>
+                <span v-bind:id="link1" @click="scrollToAnchor()">
+                    {{ name1 }}
+                </span>
+                <span v-bind:id="link2" @click="scrollToAnchor()">
+                    {{ name2 }}
+                </span>
+                <span v-bind:id="link3" @click="scrollToAnchor()">
+                    {{ name3 }}
+                </span>
             </p>
         </div>
     </Transition>

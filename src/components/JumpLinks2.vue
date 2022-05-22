@@ -4,46 +4,66 @@
     <Transition name="jump-links-move-up" appear>
         <div class="jump-links">
             <p>
-                <!--Go to:&nbsp;-->
-                <a v-bind:id="link0T" @click="scrollToTop()">{{ name0T }}</a>
-                &nbsp;
-                <a v-bind:id="link01" @click="scrollToAnchor()">{{ name01 }}</a>
-                &nbsp;
-                <a v-bind:id="link02" @click="scrollToAnchor()">{{ name02 }}</a>
-                &nbsp;
-                <a v-bind:id="link03" @click="scrollToAnchor()">{{ name03 }}</a>
-                &nbsp;
-                <a v-bind:id="link04" @click="scrollToAnchor()">{{ name04 }}</a>
-                &nbsp;
-                <a v-bind:id="link05" @click="scrollToAnchor()">{{ name05 }}</a>
-                &nbsp;
-                <a v-bind:id="link06" @click="scrollToAnchor()">{{ name06 }}</a>
-                &nbsp;
-                <a v-bind:id="link07" @click="scrollToAnchor()">{{ name07 }}</a>
-                &nbsp;
-                <a v-bind:id="link08" @click="scrollToAnchor()">{{ name08 }}</a>
-                &nbsp;
-                <a v-bind:id="link09" @click="scrollToAnchor()">{{ name09 }}</a>
-                &nbsp;
-                <a v-bind:id="link10" @click="scrollToAnchor()">{{ name10 }}</a>
-                &nbsp;
-                <a v-bind:id="link11" @click="scrollToAnchor()">{{ name11 }}</a>
-                &nbsp;
-                <a v-bind:id="link12" @click="scrollToAnchor()">{{ name12 }}</a>
-                &nbsp;
-                <a v-bind:id="link13" @click="scrollToAnchor()">{{ name13 }}</a>
-                &nbsp;
-                <a v-bind:id="link14" @click="scrollToAnchor()">{{ name14 }}</a>
-                &nbsp;
-                <a v-bind:id="link15" @click="scrollToAnchor()">{{ name15 }}</a>
-                &nbsp;
-                <a v-bind:id="link16" @click="scrollToAnchor()">{{ name16 }}</a>
-                &nbsp;
-                <a v-bind:id="link17" @click="scrollToAnchor()">{{ name17 }}</a>
-                &nbsp;
-                <a v-bind:id="link18" @click="scrollToAnchor()">{{ name18 }}</a>
-                &nbsp;
-                <a v-bind:id="link19" @click="scrollToAnchor()">{{ name19 }}</a>
+                <span v-bind:id="link0T" @click="scrollToTop()">
+                    {{ name0T }}
+                </span>
+                <span v-bind:id="link01" @click="scrollToAnchor()">
+                    {{ name01 }}
+                </span>
+                <span v-bind:id="link02" @click="scrollToAnchor()">
+                    {{ name02 }}
+                </span>
+                <span v-bind:id="link03" @click="scrollToAnchor()">
+                    {{ name03 }}
+                </span>
+                <span v-bind:id="link04" @click="scrollToAnchor()">
+                    {{ name04 }}
+                </span>
+                <span v-bind:id="link05" @click="scrollToAnchor()">
+                    {{ name05 }}
+                </span>
+                <span v-bind:id="link06" @click="scrollToAnchor()">
+                    {{ name06 }}
+                </span>
+                <span v-bind:id="link07" @click="scrollToAnchor()">
+                    {{ name07 }}
+                </span>
+                <span v-bind:id="link08" @click="scrollToAnchor()">
+                    {{ name08 }}
+                </span>
+                <span v-bind:id="link09" @click="scrollToAnchor()">
+                    {{ name09 }}
+                </span>
+                <span v-bind:id="link10" @click="scrollToAnchor()">
+                    {{ name10 }}
+                </span>
+                <span v-bind:id="link11" @click="scrollToAnchor()">
+                    {{ name11 }}
+                </span>
+                <span v-bind:id="link12" @click="scrollToAnchor()">
+                    {{ name12 }}
+                </span>
+                <span v-bind:id="link13" @click="scrollToAnchor()">
+                    {{ name13 }}
+                </span>
+                <span v-bind:id="link14" @click="scrollToAnchor()">
+                    {{ name14 }}
+                </span>
+                <span v-bind:id="link15" @click="scrollToAnchor()">
+                    {{ name15 }}
+                </span>
+                <span v-bind:id="link16" @click="scrollToAnchor()">
+                    {{ name16 }}
+                </span>
+                <span v-bind:id="link17" @click="scrollToAnchor()">
+                    {{ name17 }}
+                </span>
+                <span v-bind:id="link18" @click="scrollToAnchor()">
+                    {{ name18 }}
+                </span>
+                <span v-bind:id="link19" @click="scrollToAnchor()">
+                    {{ name19 }}
+                </span>
             </p>
         </div>
     </Transition>
