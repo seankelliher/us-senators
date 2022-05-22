@@ -305,14 +305,20 @@ header p {
     line-height: 1.2;
     margin-top: .5em;
     margin-bottom: .5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; /*main axis*/
+    align-items: center; /*cross axis*/
 }
 
-.jump-links p a {
+.jump-links p span {
     color: #020659; /*very dark blue*/
     text-decoration: none;
+    flex: initial; /*flex: 0 1 auto*/
 }
 
-.jump-links p a:hover {
+.jump-links p span:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
