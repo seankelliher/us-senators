@@ -1,13 +1,16 @@
 <template>
     <div class="info-panel">
-        <Transition name="fade-in-slide-left" appear>
+        <Transition
+            name="fade-in-slide-left"
+            appear
+        >
             <p
                 role="button"
                 tabindex="0"
                 class="cursor-pointer"
-                v-on:click="seen === true ? (seen = false) : (seen = true)"
+                @click="seen === true ? (seen = false) : (seen = true)"
             >
-                <information-icon fillColor="#d90416" /> {{ heading }}
+                <information-icon fill-color="#d90416" /> {{ heading }}
             </p>
         </Transition>
         <Transition name="slide-down-fade-in-out">
@@ -24,18 +27,27 @@ import InformationIcon from "vue-material-design-icons/Information.vue";
 
 export default {
     name: "InfoPanel",
+    components: {
+        InformationIcon,
+    },
     props: {
-        heading: String,
-        msg1: String,
-        msg2: String,
+        heading: {
+            type: String,
+            default: "",
+        },
+        msg1: {
+            type: String,
+            default: "",
+        },
+        msg2: {
+            type: String,
+            default: "",
+        },
     },
     data() {
         return {
             seen: false,
         };
-    },
-    components: {
-        InformationIcon,
     },
 };
 </script>

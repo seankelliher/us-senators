@@ -2,28 +2,28 @@
 <!--Contains photo, first name, last name, party, state, leadership role.-->
 <template>
     <div
-        class="senator-card"
         v-for="detail in details"
         :key="detail.bioguideId"
+        class="senator-card"
     >
         <figure>
             <img
                 :src="require(`../assets/images/${detail.portrait}.jpg`)"
                 :alt="detail.firstName + ' ' + detail.lastName"
-            />
+            >
             <figcaption>
                 <a :href="`detail/${detail.portrait}`">
                     {{
                         detail.firstName +
-                        " " +
-                        detail.lastName +
-                        " (" +
-                        detail.party +
-                        ")"
+                            " " +
+                            detail.lastName +
+                            " (" +
+                            detail.party +
+                            ")"
                     }}
-                    <br />
+                    <br>
                     {{ detail.state }}
-                    <br />
+                    <br>
                     {{ detail.leadershipPosition }}
                 </a>
             </figcaption>
@@ -35,7 +35,12 @@
 export default {
     name: "SenatorCard3",
     props: {
-        details: Object,
+        details: {
+            type: Object,
+            default: function() {
+                return {};
+            },
+        },
     },
 };
 </script>

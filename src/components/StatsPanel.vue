@@ -1,5 +1,8 @@
 <template>
-    <Transition name="fade-in-slide-left" appear>
+    <Transition
+        name="fade-in-slide-left"
+        appear
+    >
         <div class="stats-panel">
             <p>
                 Population: {{ stat1 }}. Rank: {{ stat2 }}. House members:
@@ -12,14 +15,23 @@
 <script>
 export default {
     name: "StatsPanel",
+    components: {},
     props: {
-        stat1: String,
-        stat2: Number,
-        stat3: Number,
+        stat1: {
+            type: String,
+            default: "",
+        },
+        stat2: {
+            type: Number,
+            default: null,
+        },
+        stat3: {
+            type: Number,
+            default: null,
+        },
     },
     data() {
         return {};
     },
-    components: {},
 };
 </script>

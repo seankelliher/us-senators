@@ -1,19 +1,34 @@
 <!--JumpLinks1: used for Class, Party, Leaders.-->
 <!--Contains slots for three links.-->
 <template>
-    <Transition name="jump-links-move-up" appear>
+    <Transition
+        name="jump-links-move-up"
+        appear
+    >
         <div class="jump-links">
             <p>
-                <span v-bind:id="linkT" @click="scrollToTop()">
-                    {{ nameT }}
+                <span
+                    :id="linkTop"
+                    @click="scrollToTop()"
+                >
+                    {{ nameTop }}
                 </span>
-                <span v-bind:id="link1" @click="scrollToAnchor()">
+                <span
+                    :id="link1"
+                    @click="scrollToAnchor()"
+                >
                     {{ name1 }}
                 </span>
-                <span v-bind:id="link2" @click="scrollToAnchor()">
+                <span
+                    :id="link2"
+                    @click="scrollToAnchor()"
+                >
                     {{ name2 }}
                 </span>
-                <span v-bind:id="link3" @click="scrollToAnchor()">
+                <span
+                    :id="link3"
+                    @click="scrollToAnchor()"
+                >
                     {{ name3 }}
                 </span>
             </p>
@@ -24,20 +39,44 @@
 <script>
 export default {
     name: "JumpLinks1",
+    components: {},
     props: {
-        linkT: String,
-        link1: String,
-        link2: String,
-        link3: String,
-        nameT: String,
-        name1: String,
-        name2: String,
-        name3: String,
+        linkTop: {
+            type: String,
+            default: "",
+        },
+        link1: {
+            type: String,
+            default: "",
+        },
+        link2: {
+            type: String,
+            default: "",
+        },
+        link3: {
+            type: String,
+            default: "",
+        },
+        nameTop: {
+            type: String,
+            default: "",
+        },
+        name1: {
+            type: String,
+            default: "",
+        },
+        name2: {
+            type: String,
+            default: "",
+        },
+        name3: {
+            type: String,
+            default: "",
+        },
     },
     data() {
         return {};
     },
-    components: {},
     methods: {
         scrollToTop() {
             window.scrollTo({

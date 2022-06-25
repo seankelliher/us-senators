@@ -2,24 +2,24 @@
 <!--Contains photo, first name, last name, party.-->
 <template>
     <div
-        class="senator-card"
         v-for="detail in details"
         :key="detail.bioguideId"
+        class="senator-card"
     >
         <figure>
             <img
                 :src="require(`../assets/images/${detail.portrait}.jpg`)"
                 :alt="detail.firstName + ' ' + detail.lastName"
-            />
+            >
             <figcaption>
                 <a :href="`detail/${detail.portrait}`">
                     {{
                         detail.firstName +
-                        " " +
-                        detail.lastName +
-                        " (" +
-                        detail.party +
-                        ")"
+                            " " +
+                            detail.lastName +
+                            " (" +
+                            detail.party +
+                            ")"
                     }}
                 </a>
             </figcaption>
@@ -31,7 +31,12 @@
 export default {
     name: "SenatorCard1",
     props: {
-        details: Object,
+        details: {
+            type: Object,
+            default: function() {
+                return {};
+            },
+        },
     },
 };
 </script>
