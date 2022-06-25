@@ -1,6 +1,9 @@
 <template>
     <section>
-        <div class="gallery-title" id="democrats">
+        <div
+            id="democrats"
+            class="gallery-title"
+        >
             <h2>Democrats</h2>
         </div>
         <InfoPanel
@@ -10,7 +13,10 @@
         <SenatorCard2 :details="getParties.democrats" />
     </section>
     <section>
-        <div class="gallery-title" id="independents">
+        <div
+            id="independents"
+            class="gallery-title"
+        >
             <h2>Independents</h2>
         </div>
         <InfoPanel
@@ -20,7 +26,10 @@
         <SenatorCard2 :details="getParties.independents" />
     </section>
     <section>
-        <div class="gallery-title" id="republicans">
+        <div
+            id="republicans"
+            class="gallery-title"
+        >
             <h2>Republicans</h2>
         </div>
         <InfoPanel
@@ -30,8 +39,8 @@
         <SenatorCard2 :details="getParties.republicans" />
     </section>
     <JumpLinks1
-        linkT="top"
-        nameT="⇧"
+        link-top="top"
+        name-top="⇧"
         link1="democrats"
         name1="Democrats"
         link2="independents"
@@ -47,15 +56,14 @@ import SenatorCard2 from "@/components/SenatorCard2.vue";
 import JumpLinks1 from "@/components/JumpLinks1.vue";
 export default {
     name: "SenateParty",
-    data() {
-        return {};
-    },
     components: {
         InfoPanel,
         SenatorCard2,
         JumpLinks1,
     },
-    methods: {},
+    data() {
+        return {};
+    },
     computed: {
         getParties() {
             return {
@@ -65,5 +73,6 @@ export default {
             };
         },
     },
+    methods: {},
 };
 </script>

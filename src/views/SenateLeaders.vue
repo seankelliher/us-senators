@@ -1,6 +1,9 @@
 <template>
     <section>
-        <div class="gallery-title" id="leaders">
+        <div
+            id="leaders"
+            class="gallery-title"
+        >
             <h2>Leaders</h2>
         </div>
         <InfoPanel
@@ -11,7 +14,10 @@
         <SenatorCard3 :details="getLeadership.leaders" />
     </section>
     <section>
-        <div class="gallery-title" id="whips">
+        <div
+            id="whips"
+            class="gallery-title"
+        >
             <h2>Whips</h2>
         </div>
         <InfoPanel
@@ -22,7 +28,10 @@
         <SenatorCard3 :details="getLeadership.whips" />
     </section>
     <section>
-        <div class="gallery-title" id="pros">
+        <div
+            id="pros"
+            class="gallery-title"
+        >
             <h2>Pro Tempore</h2>
         </div>
         <InfoPanel
@@ -33,8 +42,8 @@
         <SenatorCard3 :details="getLeadership.pros" />
     </section>
     <JumpLinks1
-        linkT="top"
-        nameT="⇧"
+        link-top="top"
+        name-top="⇧"
         link1="leaders"
         name1="Leaders"
         link2="whips"
@@ -50,15 +59,14 @@ import SenatorCard3 from "@/components/SenatorCard3.vue";
 import JumpLinks1 from "@/components/JumpLinks1.vue";
 export default {
     name: "SenateLeaders",
-    data() {
-        return {};
-    },
     components: {
         InfoPanel,
         SenatorCard3,
         JumpLinks1,
     },
-    methods: {},
+    data() {
+        return {};
+    },
     computed: {
         getLeadership() {
             return {
@@ -68,5 +76,6 @@ export default {
             };
         },
     },
+    methods: {},
 };
 </script>

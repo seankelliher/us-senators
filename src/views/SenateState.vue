@@ -1,12 +1,15 @@
 <template>
     <section>
-        <div class="gallery-title" id="states-a">
+        <div
+            id="states-a"
+            class="gallery-title"
+        >
             <h2>Alabama</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.alabama.pop"
-            v-bind:stat2="getStats.alabama.rank"
-            v-bind:stat3="getStats.alabama.seats"
+            :stat1="getStats.alabama.pop"
+            :stat2="getStats.alabama.rank"
+            :stat3="getStats.alabama.seats"
         />
         <SenatorCard1 :details="getStates.alabama" />
     </section>
@@ -15,9 +18,9 @@
             <h2>Alaska</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.alaska.pop"
-            v-bind:stat2="getStats.alaska.rank"
-            v-bind:stat3="getStats.alaska.seats"
+            :stat1="getStats.alaska.pop"
+            :stat2="getStats.alaska.rank"
+            :stat3="getStats.alaska.seats"
         />
         <SenatorCard1 :details="getStates.alaska" />
     </section>
@@ -26,9 +29,9 @@
             <h2>Arizona</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.arizona.pop"
-            v-bind:stat2="getStats.arizona.rank"
-            v-bind:stat3="getStats.arizona.seats"
+            :stat1="getStats.arizona.pop"
+            :stat2="getStats.arizona.rank"
+            :stat3="getStats.arizona.seats"
         />
         <SenatorCard1 :details="getStates.arizona" />
     </section>
@@ -37,20 +40,23 @@
             <h2>Arkansas</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.arkansas.pop"
-            v-bind:stat2="getStats.arkansas.rank"
-            v-bind:stat3="getStats.arkansas.seats"
+            :stat1="getStats.arkansas.pop"
+            :stat2="getStats.arkansas.rank"
+            :stat3="getStats.arkansas.seats"
         />
         <SenatorCard1 :details="getStates.arkansas" />
     </section>
     <section>
-        <div class="gallery-title" id="states-c">
+        <div
+            id="states-c"
+            class="gallery-title"
+        >
             <h2>California</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.california.pop"
-            v-bind:stat2="getStats.california.rank"
-            v-bind:stat3="getStats.california.seats"
+            :stat1="getStats.california.pop"
+            :stat2="getStats.california.rank"
+            :stat3="getStats.california.seats"
         />
         <SenatorCard1 :details="getStates.california" />
     </section>
@@ -59,9 +65,9 @@
             <h2>Colorado</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.colorado.pop"
-            v-bind:stat2="getStats.colorado.rank"
-            v-bind:stat3="getStats.colorado.seats"
+            :stat1="getStats.colorado.pop"
+            :stat2="getStats.colorado.rank"
+            :stat3="getStats.colorado.seats"
         />
         <SenatorCard1 :details="getStates.colorado" />
     </section>
@@ -70,64 +76,79 @@
             <h2>Connecticut</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.connecticut.pop"
-            v-bind:stat2="getStats.connecticut.rank"
-            v-bind:stat3="getStats.connecticut.seats"
+            :stat1="getStats.connecticut.pop"
+            :stat2="getStats.connecticut.rank"
+            :stat3="getStats.connecticut.seats"
         />
         <SenatorCard1 :details="getStates.connecticut" />
     </section>
     <section>
-        <div class="gallery-title" id="states-d">
+        <div
+            id="states-d"
+            class="gallery-title"
+        >
             <h2>Delaware</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.delaware.pop"
-            v-bind:stat2="getStats.delaware.rank"
-            v-bind:stat3="getStats.delaware.seats"
+            :stat1="getStats.delaware.pop"
+            :stat2="getStats.delaware.rank"
+            :stat3="getStats.delaware.seats"
         />
         <SenatorCard1 :details="getStates.delaware" />
     </section>
     <section>
-        <div class="gallery-title" id="states-f">
+        <div
+            id="states-f"
+            class="gallery-title"
+        >
             <h2>Florida</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.florida.pop"
-            v-bind:stat2="getStats.florida.rank"
-            v-bind:stat3="getStats.florida.seats"
+            :stat1="getStats.florida.pop"
+            :stat2="getStats.florida.rank"
+            :stat3="getStats.florida.seats"
         />
         <SenatorCard1 :details="getStates.florida" />
     </section>
     <section>
-        <div class="gallery-title" id="states-g">
+        <div
+            id="states-g"
+            class="gallery-title"
+        >
             <h2>Georgia</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.georgia.pop"
-            v-bind:stat2="getStats.georgia.rank"
-            v-bind:stat3="getStats.georgia.seats"
+            :stat1="getStats.georgia.pop"
+            :stat2="getStats.georgia.rank"
+            :stat3="getStats.georgia.seats"
         />
         <SenatorCard1 :details="getStates.georgia" />
     </section>
     <section>
-        <div class="gallery-title" id="states-h">
+        <div
+            id="states-h"
+            class="gallery-title"
+        >
             <h2>Hawaii</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.hawaii.pop"
-            v-bind:stat2="getStats.hawaii.rank"
-            v-bind:stat3="getStats.hawaii.seats"
+            :stat1="getStats.hawaii.pop"
+            :stat2="getStats.hawaii.rank"
+            :stat3="getStats.hawaii.seats"
         />
         <SenatorCard1 :details="getStates.hawaii" />
     </section>
     <section>
-        <div class="gallery-title" id="states-i">
+        <div
+            id="states-i"
+            class="gallery-title"
+        >
             <h2>Idaho</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.idaho.pop"
-            v-bind:stat2="getStats.idaho.rank"
-            v-bind:stat3="getStats.idaho.seats"
+            :stat1="getStats.idaho.pop"
+            :stat2="getStats.idaho.rank"
+            :stat3="getStats.idaho.seats"
         />
         <SenatorCard1 :details="getStates.idaho" />
     </section>
@@ -136,9 +157,9 @@
             <h2>Illinois</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.illinois.pop"
-            v-bind:stat2="getStats.illinois.rank"
-            v-bind:stat3="getStats.illinois.seats"
+            :stat1="getStats.illinois.pop"
+            :stat2="getStats.illinois.rank"
+            :stat3="getStats.illinois.seats"
         />
         <SenatorCard1 :details="getStates.illinois" />
     </section>
@@ -147,9 +168,9 @@
             <h2>Indiana</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.indiana.pop"
-            v-bind:stat2="getStats.indiana.rank"
-            v-bind:stat3="getStats.indiana.seats"
+            :stat1="getStats.indiana.pop"
+            :stat2="getStats.indiana.rank"
+            :stat3="getStats.indiana.seats"
         />
         <SenatorCard1 :details="getStates.indiana" />
     </section>
@@ -158,20 +179,23 @@
             <h2>Iowa</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.iowa.pop"
-            v-bind:stat2="getStats.iowa.rank"
-            v-bind:stat3="getStats.iowa.seats"
+            :stat1="getStats.iowa.pop"
+            :stat2="getStats.iowa.rank"
+            :stat3="getStats.iowa.seats"
         />
         <SenatorCard1 :details="getStates.iowa" />
     </section>
     <section>
-        <div class="gallery-title" id="states-k">
+        <div
+            id="states-k"
+            class="gallery-title"
+        >
             <h2>Kansas</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.kansas.pop"
-            v-bind:stat2="getStats.kansas.rank"
-            v-bind:stat3="getStats.kansas.seats"
+            :stat1="getStats.kansas.pop"
+            :stat2="getStats.kansas.rank"
+            :stat3="getStats.kansas.seats"
         />
         <SenatorCard1 :details="getStates.kansas" />
     </section>
@@ -180,31 +204,37 @@
             <h2>Kentucky</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.kentucky.pop"
-            v-bind:stat2="getStats.kentucky.rank"
-            v-bind:stat3="getStats.kentucky.seats"
+            :stat1="getStats.kentucky.pop"
+            :stat2="getStats.kentucky.rank"
+            :stat3="getStats.kentucky.seats"
         />
         <SenatorCard1 :details="getStates.kentucky" />
     </section>
     <section>
-        <div class="gallery-title" id="states-l">
+        <div
+            id="states-l"
+            class="gallery-title"
+        >
             <h2>Louisiana</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.louisiana.pop"
-            v-bind:stat2="getStats.louisiana.rank"
-            v-bind:stat3="getStats.louisiana.seats"
+            :stat1="getStats.louisiana.pop"
+            :stat2="getStats.louisiana.rank"
+            :stat3="getStats.louisiana.seats"
         />
         <SenatorCard1 :details="getStates.louisiana" />
     </section>
     <section>
-        <div class="gallery-title" id="states-m">
+        <div
+            id="states-m"
+            class="gallery-title"
+        >
             <h2>Maine</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.maine.pop"
-            v-bind:stat2="getStats.maine.rank"
-            v-bind:stat3="getStats.maine.seats"
+            :stat1="getStats.maine.pop"
+            :stat2="getStats.maine.rank"
+            :stat3="getStats.maine.seats"
         />
         <SenatorCard1 :details="getStates.maine" />
     </section>
@@ -213,9 +243,9 @@
             <h2>Maryland</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.maryland.pop"
-            v-bind:stat2="getStats.maryland.rank"
-            v-bind:stat3="getStats.maryland.seats"
+            :stat1="getStats.maryland.pop"
+            :stat2="getStats.maryland.rank"
+            :stat3="getStats.maryland.seats"
         />
         <SenatorCard1 :details="getStates.maryland" />
     </section>
@@ -224,9 +254,9 @@
             <h2>Massachusetts</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.massachusetts.pop"
-            v-bind:stat2="getStats.massachusetts.rank"
-            v-bind:stat3="getStats.massachusetts.seats"
+            :stat1="getStats.massachusetts.pop"
+            :stat2="getStats.massachusetts.rank"
+            :stat3="getStats.massachusetts.seats"
         />
         <SenatorCard1 :details="getStates.massachusetts" />
     </section>
@@ -235,9 +265,9 @@
             <h2>Michigan</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.michigan.pop"
-            v-bind:stat2="getStats.michigan.rank"
-            v-bind:stat3="getStats.michigan.seats"
+            :stat1="getStats.michigan.pop"
+            :stat2="getStats.michigan.rank"
+            :stat3="getStats.michigan.seats"
         />
         <SenatorCard1 :details="getStates.michigan" />
     </section>
@@ -246,9 +276,9 @@
             <h2>Minnesota</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.minnesota.pop"
-            v-bind:stat2="getStats.minnesota.rank"
-            v-bind:stat3="getStats.minnesota.seats"
+            :stat1="getStats.minnesota.pop"
+            :stat2="getStats.minnesota.rank"
+            :stat3="getStats.minnesota.seats"
         />
         <SenatorCard1 :details="getStates.minnesota" />
     </section>
@@ -257,9 +287,9 @@
             <h2>Mississippi</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.mississippi.pop"
-            v-bind:stat2="getStats.mississippi.rank"
-            v-bind:stat3="getStats.mississippi.seats"
+            :stat1="getStats.mississippi.pop"
+            :stat2="getStats.mississippi.rank"
+            :stat3="getStats.mississippi.seats"
         />
         <SenatorCard1 :details="getStates.mississippi" />
     </section>
@@ -268,9 +298,9 @@
             <h2>Missouri</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.missouri.pop"
-            v-bind:stat2="getStats.missouri.rank"
-            v-bind:stat3="getStats.missouri.seats"
+            :stat1="getStats.missouri.pop"
+            :stat2="getStats.missouri.rank"
+            :stat3="getStats.missouri.seats"
         />
         <SenatorCard1 :details="getStates.missouri" />
     </section>
@@ -279,20 +309,23 @@
             <h2>Montana</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.montana.pop"
-            v-bind:stat2="getStats.montana.rank"
-            v-bind:stat3="getStats.montana.seats"
+            :stat1="getStats.montana.pop"
+            :stat2="getStats.montana.rank"
+            :stat3="getStats.montana.seats"
         />
         <SenatorCard1 :details="getStates.montana" />
     </section>
     <section>
-        <div class="gallery-title" id="states-n">
+        <div
+            id="states-n"
+            class="gallery-title"
+        >
             <h2>Nebraska</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.nebraska.pop"
-            v-bind:stat2="getStats.nebraska.rank"
-            v-bind:stat3="getStats.nebraska.seats"
+            :stat1="getStats.nebraska.pop"
+            :stat2="getStats.nebraska.rank"
+            :stat3="getStats.nebraska.seats"
         />
         <SenatorCard1 :details="getStates.nebraska" />
     </section>
@@ -301,9 +334,9 @@
             <h2>Nevada</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.nevada.pop"
-            v-bind:stat2="getStats.nevada.rank"
-            v-bind:stat3="getStats.nevada.seats"
+            :stat1="getStats.nevada.pop"
+            :stat2="getStats.nevada.rank"
+            :stat3="getStats.nevada.seats"
         />
         <SenatorCard1 :details="getStates.nevada" />
     </section>
@@ -312,9 +345,9 @@
             <h2>New Hampshire</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.newHampshire.pop"
-            v-bind:stat2="getStats.newHampshire.rank"
-            v-bind:stat3="getStats.newHampshire.seats"
+            :stat1="getStats.newHampshire.pop"
+            :stat2="getStats.newHampshire.rank"
+            :stat3="getStats.newHampshire.seats"
         />
         <SenatorCard1 :details="getStates.newHampshire" />
     </section>
@@ -323,9 +356,9 @@
             <h2>New Jersey</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.newJersey.pop"
-            v-bind:stat2="getStats.newJersey.rank"
-            v-bind:stat3="getStats.newJersey.seats"
+            :stat1="getStats.newJersey.pop"
+            :stat2="getStats.newJersey.rank"
+            :stat3="getStats.newJersey.seats"
         />
         <SenatorCard1 :details="getStates.newJersey" />
     </section>
@@ -334,9 +367,9 @@
             <h2>New Mexico</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.newMexico.pop"
-            v-bind:stat2="getStats.newMexico.rank"
-            v-bind:stat3="getStats.newMexico.seats"
+            :stat1="getStats.newMexico.pop"
+            :stat2="getStats.newMexico.rank"
+            :stat3="getStats.newMexico.seats"
         />
         <SenatorCard1 :details="getStates.newMexico" />
     </section>
@@ -345,9 +378,9 @@
             <h2>New York</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.newYork.pop"
-            v-bind:stat2="getStats.newYork.rank"
-            v-bind:stat3="getStats.newYork.seats"
+            :stat1="getStats.newYork.pop"
+            :stat2="getStats.newYork.rank"
+            :stat3="getStats.newYork.seats"
         />
         <SenatorCard1 :details="getStates.newYork" />
     </section>
@@ -356,9 +389,9 @@
             <h2>North Carolina</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.northCarolina.pop"
-            v-bind:stat2="getStats.northCarolina.rank"
-            v-bind:stat3="getStats.northCarolina.seats"
+            :stat1="getStats.northCarolina.pop"
+            :stat2="getStats.northCarolina.rank"
+            :stat3="getStats.northCarolina.seats"
         />
         <SenatorCard1 :details="getStates.northCarolina" />
     </section>
@@ -367,20 +400,23 @@
             <h2>North Dakota</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.northDakota.pop"
-            v-bind:stat2="getStats.northDakota.rank"
-            v-bind:stat3="getStats.northDakota.seats"
+            :stat1="getStats.northDakota.pop"
+            :stat2="getStats.northDakota.rank"
+            :stat3="getStats.northDakota.seats"
         />
         <SenatorCard1 :details="getStates.northDakota" />
     </section>
     <section>
-        <div class="gallery-title" id="states-o">
+        <div
+            id="states-o"
+            class="gallery-title"
+        >
             <h2>Ohio</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.ohio.pop"
-            v-bind:stat2="getStats.ohio.rank"
-            v-bind:stat3="getStats.ohio.seats"
+            :stat1="getStats.ohio.pop"
+            :stat2="getStats.ohio.rank"
+            :stat3="getStats.ohio.seats"
         />
         <SenatorCard1 :details="getStates.ohio" />
     </section>
@@ -389,9 +425,9 @@
             <h2>Oklahoma</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.oklahoma.pop"
-            v-bind:stat2="getStats.oklahoma.rank"
-            v-bind:stat3="getStats.oklahoma.seats"
+            :stat1="getStats.oklahoma.pop"
+            :stat2="getStats.oklahoma.rank"
+            :stat3="getStats.oklahoma.seats"
         />
         <SenatorCard1 :details="getStates.oklahoma" />
     </section>
@@ -400,42 +436,51 @@
             <h2>Oregon</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.oregon.pop"
-            v-bind:stat2="getStats.oregon.rank"
-            v-bind:stat3="getStats.oregon.seats"
+            :stat1="getStats.oregon.pop"
+            :stat2="getStats.oregon.rank"
+            :stat3="getStats.oregon.seats"
         />
         <SenatorCard1 :details="getStates.oregon" />
     </section>
     <section>
-        <div class="gallery-title" id="states-p">
+        <div
+            id="states-p"
+            class="gallery-title"
+        >
             <h2>Pennsylvania</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.pennsylvania.pop"
-            v-bind:stat2="getStats.pennsylvania.rank"
-            v-bind:stat3="getStats.pennsylvania.seats"
+            :stat1="getStats.pennsylvania.pop"
+            :stat2="getStats.pennsylvania.rank"
+            :stat3="getStats.pennsylvania.seats"
         />
         <SenatorCard1 :details="getStates.pennsylvania" />
     </section>
     <section>
-        <div class="gallery-title" id="states-r">
+        <div
+            id="states-r"
+            class="gallery-title"
+        >
             <h2>Rhode Island</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.rhodeIsland.pop"
-            v-bind:stat2="getStats.rhodeIsland.rank"
-            v-bind:stat3="getStats.rhodeIsland.seats"
+            :stat1="getStats.rhodeIsland.pop"
+            :stat2="getStats.rhodeIsland.rank"
+            :stat3="getStats.rhodeIsland.seats"
         />
         <SenatorCard1 :details="getStates.rhodeIsland" />
     </section>
     <section>
-        <div class="gallery-title" id="states-s">
+        <div
+            id="states-s"
+            class="gallery-title"
+        >
             <h2>South Carolina</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.southCarolina.pop"
-            v-bind:stat2="getStats.southCarolina.rank"
-            v-bind:stat3="getStats.southCarolina.seats"
+            :stat1="getStats.southCarolina.pop"
+            :stat2="getStats.southCarolina.rank"
+            :stat3="getStats.southCarolina.seats"
         />
         <SenatorCard1 :details="getStates.southCarolina" />
     </section>
@@ -444,20 +489,23 @@
             <h2>South Dakota</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.southDakota.pop"
-            v-bind:stat2="getStats.southDakota.rank"
-            v-bind:stat3="getStats.southDakota.seats"
+            :stat1="getStats.southDakota.pop"
+            :stat2="getStats.southDakota.rank"
+            :stat3="getStats.southDakota.seats"
         />
         <SenatorCard1 :details="getStates.southDakota" />
     </section>
     <section>
-        <div class="gallery-title" id="states-t">
+        <div
+            id="states-t"
+            class="gallery-title"
+        >
             <h2>Tennessee</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.tennessee.pop"
-            v-bind:stat2="getStats.tennessee.rank"
-            v-bind:stat3="getStats.tennessee.seats"
+            :stat1="getStats.tennessee.pop"
+            :stat2="getStats.tennessee.rank"
+            :stat3="getStats.tennessee.seats"
         />
         <SenatorCard1 :details="getStates.tennessee" />
     </section>
@@ -466,31 +514,37 @@
             <h2>Texas</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.texas.pop"
-            v-bind:stat2="getStats.texas.rank"
-            v-bind:stat3="getStats.texas.seats"
+            :stat1="getStats.texas.pop"
+            :stat2="getStats.texas.rank"
+            :stat3="getStats.texas.seats"
         />
         <SenatorCard1 :details="getStates.texas" />
     </section>
     <section>
-        <div class="gallery-title" id="states-u">
+        <div
+            id="states-u"
+            class="gallery-title"
+        >
             <h2>Utah</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.utah.pop"
-            v-bind:stat2="getStats.utah.rank"
-            v-bind:stat3="getStats.utah.seats"
+            :stat1="getStats.utah.pop"
+            :stat2="getStats.utah.rank"
+            :stat3="getStats.utah.seats"
         />
         <SenatorCard1 :details="getStates.utah" />
     </section>
     <section>
-        <div class="gallery-title" id="states-v">
+        <div
+            id="states-v"
+            class="gallery-title"
+        >
             <h2>Vermont</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.vermont.pop"
-            v-bind:stat2="getStats.vermont.rank"
-            v-bind:stat3="getStats.vermont.seats"
+            :stat1="getStats.vermont.pop"
+            :stat2="getStats.vermont.rank"
+            :stat3="getStats.vermont.seats"
         />
         <SenatorCard1 :details="getStates.vermont" />
     </section>
@@ -499,20 +553,23 @@
             <h2>Virginia</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.virginia.pop"
-            v-bind:stat2="getStats.virginia.rank"
-            v-bind:stat3="getStats.virginia.seats"
+            :stat1="getStats.virginia.pop"
+            :stat2="getStats.virginia.rank"
+            :stat3="getStats.virginia.seats"
         />
         <SenatorCard1 :details="getStates.virginia" />
     </section>
     <section>
-        <div class="gallery-title" id="states-w">
+        <div
+            id="states-w"
+            class="gallery-title"
+        >
             <h2>Washington</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.washington.pop"
-            v-bind:stat2="getStats.washington.rank"
-            v-bind:stat3="getStats.washington.seats"
+            :stat1="getStats.washington.pop"
+            :stat2="getStats.washington.rank"
+            :stat3="getStats.washington.seats"
         />
         <SenatorCard1 :details="getStates.washington" />
     </section>
@@ -521,9 +578,9 @@
             <h2>West Virginia</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.westVirginia.pop"
-            v-bind:stat2="getStats.westVirginia.rank"
-            v-bind:stat3="getStats.westVirginia.seats"
+            :stat1="getStats.westVirginia.pop"
+            :stat2="getStats.westVirginia.rank"
+            :stat3="getStats.westVirginia.seats"
         />
         <SenatorCard1 :details="getStates.westVirginia" />
     </section>
@@ -532,9 +589,9 @@
             <h2>Wisconsin</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.wisconsin.pop"
-            v-bind:stat2="getStats.wisconsin.rank"
-            v-bind:stat3="getStats.wisconsin.seats"
+            :stat1="getStats.wisconsin.pop"
+            :stat2="getStats.wisconsin.rank"
+            :stat3="getStats.wisconsin.seats"
         />
         <SenatorCard1 :details="getStates.wisconsin" />
     </section>
@@ -543,15 +600,15 @@
             <h2>Wyoming</h2>
         </div>
         <StatsPanel
-            v-bind:stat1="getStats.wyoming.pop"
-            v-bind:stat2="getStats.wyoming.rank"
-            v-bind:stat3="getStats.wyoming.seats"
+            :stat1="getStats.wyoming.pop"
+            :stat2="getStats.wyoming.rank"
+            :stat3="getStats.wyoming.seats"
         />
         <SenatorCard1 :details="getStates.wyoming" />
     </section>
     <JumpLinks2
-        link0T="top"
-        name0T="⇧"
+        link-top="top"
+        name-top="⇧"
         link01="states-a"
         name01="A"
         link02="states-c"
@@ -599,15 +656,14 @@ import SenatorCard1 from "@/components/SenatorCard1.vue";
 import JumpLinks2 from "@/components/JumpLinks2.vue";
 export default {
     name: "SenateState",
-    data() {
-        return {};
-    },
     components: {
         StatsPanel,
         SenatorCard1,
         JumpLinks2,
     },
-    methods: {},
+    data() {
+        return {};
+    },
     computed: {
         getStates() {
             return {
@@ -720,5 +776,6 @@ export default {
             };
         },
     },
+    methods: {},
 };
 </script>

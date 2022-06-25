@@ -1,6 +1,9 @@
 <template>
     <section>
-        <div class="gallery-title" id="class1">
+        <div
+            id="class1"
+            class="gallery-title"
+        >
             <h2>Class I</h2>
         </div>
         <InfoPanel
@@ -11,7 +14,10 @@
         <SenatorCard2 :details="getClasses.classOne" />
     </section>
     <section>
-        <div class="gallery-title" id="class2">
+        <div
+            id="class2"
+            class="gallery-title"
+        >
             <h2>Class II</h2>
         </div>
         <InfoPanel
@@ -21,7 +27,10 @@
         <SenatorCard2 :details="getClasses.classTwo" />
     </section>
     <section>
-        <div class="gallery-title" id="class3">
+        <div
+            id="class3"
+            class="gallery-title"
+        >
             <h2>Class III</h2>
         </div>
         <InfoPanel
@@ -31,8 +40,8 @@
         <SenatorCard2 :details="getClasses.classThree" />
     </section>
     <JumpLinks1
-        linkT="top"
-        nameT="⇧"
+        link-top="top"
+        name-top="⇧"
         link1="class1"
         name1="Class I"
         link2="class2"
@@ -49,15 +58,14 @@ import JumpLinks1 from "@/components/JumpLinks1.vue";
 
 export default {
     name: "SenateClass",
-    data() {
-        return {};
-    },
     components: {
         InfoPanel,
         SenatorCard2,
         JumpLinks1,
     },
-    methods: {},
+    data() {
+        return {};
+    },
     computed: {
         getClasses() {
             return {
@@ -67,5 +75,6 @@ export default {
             };
         },
     },
+    methods: {},
 };
 </script>
