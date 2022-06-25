@@ -2061,7 +2061,7 @@ export default createStore({
     getters: {
         getTheState: (state) => (stateName) => {
             return state.senators.filter(
-                (senator) => senator.state === stateName
+                (senator) => senator.state === stateName,
             );
         },
         getTheStat: (state) => (stateName) => {
@@ -2073,22 +2073,22 @@ export default createStore({
         },
         getTheClass: (state) => (className) => {
             return state.senators.filter(
-                (senator) => senator.senateClass === className
+                (senator) => senator.senateClass === className,
             );
         },
         getTheParty: (state) => (partyName) => {
             return state.senators.filter(
-                (senator) => senator.party === partyName
+                (senator) => senator.party === partyName,
             );
         },
         getTheLeader: (state) => (leadType) => {
             return state.senators.filter(
-                (senator) => senator.leadershipType === leadType
+                (senator) => senator.leadershipType === leadType,
             );
         },
         getSenatorDetails: (state) => (routeParam) => {
             return state.senators.filter(
-                (senator) => senator.portrait === routeParam
+                (senator) => senator.portrait === routeParam,
             );
         },
     },
